@@ -365,7 +365,7 @@
       {
         "file": "assets/NewSprite12.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite12.png\"}",
         "name": "NewSprite12",
         "smoothed": false,
         "userAdded": false
