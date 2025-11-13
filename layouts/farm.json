@@ -20,7 +20,7 @@
     "snap": false,
     "zoomFactor": 0.4598521426736339,
     "windowMask": false,
-    "selectedLayer": "Desert Floor"
+    "selectedLayer": ""
   },
   "objectsGroups": [],
   "variables": [],
@@ -31,12 +31,12 @@
       "depth": 1,
       "height": 1160,
       "keepRatio": true,
-      "layer": "",
+      "layer": "Desert Floor",
       "name": "Garden_Background",
       "persistentUuid": "f7d897c5-a003-4e3a-ad97-84c88e732bfd",
       "width": 1944,
-      "x": -5,
-      "y": -67,
+      "x": -10,
+      "y": -24,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [
@@ -690,17 +690,16 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 182,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
       "layer": "",
       "name": "Player",
-      "persistentUuid": "a948cf92-d894-45df-8f1f-5ecdefed73a9",
-      "width": 213,
-      "x": 381,
-      "y": 361,
-      "zOrder": 113,
+      "persistentUuid": "c3a62af2-1f8c-410e-b60b-1e2a620de2b1",
+      "width": 0,
+      "x": 413,
+      "y": 336,
+      "zOrder": 16,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1143,7 +1142,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite10",
+                  "image": "Player",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1159,20 +1158,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 11,
-                        "y": 4
+                        "x": 26,
+                        "y": 9
                       },
                       {
-                        "x": 45,
-                        "y": 4
+                        "x": 105,
+                        "y": 9
                       },
                       {
-                        "x": 45,
-                        "y": 57
+                        "x": 105,
+                        "y": 134
                       },
                       {
-                        "x": 11,
-                        "y": 57
+                        "x": 26,
+                        "y": 134
                       }
                     ]
                   ]
@@ -1343,8 +1342,8 @@
               "parameters": [
                 "",
                 "Cactus",
-                "Planter_Box.X()",
-                "Planter_Box.Y()",
+                "Planter_Box.X() + 130",
+                "Planter_Box.Y() + 85",
                 ""
               ]
             },
@@ -1392,9 +1391,9 @@
                 "value": "CollisionPoint"
               },
               "parameters": [
-                "Mushroom",
-                "MouseX()",
-                "MouseY()"
+                "Cactus",
+                "Player.X()",
+                "Player.Y()"
               ]
             },
             {
@@ -1445,7 +1444,7 @@
       "cameraType": "",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": true,
+      "isLocked": false,
       "name": "Planting Boxes Final",
       "renderingType": "",
       "visibility": true,
@@ -1498,7 +1497,7 @@
       "cameraType": "",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": true,
+      "isLocked": false,
       "name": "Desert Floor",
       "renderingType": "",
       "visibility": true,

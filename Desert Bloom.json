@@ -369,6 +369,14 @@
         "name": "NewSprite12",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Player.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
