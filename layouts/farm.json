@@ -35,33 +35,16 @@
       "name": "Garden_Background",
       "persistentUuid": "f7d897c5-a003-4e3a-ad97-84c88e732bfd",
       "width": 1944,
-      "x": -8,
+      "x": -5,
       "y": -67,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [
         {
           "name": "tilemap",
-          "value": "{\"tileWidth\":128,\"tileHeight\":128,\"dimX\":16,\"dimY\":9,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23],[23,23,23,23,23,91,91,91,91,91,91,91,91,91,91,25],[23,23,23,23,23,91,91,91,91,91,91,91,91,91,91,25],[23,23,23,23,23,91,91,91,91,91,91,91,91,91,91,25],[23,23,23,23,23,91,91,91,91,91,91,91,91,91,91,25],[23,23,23,23,23,91,91,91,91,91,91,91,91,91,91,25],[23,23,23,23,23,91,91,91,91,91,91,91,91,91,91,25],[23,23,23,23,23,91,91,91,91,91,91,91,91,91,91,25],[56,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40]]}]}"
+          "value": "{\"tileWidth\":128,\"tileHeight\":128,\"dimX\":16,\"dimY\":9,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91],[91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91],[91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91],[91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91],[91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91],[91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91],[91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91],[91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91],[91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91]]}]}"
         }
       ],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 64,
-      "height": 53,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Mushroom_Meter",
-      "persistentUuid": "1d127f9c-c908-413d-bc7e-648cc97a8425",
-      "width": 125,
-      "x": 111,
-      "y": 27,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
       "initialVariables": []
     },
     {
@@ -627,22 +610,6 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 100,
-      "layer": "",
-      "name": "Mushroom_Icon",
-      "persistentUuid": "960da35b-1dcb-46ac-8613-4dc665eb5a95",
-      "width": 100,
-      "x": 11,
-      "y": 1,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 35.71428571428571,
       "height": 53,
       "layer": "",
@@ -707,23 +674,6 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 80,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Coin_Icon",
-      "persistentUuid": "0d661dc0-7efe-4c90-bea8-a6e427738b2d",
-      "width": 80,
-      "x": 321,
-      "y": 11,
-      "zOrder": 14,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
@@ -731,8 +681,8 @@
       "name": "Score",
       "persistentUuid": "c97bbb34-524f-4f10-ab5c-32670cc72331",
       "width": 0,
-      "x": 404,
-      "y": 19,
+      "x": 163,
+      "y": 20,
       "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
@@ -742,14 +692,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 186,
+      "height": 182,
       "keepRatio": true,
       "layer": "",
       "name": "Player",
       "persistentUuid": "a948cf92-d894-45df-8f1f-5ecdefed73a9",
-      "width": 251,
-      "x": 306,
-      "y": 312,
+      "width": 213,
+      "x": 381,
+      "y": 361,
       "zOrder": 113,
       "numberProperties": [],
       "stringProperties": [],
@@ -769,254 +719,7 @@
         "rowCount": 12,
         "columnCount": 17,
         "tileSize": 128,
-        "tilesWithHitBox": "39,40,41,192,193,194,195,196,197,198,199,115"
-      }
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Mushroom",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "Mushroom",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Mushroom",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 31,
-                        "y": 33
-                      },
-                      {
-                        "x": 132,
-                        "y": 33
-                      },
-                      {
-                        "x": 132,
-                        "y": 130
-                      },
-                      {
-                        "x": 31,
-                        "y": 130
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "3d6c54e76a9a06cbd7629c1e78388d4ab808bbf36d644c61d6a14c9ad34d4f89",
-      "name": "Mushroom_Meter",
-      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-      "variant": "Red Flat Bar",
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Health",
-          "type": "Health::Health",
-          "Health": 0,
-          "CurrentHealth": 0,
-          "MaxHealth": 5,
-          "DamageCooldown": 0,
-          "AllowOverHealing": false,
-          "IsHealthJustDamaged": false,
-          "DamageToBeApplied": 0,
-          "HitAtLeastOnce": false,
-          "ChanceToDodge": 0,
-          "IsJustDodged": false,
-          "HealToBeApplied": 0,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
-          "IsJustHealed": false,
-          "CurrentShieldPoints": 2.0247e-320,
-          "MaxShieldPoints": 0,
-          "ShieldDuration": 5,
-          "ShieldRegenRate": 0,
-          "BlockExcessDamage": false,
-          "ShieldRegenDelay": 0,
-          "IsShieldJustDamaged": false,
-          "ShieldDamageTaken": 2.0247e-320,
-          "FlatDamageReduction": 0,
-          "PercentDamageReduction": 0
-        }
-      ],
-      "content": {
-        "PreviousHighValueDuration": 0,
-        "ShowLabel": true,
-        "BarTopPadding": 4,
-        "BarBottomPadding": 6,
-        "BarLeftPadding": 4,
-        "BarRightPadding": 4,
-        "MaxValue": 5,
-        "InitialValue": 0
-      }
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Farmer",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Farmer.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 248,
-                        "y": 31
-                      },
-                      {
-                        "x": 775,
-                        "y": 31
-                      },
-                      {
-                        "x": 775,
-                        "y": 992
-                      },
-                      {
-                        "x": 248,
-                        "y": 992
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Mushroom_Icon",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Mushroom.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 76,
-                        "y": 72
-                      },
-                      {
-                        "x": 321,
-                        "y": 72
-                      },
-                      {
-                        "x": 321,
-                        "y": 288
-                      },
-                      {
-                        "x": 76,
-                        "y": 288
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "5faf2b0415c271fa6e747283ed36297a95f04d2b6c477a7b011775fa6fb444ee",
-      "name": "Market_Button",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Brown With Shadow",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LeftPadding": 16,
-        "RightPadding": 16,
-        "PressedLabelOffsetY": 3,
-        "BottomPadding": 32,
-        "TopPadding": 32,
-        "HoveredFadeOutDuration": 0.25,
-        "LabelText": "Market"
+        "tilesWithHitBox": "39,40,41,192,193,194,195,196,197,198,199,115,91"
       }
     },
     {
@@ -1403,24 +1106,6 @@
       }
     },
     {
-      "assetStoreId": "5faf2b0415c271fa6e747283ed36297a95f04d2b6c477a7b011775fa6fb444ee",
-      "name": "Expand_Button",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Brown With Shadow",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LeftPadding": 16,
-        "RightPadding": 16,
-        "PressedLabelOffsetY": 3,
-        "BottomPadding": 32,
-        "TopPadding": 32,
-        "HoveredFadeOutDuration": 0.25,
-        "LabelText": "Expand Farm"
-      }
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Player",
@@ -1428,7 +1113,24 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "acceleration": 400,
+          "allowDiagonals": false,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "deceleration": 800,
+          "ignoreDefaultControls": false,
+          "maxSpeed": 200,
+          "movementAngleOffset": 0,
+          "name": "TopDownMovement",
+          "rotateObject": false,
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "useLegacyTurnBack": false,
+          "viewpoint": "TopDown"
+        }
+      ],
       "animations": [
         {
           "name": "Player",
@@ -1492,16 +1194,7 @@
         "objectName": "Planter_Box"
       },
       {
-        "objectName": "Farmer"
-      },
-      {
         "objectName": "Player"
-      },
-      {
-        "objectName": "Market_Button"
-      },
-      {
-        "objectName": "Expand_Button"
       },
       {
         "objectName": "Coin_Icon"
@@ -1510,16 +1203,7 @@
         "objectName": "Score"
       },
       {
-        "objectName": "Mushroom"
-      },
-      {
-        "objectName": "Mushroom_Icon"
-      },
-      {
         "objectName": "Water_Icon"
-      },
-      {
-        "objectName": "Mushroom_Meter"
       },
       {
         "objectName": "Water_Meter"
@@ -1538,82 +1222,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Market",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "Market_Button",
-                "\"Right\""
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
-              },
-              "parameters": [
-                "Mushroom_Meter",
-                ">",
-                "0",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Coins",
-                "+",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "Score",
-                "Text",
-                "=",
-                "Coins"
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
-              },
-              "parameters": [
-                "Mushroom_Meter",
-                "-",
-                "1",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
       "name": "Planting",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1626,9 +1234,9 @@
                 "value": "CollisionPoint"
               },
               "parameters": [
-                "Planter_Box",
-                "MouseX()",
-                "MouseY()"
+                "Player",
+                "Player.X()",
+                "Player.Y()"
               ]
             },
             {
@@ -1776,6 +1384,59 @@
       "isLocked": true,
       "name": "Planting Boxes Final",
       "renderingType": "",
+      "visibility": false,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": true,
+      "name": "Desert Floor",
+      "renderingType": "",
       "visibility": true,
       "cameras": [],
       "effects": [
@@ -1913,6 +1574,10 @@
     {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "TopDownMovement",
+      "type": "TopDownMovementBehavior::TopDownMovementBehavior"
     }
   ]
 }
