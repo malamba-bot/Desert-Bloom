@@ -1,0 +1,1887 @@
+{
+  "b": 209,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Farm",
+  "name": "Farm",
+  "r": 209,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 209,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.4598521426736339,
+    "windowMask": false,
+    "selectedLayer": ""
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1160,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Garden_Background",
+      "persistentUuid": "f7d897c5-a003-4e3a-ad97-84c88e732bfd",
+      "width": 1944,
+      "x": -8,
+      "y": -67,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [
+        {
+          "name": "tilemap",
+          "value": "{\"tileWidth\":128,\"tileHeight\":128,\"dimX\":16,\"dimY\":9,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23],[23,23,23,23,23,91,91,91,91,91,91,91,91,91,91,25],[23,23,23,23,23,91,91,91,91,91,91,91,91,91,91,25],[23,23,23,23,23,91,91,91,91,91,91,91,91,91,91,25],[23,23,23,23,23,91,91,91,91,91,91,91,91,91,91,25],[23,23,23,23,23,91,91,91,91,91,91,91,91,91,91,25],[23,23,23,23,23,91,91,91,91,91,91,91,91,91,91,25],[23,23,23,23,23,91,91,91,91,91,91,91,91,91,91,25],[56,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40]]}]}"
+        }
+      ],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 53,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Mushroom_Meter",
+      "persistentUuid": "1d127f9c-c908-413d-bc7e-648cc97a8425",
+      "width": 125,
+      "x": 111,
+      "y": 27,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 194,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Farmer",
+      "persistentUuid": "3597b5b6-f0d4-4fc6-9a55-618728e01967",
+      "width": 163,
+      "x": 319,
+      "y": 368,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 112,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Market_Button",
+      "persistentUuid": "a55da87b-9a0c-4ada-84f9-79ea27c6a4dd",
+      "width": 527,
+      "x": 37,
+      "y": 610,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "50d60ddf-cc60-45a5-914d-e095af47a176",
+      "width": 340,
+      "x": 490,
+      "y": -17,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "a5b2fc12-6021-4c85-8d02-f027e7d4abed",
+      "width": 340,
+      "x": 670,
+      "y": -17,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "5936ed2f-2fa6-49fb-b86e-dc3998d22ab4",
+      "width": 340,
+      "x": 850,
+      "y": -17,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "c3e63b0d-d34f-4de9-864e-f6e8f5dce034",
+      "width": 340,
+      "x": 1032,
+      "y": -17,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "65226d43-04d5-4c7b-9f38-8e3fc39ce07e",
+      "width": 340,
+      "x": 1212,
+      "y": -17,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "bdd934dc-52a7-4e33-bcf6-ffc8770e1641",
+      "width": 340,
+      "x": 1392,
+      "y": -17,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "32df5a17-223f-4a8d-85f4-cc07586e6fb4",
+      "width": 340,
+      "x": 1572,
+      "y": -17,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "cbdbad84-c559-4042-b74a-01c5d1684230",
+      "width": 340,
+      "x": 489,
+      "y": 169,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "8277f65e-a56c-45fd-b411-75ddc63c2217",
+      "width": 340,
+      "x": 669,
+      "y": 169,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "32e0add3-726e-47ab-bcb0-4cef8fbb2548",
+      "width": 340,
+      "x": 849,
+      "y": 169,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "db6dbc05-a990-4474-9504-306f2cc6e6a5",
+      "width": 340,
+      "x": 1031,
+      "y": 169,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "6f7ad89b-14f6-4ff7-be0c-f82c4068ead4",
+      "width": 340,
+      "x": 1391,
+      "y": 169,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "f7ee36be-3128-45bd-b43a-32e0a226c1a7",
+      "width": 340,
+      "x": 1211,
+      "y": 169,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "4fd4fd45-d888-40fc-912a-ebc8f00d5248",
+      "width": 340,
+      "x": 1571,
+      "y": 169,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "46b02da7-c007-418d-b564-ee45248bc5e6",
+      "width": 340,
+      "x": 489,
+      "y": 350,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "d87e8d5c-3b8a-4ab4-b413-087b72cb9e02",
+      "width": 340,
+      "x": 669,
+      "y": 350,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "6c791a1a-7409-414f-8f7f-7c97fe68481c",
+      "width": 340,
+      "x": 849,
+      "y": 350,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "4be5f54e-7ddc-4747-8b0a-3862434627db",
+      "width": 340,
+      "x": 1031,
+      "y": 350,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "9d03d7e0-0401-4a80-8ce7-4d4e0b3948cf",
+      "width": 340,
+      "x": 1211,
+      "y": 350,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "be6df911-dd12-42cb-a6fb-748da16a928c",
+      "width": 340,
+      "x": 1391,
+      "y": 350,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "4d855cfc-f932-4471-8edf-3a69e3a7ec48",
+      "width": 340,
+      "x": 1571,
+      "y": 350,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "3bca77fa-c5f5-499b-9158-0c9f117cdf68",
+      "width": 340,
+      "x": 488,
+      "y": 536,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "b5abb090-cf42-4f04-a5cd-c40dc6681fea",
+      "width": 340,
+      "x": 668,
+      "y": 536,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "b610224e-0d11-4193-bf8e-aedfe59685db",
+      "width": 340,
+      "x": 848,
+      "y": 536,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "fd86f2e8-3b5d-49cc-a1a1-c2605d9f6e82",
+      "width": 340,
+      "x": 1030,
+      "y": 536,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "028190aa-41c8-49c3-8860-2d5514052885",
+      "width": 340,
+      "x": 1390,
+      "y": 536,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "3c4b3eff-dff8-4e67-bdee-eb21c1d386ef",
+      "width": 340,
+      "x": 1210,
+      "y": 536,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "6ca197df-a1d6-4cda-b8a9-bf5c4843b1d2",
+      "width": 340,
+      "x": 1570,
+      "y": 536,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "13f2b9e7-7396-4d0f-9889-2ef942ac8eb9",
+      "width": 340,
+      "x": 490,
+      "y": 722,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "aa08905e-e997-4b7f-9223-da67bea2fa73",
+      "width": 340,
+      "x": 670,
+      "y": 722,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "b47564ea-b8bc-48e8-9404-db7b5e4e31b9",
+      "width": 340,
+      "x": 850,
+      "y": 722,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "e768a3c5-4a39-4795-afde-f8be7f9bceaf",
+      "width": 340,
+      "x": 1032,
+      "y": 722,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "70284b88-1265-4036-bdcd-bd5ffbed6c4f",
+      "width": 340,
+      "x": 1212,
+      "y": 722,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "1334a7a4-2889-42cd-983a-d22f18bb7549",
+      "width": 340,
+      "x": 1572,
+      "y": 722,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 340,
+      "layer": "Planting Boxes Final",
+      "name": "Planter_Box",
+      "persistentUuid": "ab2cf403-c48d-450a-9a06-a00794857891",
+      "width": 340,
+      "x": 1392,
+      "y": 722,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 100,
+      "layer": "",
+      "name": "Mushroom_Icon",
+      "persistentUuid": "960da35b-1dcb-46ac-8613-4dc665eb5a95",
+      "width": 100,
+      "x": 11,
+      "y": 1,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 35.71428571428571,
+      "height": 53,
+      "layer": "",
+      "name": "Water_Meter",
+      "persistentUuid": "b91a50a2-9ccf-409b-9e50-8a24e29ddddd",
+      "width": 125,
+      "x": 111,
+      "y": 129,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 35.71428571428571,
+      "height": 53,
+      "layer": "",
+      "name": "Seed_Meter",
+      "persistentUuid": "7974cfad-f637-4f03-8743-4c395ad282a2",
+      "width": 125,
+      "x": 111,
+      "y": 237,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 66,
+      "layer": "",
+      "name": "Water_Icon",
+      "persistentUuid": "473070b7-593e-4f85-ad13-c0a2b90dd2f5",
+      "width": 66,
+      "x": 27,
+      "y": 121,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1.1948051948051948,
+      "height": 92,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Seed_Sprite",
+      "persistentUuid": "9741065e-a38c-4da3-8edf-cb5ea33d2b37",
+      "width": 108.72727272727272,
+      "x": 7,
+      "y": 219,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 80,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Coin_Icon",
+      "persistentUuid": "0d661dc0-7efe-4c90-bea8-a6e427738b2d",
+      "width": 80,
+      "x": 321,
+      "y": 11,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Score",
+      "persistentUuid": "c97bbb34-524f-4f10-ab5c-32670cc72331",
+      "width": 0,
+      "x": 404,
+      "y": 19,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 175.66666666666669,
+      "height": 112,
+      "layer": "",
+      "name": "Expand_Button",
+      "persistentUuid": "3aee6736-87de-43d6-afef-c51b210265be",
+      "width": 527,
+      "x": 37,
+      "y": 755,
+      "zOrder": 112,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "8b09a5d87398e59848c8fcf81c06881485fa3c7221e69085dd31280eeb2535ae",
+      "name": "Garden_Background",
+      "type": "TileMap::SimpleTileMap",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "atlasImage": "mapPack_tilesheet_2X.png",
+        "rowCount": 12,
+        "columnCount": 17,
+        "tileSize": 128,
+        "tilesWithHitBox": "39,40,41,192,193,194,195,196,197,198,199,115"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Mushroom",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Mushroom",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Mushroom",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 31,
+                        "y": 33
+                      },
+                      {
+                        "x": 132,
+                        "y": 33
+                      },
+                      {
+                        "x": 132,
+                        "y": 130
+                      },
+                      {
+                        "x": 31,
+                        "y": 130
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "3d6c54e76a9a06cbd7629c1e78388d4ab808bbf36d644c61d6a14c9ad34d4f89",
+      "name": "Mushroom_Meter",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "Red Flat Bar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 0,
+          "CurrentHealth": 0,
+          "MaxHealth": 5,
+          "DamageCooldown": 0,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        }
+      ],
+      "content": {
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": true,
+        "BarTopPadding": 4,
+        "BarBottomPadding": 6,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "MaxValue": 5,
+        "InitialValue": 0
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Farmer",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Farmer.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 248,
+                        "y": 31
+                      },
+                      {
+                        "x": 775,
+                        "y": 31
+                      },
+                      {
+                        "x": 775,
+                        "y": 992
+                      },
+                      {
+                        "x": 248,
+                        "y": 992
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Mushroom_Icon",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Mushroom.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 76,
+                        "y": 72
+                      },
+                      {
+                        "x": 321,
+                        "y": 72
+                      },
+                      {
+                        "x": 321,
+                        "y": 288
+                      },
+                      {
+                        "x": 76,
+                        "y": 288
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "5faf2b0415c271fa6e747283ed36297a95f04d2b6c477a7b011775fa6fb444ee",
+      "name": "Market_Button",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Brown With Shadow",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 3,
+        "BottomPadding": 32,
+        "TopPadding": 32,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Market"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Planter_Box",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 21,
+                        "y": 15
+                      },
+                      {
+                        "x": 54,
+                        "y": 15
+                      },
+                      {
+                        "x": 54,
+                        "y": 46
+                      },
+                      {
+                        "x": 21,
+                        "y": 46
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "3d6c54e76a9a06cbd7629c1e78388d4ab808bbf36d644c61d6a14c9ad34d4f89",
+      "name": "Water_Meter",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "Blue Flat Bar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 5,
+          "CurrentHealth": 0,
+          "MaxHealth": 5,
+          "DamageCooldown": 0,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        }
+      ],
+      "content": {
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": true,
+        "BarTopPadding": 4,
+        "BarBottomPadding": 6,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "MaxValue": 5,
+        "InitialValue": 5
+      }
+    },
+    {
+      "assetStoreId": "3d6c54e76a9a06cbd7629c1e78388d4ab808bbf36d644c61d6a14c9ad34d4f89",
+      "name": "Seed_Meter",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "Green Flat Bar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 15,
+          "CurrentHealth": 0,
+          "MaxHealth": 15,
+          "DamageCooldown": 0,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        }
+      ],
+      "content": {
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": true,
+        "BarTopPadding": 4,
+        "BarBottomPadding": 6,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "MaxValue": 15,
+        "InitialValue": 15
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Water_Icon",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite5",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite6",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 59
+                      },
+                      {
+                        "x": 11,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Seed_Sprite",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite7",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12,
+                        "y": 20
+                      },
+                      {
+                        "x": 52,
+                        "y": 20
+                      },
+                      {
+                        "x": 52,
+                        "y": 40
+                      },
+                      {
+                        "x": 12,
+                        "y": 40
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Coin_Icon",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite9",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 8,
+                        "y": 8
+                      },
+                      {
+                        "x": 56,
+                        "y": 8
+                      },
+                      {
+                        "x": 56,
+                        "y": 56
+                      },
+                      {
+                        "x": 8,
+                        "y": 56
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Score",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "0",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 60,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "0",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 60,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "5faf2b0415c271fa6e747283ed36297a95f04d2b6c477a7b011775fa6fb444ee",
+      "name": "Expand_Button",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Brown With Shadow",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 3,
+        "BottomPadding": 32,
+        "TopPadding": 32,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Expand Farm"
+      }
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "Garden_Background"
+      },
+      {
+        "objectName": "Planter_Box"
+      },
+      {
+        "objectName": "Farmer"
+      },
+      {
+        "objectName": "Market_Button"
+      },
+      {
+        "objectName": "Expand_Button"
+      },
+      {
+        "objectName": "Coin_Icon"
+      },
+      {
+        "objectName": "Score"
+      },
+      {
+        "objectName": "Mushroom"
+      },
+      {
+        "objectName": "Mushroom_Icon"
+      },
+      {
+        "objectName": "Water_Icon"
+      },
+      {
+        "objectName": "Mushroom_Meter"
+      },
+      {
+        "objectName": "Water_Meter"
+      },
+      {
+        "objectName": "Seed_Meter"
+      },
+      {
+        "objectName": "Seed_Sprite"
+      }
+    ]
+  },
+  "events": [
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Market",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "Market_Button",
+                "\"Right\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+              },
+              "parameters": [
+                "Mushroom_Meter",
+                ">",
+                "0",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Coins",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Score",
+                "Text",
+                "=",
+                "Coins"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "Mushroom_Meter",
+                "-",
+                "1",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Planting",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionPoint"
+              },
+              "parameters": [
+                "Planter_Box",
+                "MouseX()",
+                "MouseY()"
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+              },
+              "parameters": [
+                "Water_Meter",
+                ">",
+                "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+              },
+              "parameters": [
+                "Seed_Meter",
+                ">",
+                "2",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Mushroom",
+                "Planter_Box.X() + 116",
+                "Planter_Box.Y() + 81",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "Water_Meter",
+                "-",
+                "1",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "Seed_Meter",
+                "-",
+                "3",
+                "3"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Collecting",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionPoint"
+              },
+              "parameters": [
+                "Mushroom",
+                "MouseX()",
+                "MouseY()"
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Right\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "Mushroom_Meter",
+                "+",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Mushroom",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": true,
+      "name": "Planting Boxes Final",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Health",
+      "type": "Health::Health"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 243,
+    "major": 5,
+    "minor": 5,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "default",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": false,
+    "projectUuid": "697e8baa-77b6-42d3-81c2-5d09e1c73694",
+    "scaleMode": "nearest",
+    "sizeOnStartupMode": "adaptWidth",
+    "templateSlug": "",
+    "version": "1.0.0",
+    "name": "Desert Bloom",
+    "description": "",
+    "author": "",
+    "windowWidth": 1920,
+    "windowHeight": 1080,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": ""
+    },
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "file": "assets/mapPack_tilesheet_2X.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "mapPack_tilesheet_2X.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Tilemaps/High Definition/5f0063211bf3fddcc0a7c68a2cafb734e57e96df0f5a55d4906ffcfac71936b0_mapPack_tilesheet_2X.png",
+          "name": "mapPack_tilesheet_2X.png"
+        }
+      },
+      {
+        "file": "assets/mushroom.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "mushroom.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/14bc0140-3b0b-4bbc-be89-e4a479664c69/resources/192a1bf49e6dd16e42d8994362b476922bf0abf08a6d7082dba7ec71a81f0e13-mushroom.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Mushroom.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Mushroom.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/14bc0140-3b0b-4bbc-be89-e4a479664c69/resources/117f9fad32f57518344e7dcd7b90d0ad625388f39e97c47cb669000aa60e4596-Mushroom.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Flat Bar Red Fill Bar.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Flat Bar Red Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/212e9679eaae4753beaa5d595d7c80ea66df3235485c6a3963e88b0d936a1798_Flat Bar Red Fill Bar.png",
+          "name": "Flat Bar Red Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/Flat Bar White Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar White Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/c090d31cafed0c8ef7bb4d5af75a7dbf7149bcc03a7d5d63ae997d59100e362e_Flat Bar White Border.png",
+          "name": "Flat Bar White Border.png"
+        }
+      },
+      {
+        "file": "assets/Farmer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Farmer.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/14bc0140-3b0b-4bbc-be89-e4a479664c69/resources/dc091843b07f8c932017249c0b304c43247904c83d0b23087c6d23f332804d85-Farmer.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Red Button With Shadow_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Red Button With Shadow_Hovered.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/71ee2c8d8b72808c7f084252cd36c80c44bc07655a3729e5fe7459c634007e8a_Red Button With Shadow_Hovered.png",
+          "name": "Red Button With Shadow_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Red Button With Shadow_Idle.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Red Button With Shadow_Idle.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/6c6bf020fb86d99a9ecc993f8b90064d73d757bc2408050cf353c84bc36f6be2_Red Button With Shadow_Idle.png",
+          "name": "Red Button With Shadow_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Red Button With Shadow_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Red Button With Shadow_Pressed.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/b9ce526450d48adedb6875043465ae168fff1f6b01dd1ff7f43b7e7c1568cc21_Red Button With Shadow_Pressed.png",
+          "name": "Red Button With Shadow_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/CantoraOne-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "CantoraOne-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
+          "name": "CantoraOne-Regular.ttf"
+        }
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Mushroom2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Mushroom",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Shaded Red Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Shaded Red Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/96409107ae77918bbcde7a715c09e12b1b6c8ef16524b06b0d162955f1bd1a27_Shaded Red Fill Bar.png",
+          "name": "Shaded Red Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/Wood Bar Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wood Bar Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/5c3135f6fa8587da82ddea950881fc8b35d422bb806d9331f8b47fdc715ee76a_Wood Bar Border.png",
+          "name": "Wood Bar Border.png"
+        }
+      },
+      {
+        "file": "assets/Flat_Bar_Blue.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat_Bar_Blue.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/14bc0140-3b0b-4bbc-be89-e4a479664c69/resources/6184f8495545cd20504f4d09acd9dc7be95e53c8f118743f76a0e5289b20b977-Flat_Bar_Blue.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Green_Flat_Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green_Flat_Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/14bc0140-3b0b-4bbc-be89-e4a479664c69/resources/1e072e424fb367a454b38947432f2716c902d7e035f9d8f80fc013d11c391c85-Green_Flat_Bar.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Red Button With Shadow_Idle.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Red Button With Shadow_Idle.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite9",
+        "smoothed": false,
+        "userAdded": false
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
+  "objectsGroups": [],
+  "variables": [
+    {
+      "name": "Coins",
+      "type": "number",
+      "value": 0
+    }
+  ],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/farm"
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/health"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+    }
+  ],
+  "externalLayouts": []
+}
