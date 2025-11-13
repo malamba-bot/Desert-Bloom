@@ -20,7 +20,7 @@
     "snap": false,
     "zoomFactor": 0.4598521426736339,
     "windowMask": false,
-    "selectedLayer": "Desert Floor"
+    "selectedLayer": ""
   },
   "objectsGroups": [],
   "variables": [],
@@ -691,23 +691,6 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 182,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Player",
-      "persistentUuid": "a948cf92-d894-45df-8f1f-5ecdefed73a9",
-      "width": 213,
-      "x": 381,
-      "y": 361,
-      "zOrder": 113,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 0,
       "height": 128,
       "keepRatio": true,
@@ -715,9 +698,25 @@
       "name": "Well",
       "persistentUuid": "0d0a68fa-a3b9-494d-8cb0-cbd7178e7d51",
       "width": 128,
-      "x": 960,
-      "y": 540,
+      "x": 105,
+      "y": 401,
       "zOrder": 113,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Player",
+      "persistentUuid": "656121e5-ce7b-478d-aed3-4388e383b07b",
+      "width": 0,
+      "x": 380,
+      "y": 394,
+      "zOrder": 114,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1160,7 +1159,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite10",
+                  "image": "Player",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1176,20 +1175,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 11,
-                        "y": 4
+                        "x": 26,
+                        "y": 9
                       },
                       {
-                        "x": 45,
-                        "y": 4
+                        "x": 105,
+                        "y": 9
                       },
                       {
-                        "x": 45,
-                        "y": 57
+                        "x": 105,
+                        "y": 134
                       },
                       {
-                        "x": 11,
-                        "y": 57
+                        "x": 26,
+                        "y": 134
                       }
                     ]
                   ]
@@ -1429,8 +1428,8 @@
               "parameters": [
                 "",
                 "Cactus",
-                "Planter_Box.X()",
-                "Planter_Box.Y()",
+                "Planter_Box.X() + 130",
+                "Planter_Box.Y() + 85",
                 ""
               ]
             },
@@ -1470,6 +1469,60 @@
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Water"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Well",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "Water_Meter",
+                "+",
+                "10",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Cactus"
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -1518,92 +1571,9 @@
         }
       ],
       "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "Well",
-            "Player",
-            "",
-            "",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
-          },
-          "parameters": [
-            "Water_Meter",
-            "+",
-            "10",
-            ""
-          ]
-        }
-      ]
     }
   ],
   "layers": [
-    {
-      "ambientLightColorB": 200,
-      "ambientLightColorG": 200,
-      "ambientLightColorR": 200,
-      "camera3DFarPlaneDistance": 10000,
-      "camera3DFieldOfView": 45,
-      "camera3DNearPlaneDistance": 3,
-      "cameraType": "",
-      "followBaseLayerCamera": false,
-      "isLightingLayer": false,
-      "isLocked": true,
-      "name": "Planting Boxes Final",
-      "renderingType": "",
-      "visibility": true,
-      "cameras": [],
-      "effects": [
-        {
-          "effectType": "Scene3D::HemisphereLight",
-          "name": "3D Ambient Hemisphere Light",
-          "doubleParameters": {
-            "elevation": 40,
-            "intensity": 0.33,
-            "rotation": 300
-          },
-          "stringParameters": {
-            "groundColor": "127;127;127",
-            "skyColor": "255;255;255",
-            "top": "Z+"
-          },
-          "booleanParameters": {}
-        },
-        {
-          "effectType": "Scene3D::DirectionalLight",
-          "name": "3D Sun Light",
-          "doubleParameters": {
-            "distanceFromCamera": 1500,
-            "elevation": 40,
-            "frustumSize": 4000,
-            "intensity": 0.75,
-            "minimumShadowBias": 0,
-            "rotation": 300
-          },
-          "stringParameters": {
-            "color": "255;255;255",
-            "shadowQuality": "medium",
-            "top": "Z+"
-          },
-          "booleanParameters": {
-            "isCastingShadow": true
-          }
-        }
-      ]
-    },
     {
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
@@ -1683,6 +1653,59 @@
           "width": 0
         }
       ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": true,
+      "name": "Planting Boxes Final",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
       "effects": [
         {
           "effectType": "Scene3D::HemisphereLight",
