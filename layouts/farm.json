@@ -681,8 +681,8 @@
       "name": "Score",
       "persistentUuid": "c97bbb34-524f-4f10-ab5c-32670cc72331",
       "width": 0,
-      "x": 163,
-      "y": 20,
+      "x": 157,
+      "y": 26,
       "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
@@ -717,6 +717,23 @@
       "x": 380,
       "y": 394,
       "zOrder": 114,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 98,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Cactus",
+      "persistentUuid": "cd16feea-75f0-4447-a243-79e68c04cd69",
+      "width": 96,
+      "x": 29,
+      "y": 8,
+      "zOrder": 115,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1380,12 +1397,14 @@
           "conditions": [
             {
               "type": {
-                "value": "CollisionPoint"
+                "value": "CollisionNP"
               },
               "parameters": [
+                "Player",
                 "Planter_Box",
-                "Player.X()",
-                "Player.Y()"
+                "Player.Y()",
+                "",
+                ""
               ]
             },
             {
@@ -1395,28 +1414,6 @@
               "parameters": [
                 "",
                 "\"f\""
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
-              },
-              "parameters": [
-                "Water_Meter",
-                ">",
-                "0",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
-              },
-              "parameters": [
-                "Seed_Meter",
-                ">",
-                "2",
-                ""
               ]
             }
           ],
@@ -1528,46 +1525,63 @@
           "conditions": [
             {
               "type": {
-                "value": "CollisionPoint"
+                "value": "CollisionNP"
               },
               "parameters": [
-                "Mushroom",
-                "MouseX()",
-                "MouseY()"
+                "Player",
+                "Cactus",
+                "Player.Y()",
+                "",
+                ""
               ]
             },
             {
               "type": {
-                "value": "MouseButtonFromTextReleased"
+                "value": "KeyFromTextReleased"
               },
               "parameters": [
                 "",
-                "\"Right\""
+                "\"g\""
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                "value": "Delete"
               },
               "parameters": [
-                "Mushroom_Meter",
-                "+",
-                "1",
+                "Cactus",
                 ""
               ]
             },
             {
               "type": {
-                "value": "Delete"
+                "value": "SetNumberVariable"
               },
               "parameters": [
-                "Mushroom",
-                ""
+                "Collected_Cacti",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Score",
+                "Text",
+                "=",
+                "Collected_Cacti"
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "parameters": []

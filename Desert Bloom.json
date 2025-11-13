@@ -396,7 +396,7 @@
   "objectsGroups": [],
   "variables": [
     {
-      "name": "Coins",
+      "name": "Collected_Cacti",
       "type": "number",
       "value": 0
     }
