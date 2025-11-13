@@ -20,7 +20,7 @@
     "snap": false,
     "zoomFactor": 0.4598521426736339,
     "windowMask": false,
-    "selectedLayer": ""
+    "selectedLayer": "Planting Boxes Final"
   },
   "objectsGroups": [],
   "variables": [],
@@ -60,40 +60,6 @@
       "x": 111,
       "y": 27,
       "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 194,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Farmer",
-      "persistentUuid": "3597b5b6-f0d4-4fc6-9a55-618728e01967",
-      "width": 163,
-      "x": 319,
-      "y": 368,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 64,
-      "height": 112,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Market_Button",
-      "persistentUuid": "a55da87b-9a0c-4ada-84f9-79ea27c6a4dd",
-      "width": 527,
-      "x": 37,
-      "y": 610,
-      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -775,15 +741,16 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 175.66666666666669,
-      "height": 112,
+      "depth": 1,
+      "height": 186,
+      "keepRatio": true,
       "layer": "",
-      "name": "Expand_Button",
-      "persistentUuid": "3aee6736-87de-43d6-afef-c51b210265be",
-      "width": 527,
-      "x": 37,
-      "y": 755,
-      "zOrder": 112,
+      "name": "Player",
+      "persistentUuid": "a948cf92-d894-45df-8f1f-5ecdefed73a9",
+      "width": 251,
+      "x": 306,
+      "y": 312,
+      "zOrder": 113,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1452,6 +1419,67 @@
         "HoveredFadeOutDuration": 0.25,
         "LabelText": "Expand Farm"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Player",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Player",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite10",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 4
+                      },
+                      {
+                        "x": 45,
+                        "y": 4
+                      },
+                      {
+                        "x": 45,
+                        "y": 57
+                      },
+                      {
+                        "x": 11,
+                        "y": 57
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1465,6 +1493,9 @@
       },
       {
         "objectName": "Farmer"
+      },
+      {
+        "objectName": "Player"
       },
       {
         "objectName": "Market_Button"
