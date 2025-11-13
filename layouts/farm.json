@@ -1343,8 +1343,8 @@
               "parameters": [
                 "",
                 "Cactus",
-                "Planter_Box.X() + 116",
-                "Planter_Box.Y() + 81",
+                "Planter_Box.X()",
+                "Planter_Box.Y()",
                 ""
               ]
             },
