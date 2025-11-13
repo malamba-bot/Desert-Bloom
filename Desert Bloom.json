@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 243,
+    "build": 245,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -14,7 +14,7 @@
     "orientation": "default",
     "packageName": "com.example.gamename",
     "pixelsRounding": false,
-    "projectUuid": "697e8baa-77b6-42d3-81c2-5d09e1c73694",
+    "projectUuid": "dad0094e-3db7-49ba-ba79-dfc3b47790d2",
     "scaleMode": "nearest",
     "sizeOnStartupMode": "adaptWidth",
     "templateSlug": "",
