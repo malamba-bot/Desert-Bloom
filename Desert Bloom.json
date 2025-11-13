@@ -369,6 +369,14 @@
         "name": "NewSprite12",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Well.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Well.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
