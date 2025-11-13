@@ -20,7 +20,7 @@
     "snap": false,
     "zoomFactor": 0.4598521426736339,
     "windowMask": false,
-    "selectedLayer": "Planting Boxes Final"
+    "selectedLayer": "Desert Floor"
   },
   "objectsGroups": [],
   "variables": [],
@@ -1182,6 +1182,67 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Cactus",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite12",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 14
+                      },
+                      {
+                        "x": 117,
+                        "y": 14
+                      },
+                      {
+                        "x": 117,
+                        "y": 143
+                      },
+                      {
+                        "x": 7,
+                        "y": 143
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1201,6 +1262,9 @@
       },
       {
         "objectName": "Score"
+      },
+      {
+        "objectName": "Cactus"
       },
       {
         "objectName": "Water_Icon"
@@ -1234,18 +1298,18 @@
                 "value": "CollisionPoint"
               },
               "parameters": [
-                "Player",
+                "Planter_Box",
                 "Player.X()",
                 "Player.Y()"
               ]
             },
             {
               "type": {
-                "value": "MouseButtonFromTextReleased"
+                "value": "KeyFromTextReleased"
               },
               "parameters": [
                 "",
-                "\"Left\""
+                "\"f\""
               ]
             },
             {
@@ -1278,7 +1342,7 @@
               },
               "parameters": [
                 "",
-                "Mushroom",
+                "Cactus",
                 "Planter_Box.X() + 116",
                 "Planter_Box.Y() + 81",
                 ""
@@ -1384,7 +1448,7 @@
       "isLocked": true,
       "name": "Planting Boxes Final",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [],
       "effects": [
         {
