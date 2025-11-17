@@ -385,6 +385,182 @@
         "name": "Player",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/RightFacing.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/RightFacing.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/LeftFacing.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/LeftFacing.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Front Facing.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Front Facing.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Back Facing.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Back Facing.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Front Walking Animation/Front Facing 0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Front Walking Animation/Front Facing 0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Front Walking Animation/Front Facing 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Front Walking Animation/Front Facing 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Front Walking Animation/Front Facing 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Front Walking Animation/Front Facing 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Back Walking Animation/Back Facing 0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Back Walking Animation/Back Facing 0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Back Walking Animation/Back Facing 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Back Walking Animation/Back Facing 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Back Walking Animation/Back Facing 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Back Walking Animation/Back Facing 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Right Walking Animation/Right1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Right Walking Animation/Right1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Right Walking Animation/Right2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Right Walking Animation/Right2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Right Walking Animation/Right3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Right Walking Animation/Right3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Right Walking Animation/Right4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Right Walking Animation/Right4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Right Walking Animation/Right5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Right Walking Animation/Right5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Right Walking Animation/RightFacing.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Right Walking Animation/RightFacing.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Left Walking Animation/Left0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Left Walking Animation/Left0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Left Walking Animation/Left1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Left Walking Animation/Left1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Left Walking Animation/Left2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Left Walking Animation/Left2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Left Walking Animation/Left3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Left Walking Animation/Left3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Left Walking Animation/Left4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Left Walking Animation/Left4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Left Walking Animation/Left5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Left Walking Animation/Left5.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
