@@ -16,7 +16,7 @@
     "pixelsRounding": false,
     "projectUuid": "dad0094e-3db7-49ba-ba79-dfc3b47790d2",
     "scaleMode": "nearest",
-    "sizeOnStartupMode": "adaptWidth",
+    "sizeOnStartupMode": "",
     "templateSlug": "",
     "version": "1.0.0",
     "name": "Desert Bloom",
@@ -825,6 +825,22 @@
         "kind": "image",
         "metadata": "",
         "name": "assets/Left5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/WaterWell.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/WaterWell.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite2",
         "smoothed": false,
         "userAdded": false
       }

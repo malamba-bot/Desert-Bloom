@@ -18,9 +18,9 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.542792080247329,
+    "zoomFactor": 0.47535850871269497,
     "windowMask": false,
-    "selectedLayer": "Planting Boxes Final"
+    "selectedLayer": "Border"
   },
   "objectsGroups": [],
   "variables": [],
@@ -723,12 +723,96 @@
       "height": 1078,
       "keepRatio": true,
       "layer": "Desert Floor",
-      "name": "NewTiledSprite",
+      "name": "Sand",
       "persistentUuid": "a2a81d75-95c2-4b59-8c11-3a361df1e747",
-      "width": 2068,
+      "width": 1917,
       "x": 1,
       "y": 1,
       "zOrder": 117,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "Border",
+      "name": "Border",
+      "persistentUuid": "00259c1a-5b01-4304-8533-e10c9d82fbb3",
+      "width": 1923,
+      "x": 2,
+      "y": -35,
+      "zOrder": 118,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Border",
+      "name": "Border",
+      "persistentUuid": "db3d788e-5d14-4282-a74c-4ab2af71fbf2",
+      "width": 0,
+      "x": -30,
+      "y": -34,
+      "zOrder": 119,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1120,
+      "keepRatio": true,
+      "layer": "Border",
+      "name": "Border",
+      "persistentUuid": "8efc30f2-f295-48ac-958c-171a108a1de7",
+      "width": 32,
+      "x": -30,
+      "y": -3,
+      "zOrder": 120,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "Border",
+      "name": "Border",
+      "persistentUuid": "bbde8c21-b039-4353-b212-157a6cd8fc56",
+      "width": 1949,
+      "x": 3,
+      "y": 1082,
+      "zOrder": 121,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1116,
+      "keepRatio": true,
+      "layer": "Border",
+      "name": "Border",
+      "persistentUuid": "5bfc5c72-a9f5-493f-bd62-cfe4a0ba1ea9",
+      "width": 32,
+      "x": 1922,
+      "y": -34,
+      "zOrder": 122,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2075,7 +2159,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/Well.png",
+                  "image": "assets/WaterWell.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2095,16 +2179,16 @@
                         "y": 0
                       },
                       {
-                        "x": 128,
+                        "x": 160,
                         "y": 0
                       },
                       {
-                        "x": 128,
-                        "y": 128
+                        "x": 160,
+                        "y": 160
                       },
                       {
                         "x": 0,
-                        "y": 128
+                        "y": 160
                       }
                     ]
                   ]
@@ -2118,10 +2202,21 @@
     {
       "assetStoreId": "",
       "height": 160,
-      "name": "NewTiledSprite",
+      "name": "Sand",
       "texture": "assets/Tiles.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 160,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Border",
+      "texture": "NewTiledSprite2",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
       "variables": [],
       "effects": [],
       "behaviors": []
@@ -2132,6 +2227,9 @@
     "children": [
       {
         "objectName": "Planter_Box"
+      },
+      {
+        "objectName": "Border"
       },
       {
         "objectName": "Player"
@@ -2158,7 +2256,7 @@
         "objectName": "Seed_Sprite"
       },
       {
-        "objectName": "NewTiledSprite"
+        "objectName": "Sand"
       },
       {
         "objectName": "Well"
@@ -2650,7 +2748,60 @@
       "cameraType": "",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": true,
+      "isLocked": false,
+      "name": "Border",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
       "name": "Planting Boxes Final",
       "renderingType": "",
       "visibility": true,
