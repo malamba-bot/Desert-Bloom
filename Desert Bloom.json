@@ -561,6 +561,56 @@
         "name": "../DesertBloom Art/Left Walking Animation/Left5.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "DesertBloomSounds/songs-instrumentals/cactus song 1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "DesertBloomSounds/songs-instrumentals/cactus song 1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "DesertBloomSounds/walking.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "DesertBloomSounds/walking.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "DesertBloomSounds/songs-instrumentals/cactus song 2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "DesertBloomSounds/songs-instrumentals/cactus song 2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "DesertBloomSounds/sand-step.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "DesertBloomSounds/sand-step.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "DesertBloomSounds/songs-instrumentals/cactus song 3.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "DesertBloomSounds/songs-instrumentals/cactus song 3.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
