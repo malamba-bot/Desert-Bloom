@@ -18,35 +18,13 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4753585087126943,
+    "zoomFactor": 0.542792080247329,
     "windowMask": false,
-    "selectedLayer": ""
+    "selectedLayer": "Planting Boxes Final"
   },
   "objectsGroups": [],
   "variables": [],
   "instances": [
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 1160,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Garden_Background",
-      "persistentUuid": "f7d897c5-a003-4e3a-ad97-84c88e732bfd",
-      "width": 1944,
-      "x": -3,
-      "y": -67,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [
-        {
-          "name": "tilemap",
-          "value": "{\"tileWidth\":128,\"tileHeight\":128,\"dimX\":16,\"dimY\":9,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91],[91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91],[91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91],[91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91],[91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91],[91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91],[91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91],[91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91],[91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91]]}]}"
-        }
-      ],
-      "initialVariables": []
-    },
     {
       "angle": 0,
       "customSize": true,
@@ -612,7 +590,7 @@
       "customSize": true,
       "depth": 35.71428571428571,
       "height": 53,
-      "layer": "",
+      "layer": "UI",
       "name": "Water_Meter",
       "persistentUuid": "b91a50a2-9ccf-409b-9e50-8a24e29ddddd",
       "width": 125,
@@ -628,7 +606,7 @@
       "customSize": true,
       "depth": 35.71428571428571,
       "height": 53,
-      "layer": "",
+      "layer": "UI",
       "name": "Seed_Meter",
       "persistentUuid": "7974cfad-f637-4f03-8743-4c395ad282a2",
       "width": 125,
@@ -644,7 +622,7 @@
       "customSize": true,
       "depth": 2,
       "height": 66,
-      "layer": "",
+      "layer": "UI",
       "name": "Water_Icon",
       "persistentUuid": "473070b7-593e-4f85-ad13-c0a2b90dd2f5",
       "width": 66,
@@ -661,7 +639,7 @@
       "depth": 1.1948051948051948,
       "height": 92,
       "keepRatio": true,
-      "layer": "",
+      "layer": "UI",
       "name": "Seed_Sprite",
       "persistentUuid": "9741065e-a38c-4da3-8edf-cb5ea33d2b37",
       "width": 108.72727272727272,
@@ -677,12 +655,12 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "UI",
       "name": "Score",
       "persistentUuid": "c97bbb34-524f-4f10-ab5c-32670cc72331",
       "width": 0,
-      "x": 157,
-      "y": 26,
+      "x": 140,
+      "y": 42,
       "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
@@ -711,11 +689,11 @@
       "depth": 1,
       "height": 98,
       "keepRatio": true,
-      "layer": "",
+      "layer": "UI",
       "name": "Cactus",
       "persistentUuid": "cd16feea-75f0-4447-a243-79e68c04cd69",
       "width": 96,
-      "x": 29,
+      "x": 19,
       "y": 8,
       "zOrder": 115,
       "numberProperties": [],
@@ -737,24 +715,26 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1078,
+      "keepRatio": true,
+      "layer": "Desert Floor",
+      "name": "NewTiledSprite",
+      "persistentUuid": "a2a81d75-95c2-4b59-8c11-3a361df1e747",
+      "width": 2068,
+      "x": 1,
+      "y": 1,
+      "zOrder": 117,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
-    {
-      "assetStoreId": "8b09a5d87398e59848c8fcf81c06881485fa3c7221e69085dd31280eeb2535ae",
-      "name": "Garden_Background",
-      "type": "TileMap::SimpleTileMap",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "atlasImage": "mapPack_tilesheet_2X.png",
-        "rowCount": 12,
-        "columnCount": 17,
-        "tileSize": 128,
-        "tilesWithHitBox": "39,40,41,192,193,194,195,196,197,198,199,115,91"
-      }
-    },
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
@@ -1175,127 +1155,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "../DesertBloom Art/Front Walking Animation/Front Facing 0.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 110,
-                        "y": 0
-                      },
-                      {
-                        "x": 110,
-                        "y": 150
-                      },
-                      {
-                        "x": 0,
-                        "y": 150
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Walking Down",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "../DesertBloom Art/Front Walking Animation/Front Facing 0.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 110,
-                        "y": 0
-                      },
-                      {
-                        "x": 110,
-                        "y": 150
-                      },
-                      {
-                        "x": 0,
-                        "y": 150
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "../DesertBloom Art/Front Walking Animation/Front Facing 1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 110,
-                        "y": 0
-                      },
-                      {
-                        "x": 110,
-                        "y": 150
-                      },
-                      {
-                        "x": 0,
-                        "y": 150
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "../DesertBloom Art/Front Walking Animation/Front Facing 2.png",
+                  "image": "assets/Front Facing 0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1343,7 +1203,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "../DesertBloom Art/Left Walking Animation/Left0.png",
+                  "image": "assets/Left0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1379,7 +1239,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "../DesertBloom Art/Left Walking Animation/Left1.png",
+                  "image": "assets/Left1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1415,7 +1275,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "../DesertBloom Art/Left Walking Animation/Left2.png",
+                  "image": "assets/Left2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1451,7 +1311,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "../DesertBloom Art/Left Walking Animation/Left3.png",
+                  "image": "assets/Left3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1487,7 +1347,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "../DesertBloom Art/Left Walking Animation/Left4.png",
+                  "image": "assets/Left4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1523,7 +1383,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "../DesertBloom Art/Left Walking Animation/Left5.png",
+                  "image": "assets/Left5.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1562,7 +1422,7 @@
           ]
         },
         {
-          "name": "Walking Up",
+          "name": "WalkingDown",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1571,7 +1431,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "../DesertBloom Art/Back Walking Animation/Back Facing 0.png",
+                  "image": "assets/Front Facing 0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1607,7 +1467,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "../DesertBloom Art/Back Walking Animation/Back Facing 1.png",
+                  "image": "assets/Front Facing 1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1643,7 +1503,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "../DesertBloom Art/Back Walking Animation/Back Facing 2.png",
+                  "image": "assets/Front Facing 2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1691,7 +1551,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "../DesertBloom Art/Right Walking Animation/Right1.png",
+                  "image": "assets/RightFacing.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1727,7 +1587,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "../DesertBloom Art/Right Walking Animation/Right2.png",
+                  "image": "assets/Right1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1763,7 +1623,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "../DesertBloom Art/Right Walking Animation/Right3.png",
+                  "image": "assets/Right2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1799,7 +1659,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "../DesertBloom Art/Right Walking Animation/Right4.png",
+                  "image": "assets/Right3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1835,7 +1695,163 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "../DesertBloom Art/Right Walking Animation/Right5.png",
+                  "image": "assets/Right4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 110,
+                        "y": 0
+                      },
+                      {
+                        "x": 110,
+                        "y": 150
+                      },
+                      {
+                        "x": 0,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/Right5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 110,
+                        "y": 0
+                      },
+                      {
+                        "x": 110,
+                        "y": 150
+                      },
+                      {
+                        "x": 0,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "WalkingUp",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.12,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/Back Facing 0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 110,
+                        "y": 0
+                      },
+                      {
+                        "x": 110,
+                        "y": 150
+                      },
+                      {
+                        "x": 0,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/Back Facing 1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 110,
+                        "y": 0
+                      },
+                      {
+                        "x": 110,
+                        "y": 150
+                      },
+                      {
+                        "x": 0,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/Back Facing 2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1886,17 +1902,16 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "Basic",
+          "name": "Baby",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite12",
+                  "image": "assets/BabyCactus.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1912,20 +1927,69 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 7,
-                        "y": 14
+                        "x": 20,
+                        "y": 50
                       },
                       {
-                        "x": 117,
-                        "y": 14
+                        "x": 130,
+                        "y": 50
                       },
                       {
-                        "x": 117,
-                        "y": 143
+                        "x": 130,
+                        "y": 160
                       },
                       {
-                        "x": 7,
-                        "y": 143
+                        "x": 20,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grown",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/Cactus.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 20,
+                        "y": 50
+                      },
+                      {
+                        "x": 130,
+                        "y": 50
+                      },
+                      {
+                        "x": 130,
+                        "y": 160
+                      },
+                      {
+                        "x": 20,
+                        "y": 160
                       }
                     ]
                   ]
@@ -1945,7 +2009,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite12",
+                  "image": "assets/SeedCactus.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1961,56 +2025,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 7,
-                        "y": 14
+                        "x": 20,
+                        "y": 50
                       },
                       {
-                        "x": 117,
-                        "y": 14
+                        "x": 130,
+                        "y": 50
                       },
                       {
-                        "x": 117,
-                        "y": 143
+                        "x": 130,
+                        "y": 160
                       },
                       {
-                        "x": 7,
-                        "y": 143
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite12",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 7,
-                        "y": 14
-                      },
-                      {
-                        "x": 117,
-                        "y": 14
-                      },
-                      {
-                        "x": 117,
-                        "y": 143
-                      },
-                      {
-                        "x": 7,
-                        "y": 143
+                        "x": 20,
+                        "y": 160
                       }
                     ]
                   ]
@@ -2086,14 +2114,22 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 160,
+      "name": "NewTiledSprite",
+      "texture": "assets/Tiles.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 160,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
-      {
-        "objectName": "Garden_Background"
-      },
       {
         "objectName": "Planter_Box"
       },
@@ -2120,6 +2156,9 @@
       },
       {
         "objectName": "Seed_Sprite"
+      },
+      {
+        "objectName": "NewTiledSprite"
       },
       {
         "objectName": "Well"
@@ -2476,7 +2515,7 @@
                 "Player",
                 "Animation",
                 "=",
-                "\"Walking Up\""
+                "\"WalkingUp\""
               ]
             }
           ]
@@ -2503,7 +2542,7 @@
                 "Player",
                 "Animation",
                 "=",
-                "\"Walking Down\""
+                "\"WalkingDown\""
               ]
             }
           ]
@@ -2612,6 +2651,59 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": true,
+      "name": "Planting Boxes Final",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
       "name": "Desert Floor",
       "renderingType": "",
       "visibility": true,
@@ -2728,8 +2820,8 @@
       "cameraType": "",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": true,
-      "name": "Planting Boxes Final",
+      "isLocked": false,
+      "name": "UI",
       "renderingType": "",
       "visibility": true,
       "cameras": [],

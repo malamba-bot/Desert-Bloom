@@ -611,6 +611,222 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "Tiles.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Tiles.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../DesertBloom Art/Tiles.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../DesertBloom Art/Tiles.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Cactus.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Cactus.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "BabyCactus.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BabyCactus.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "SeedCactus.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "SeedCactus.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BabyCactus.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/BabyCactus.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Cactus.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Cactus.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/SeedCactus.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/SeedCactus.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Tiles.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Tiles.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Front Facing 0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Front Facing 0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Back Facing 0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Back Facing 0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Back Facing 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Back Facing 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Back Facing 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Back Facing 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Right1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Right1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Right2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Right2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Right3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Right3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Right4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Right4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Right5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Right5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/RightFacing.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/RightFacing.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Front Facing 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Front Facing 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Front Facing 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Front Facing 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Left0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Left0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Left1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Left1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Left2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Left2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Left3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Left3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Left4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Left4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Left5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Left5.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
