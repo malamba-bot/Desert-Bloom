@@ -20,7 +20,7 @@
     "snap": false,
     "zoomFactor": 0.5079575118131755,
     "windowMask": false,
-    "selectedLayer": "UI"
+    "selectedLayer": "Soil Patches"
   },
   "objectsGroups": [
     {
@@ -47,7 +47,7 @@
       "persistentUuid": "50d60ddf-cc60-45a5-914d-e095af47a176",
       "width": 340,
       "x": 490,
-      "y": -17,
+      "y": -18,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -668,13 +668,13 @@
       "depth": 0,
       "height": 128,
       "keepRatio": true,
-      "layer": "",
+      "layer": "Soil Patches",
       "name": "Well",
       "persistentUuid": "0d0a68fa-a3b9-494d-8cb0-cbd7178e7d51",
       "width": 128,
       "x": 134,
       "y": 401,
-      "zOrder": 113,
+      "zOrder": 200,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -861,6 +861,566 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "611e52bc-110e-4e9d-89b9-f67321776bdd",
+      "width": 0,
+      "x": 638,
+      "y": 93,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "457e069a-8e53-457c-8750-e379b577adbb",
+      "width": 0,
+      "x": 820,
+      "y": 94,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "3a01dfbc-11a6-4b5c-b8cc-6edff905a8ea",
+      "width": 0,
+      "x": 1180,
+      "y": 93,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "02e0655e-5a92-454b-bfc1-a8964f850258",
+      "width": 0,
+      "x": 998,
+      "y": 92,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "b8fcd3c2-9962-4e56-86f3-000c1e79d8ed",
+      "width": 0,
+      "x": 1360,
+      "y": 94,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "be47c823-6b08-4067-ac9a-c2f9cbfcfba4",
+      "width": 0,
+      "x": 1720,
+      "y": 93,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "43998de5-a5f0-45f6-aa10-5a81dfe0e26c",
+      "width": 0,
+      "x": 1542,
+      "y": 95,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "1adbd14f-19d8-4dde-bce4-4f01a8dffe60",
+      "width": 0,
+      "x": 640,
+      "y": 281,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "ce171d2f-2e62-4619-9c0f-19e053231012",
+      "width": 0,
+      "x": 1722,
+      "y": 281,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "9a58ceff-1e18-4ecb-b3b2-175b2bbdd754",
+      "width": 0,
+      "x": 822,
+      "y": 282,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "bab60f5e-9dfa-4c08-b9af-03b62942ea2c",
+      "width": 0,
+      "x": 1000,
+      "y": 280,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "7430b00c-0b95-4c48-9f47-c4de3b9fa4ff",
+      "width": 0,
+      "x": 1182,
+      "y": 281,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "c8e8fc2a-fece-4c6a-b301-f2da5627812a",
+      "width": 0,
+      "x": 1362,
+      "y": 282,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "a034d273-8723-45b9-b1a7-c5974bdc78fc",
+      "width": 0,
+      "x": 1544,
+      "y": 283,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "c8a501e3-82bc-469f-9d11-0b373368630e",
+      "width": 0,
+      "x": 638,
+      "y": 648,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "9d5d547c-9769-4665-9885-ad70014eff52",
+      "width": 0,
+      "x": 1720,
+      "y": 648,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "01584d9d-2e0c-4314-bc2f-24dbb0f424e4",
+      "width": 0,
+      "x": 820,
+      "y": 649,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "3b860be8-6223-4aae-a05c-f159c3d598e7",
+      "width": 0,
+      "x": 998,
+      "y": 647,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "ae26c5b8-1090-4a3b-b1df-d7e6475d9579",
+      "width": 0,
+      "x": 1180,
+      "y": 648,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "36b2ddf8-7e42-49e5-8218-36ffb9aa00b0",
+      "width": 0,
+      "x": 1360,
+      "y": 649,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "884d2585-aeac-4554-bb1d-88418714768f",
+      "width": 0,
+      "x": 1542,
+      "y": 650,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "0ca1695f-6946-43b5-92b8-e3f0176b9f35",
+      "width": 0,
+      "x": 636,
+      "y": 460,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "3ecfafc3-d32c-4d94-b5ec-963c63a43a8f",
+      "width": 0,
+      "x": 818,
+      "y": 461,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "1b443f43-ccec-44b5-b00d-016af33da241",
+      "width": 0,
+      "x": 996,
+      "y": 459,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "1cdae826-918c-4537-a134-99c499c113e3",
+      "width": 0,
+      "x": 1178,
+      "y": 460,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "fe4868bd-2ca6-44c3-8b85-ea680415f8fa",
+      "width": 0,
+      "x": 1358,
+      "y": 461,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "be3a25fb-b5ba-4d49-af2e-a3eb9597b2c4",
+      "width": 0,
+      "x": 1540,
+      "y": 462,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "7c9b864a-c395-417f-ac21-813d21e7443c",
+      "width": 0,
+      "x": 1718,
+      "y": 460,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "ae82f380-9e0e-4d2d-801f-abce2eb6e4ed",
+      "width": 0,
+      "x": 637,
+      "y": 834,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "3a885bf8-06ba-485c-ab7d-11d4f82df793",
+      "width": 0,
+      "x": 819,
+      "y": 835,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "ccce9b96-d9c6-470c-a216-367af950418b",
+      "width": 0,
+      "x": 997,
+      "y": 833,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "ca051fb5-605b-4e54-baa9-49c98c177e5c",
+      "width": 0,
+      "x": 1179,
+      "y": 834,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "fbcf2e16-8487-4432-82df-fb7557052547",
+      "width": 0,
+      "x": 1359,
+      "y": 835,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "e0714f45-06f3-46a7-8324-9fb0aae3068f",
+      "width": 0,
+      "x": 1541,
+      "y": 836,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Soil Patches",
+      "name": "Soil",
+      "persistentUuid": "fd413229-f4ca-4b03-94d9-2cc267560390",
+      "width": 0,
+      "x": 1719,
+      "y": 834,
+      "zOrder": 127,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -886,6 +1446,91 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "NewSprite2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 21,
+                        "y": 15
+                      },
+                      {
+                        "x": 54,
+                        "y": 15
+                      },
+                      {
+                        "x": 54,
+                        "y": 46
+                      },
+                      {
+                        "x": 21,
+                        "y": 46
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Soil",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/Soil.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 21,
+                        "y": 15
+                      },
+                      {
+                        "x": 54,
+                        "y": 15
+                      },
+                      {
+                        "x": 54,
+                        "y": 46
+                      },
+                      {
+                        "x": 21,
+                        "y": 46
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/Soil2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1145,111 +1790,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Coin_Icon",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "NewSprite",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite9",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 8,
-                        "y": 8
-                      },
-                      {
-                        "x": 56,
-                        "y": 8
-                      },
-                      {
-                        "x": 56,
-                        "y": 56
-                      },
-                      {
-                        "x": 8,
-                        "y": 56
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "Score",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "0",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 60,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "0",
-        "font": "",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 60,
-        "lineHeight": 0,
-        "color": "0;0;0"
-      }
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Player",
       "type": "Sprite",
@@ -1302,11 +1843,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
@@ -1350,11 +1891,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
@@ -1386,11 +1927,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
@@ -1422,11 +1963,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
@@ -1458,11 +1999,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
@@ -1494,11 +2035,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
@@ -1530,11 +2071,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
@@ -1557,7 +2098,7 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.12,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -1578,11 +2119,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
@@ -1614,11 +2155,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
@@ -1650,11 +2191,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
@@ -1698,11 +2239,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
@@ -1734,11 +2275,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
@@ -1770,11 +2311,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
@@ -1806,11 +2347,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
@@ -1842,11 +2383,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
@@ -1878,11 +2419,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
@@ -1926,11 +2467,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
@@ -1962,11 +2503,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
@@ -1998,11 +2539,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
-                        "y": 0
+                        "y": 90
                       },
                       {
                         "x": 110,
@@ -2257,24 +2798,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 15,
-                        "y": 11.5
-                      },
-                      {
-                        "x": 80,
-                        "y": 10
+                        "x": 19,
+                        "y": 19
                       },
                       {
                         "x": 138.5,
-                        "y": 11.5
+                        "y": 20
                       },
                       {
-                        "x": 160,
-                        "y": 41
+                        "x": 140,
+                        "y": 134
                       },
                       {
-                        "x": 0.5,
-                        "y": 41
+                        "x": 16,
+                        "y": 132.5
                       }
                     ]
                   ]
@@ -2650,25 +3187,113 @@
         "MaxValue": 50,
         "InitialValue": 0
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Soil",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/Soil.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 160,
+                        "y": 0
+                      },
+                      {
+                        "x": 160,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "Planter_Box"
+        "folderName": "Meters",
+        "children": [
+          {
+            "objectName": "Seed_Sprite"
+          },
+          {
+            "objectName": "Water_Icon"
+          },
+          {
+            "objectName": "Cactus_Meter"
+          },
+          {
+            "objectName": "Seed_Meter"
+          },
+          {
+            "objectName": "Water_Meter"
+          }
+        ]
       },
       {
-        "objectName": "Border"
+        "folderName": "Ground Tiles",
+        "children": [
+          {
+            "objectName": "Well_Distance_Mask"
+          },
+          {
+            "objectName": "Border"
+          },
+          {
+            "objectName": "Planter_Box"
+          },
+          {
+            "objectName": "Sand"
+          },
+          {
+            "objectName": "Soil"
+          }
+        ]
       },
       {
         "objectName": "Player"
-      },
-      {
-        "objectName": "Coin_Icon"
-      },
-      {
-        "objectName": "Score"
       },
       {
         "objectName": "Cactus"
@@ -2677,31 +3302,10 @@
         "objectName": "Cactus_Icon"
       },
       {
-        "objectName": "Water_Icon"
-      },
-      {
-        "objectName": "Water_Meter"
-      },
-      {
-        "objectName": "Seed_Meter"
-      },
-      {
-        "objectName": "Cactus_Meter"
-      },
-      {
-        "objectName": "Seed_Sprite"
-      },
-      {
-        "objectName": "Sand"
-      },
-      {
         "objectName": "Well"
       },
       {
         "objectName": "E_Prompt"
-      },
-      {
-        "objectName": "Well_Distance_Mask"
       }
     ]
   },
@@ -2779,8 +3383,21 @@
               },
               "parameters": [
                 "Player",
-                "Planter_Box",
+                "Soil",
                 "Player.Y()",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "Cactus",
+                "",
                 "",
                 ""
               ]
@@ -2825,8 +3442,8 @@
               "parameters": [
                 "",
                 "Cactus",
-                "Planter_Box.X() + 130",
-                "Planter_Box.Y() + 85",
+                "Soil.X() - 25",
+                "Soil.Y() - 85",
                 ""
               ]
             },
@@ -2914,7 +3531,7 @@
               },
               "parameters": [
                 "Player",
-                "Well_Distance_Mask",
+                "Well",
                 "200",
                 ""
               ]
@@ -2943,6 +3560,16 @@
                     "",
                     "\"e\""
                   ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SoundPlaying"
+                  },
+                  "parameters": [
+                    "",
+                    "2"
+                  ]
                 }
               ],
               "actions": [
@@ -2955,6 +3582,19 @@
                     "+",
                     "10",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "DesertBloomSounds/WaterFill.mp3",
+                    "2",
+                    "",
+                    "30",
+                    "2"
                   ]
                 }
               ]
@@ -2971,7 +3611,7 @@
               },
               "parameters": [
                 "Player",
-                "Well_Distance_Mask",
+                "Well",
                 "200",
                 ""
               ]
@@ -3057,8 +3697,8 @@
               },
               "parameters": [
                 "Player",
-                ">",
-                "Cactus.CenterY()"
+                "<",
+                "Cactus.Y() + 70"
               ]
             }
           ],
@@ -3070,7 +3710,7 @@
               "parameters": [
                 "Player",
                 "=",
-                "Cactus.ZOrder() + 1"
+                "0"
               ]
             }
           ]
@@ -3084,8 +3724,8 @@
               },
               "parameters": [
                 "Player",
-                "<",
-                "Cactus.CenterY()"
+                ">",
+                "Cactus.Y()+70"
               ]
             }
           ],
@@ -3097,27 +3737,8 @@
               "parameters": [
                 "Player",
                 "=",
-                "Cactus.ZOrder() - 1"
+                "600"
               ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Growth"
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
             }
           ]
         }
@@ -3358,6 +3979,11 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [
@@ -3425,7 +4051,7 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "Planting Boxes Final",
+      "name": "Desert Floor",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
@@ -3478,7 +4104,60 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "Desert Floor",
+      "name": "Planting Boxes Final",
+      "renderingType": "",
+      "visibility": false,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Soil Patches",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
@@ -3670,10 +4349,6 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "Text",
-      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "TopDownMovement",
