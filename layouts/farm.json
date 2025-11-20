@@ -18,11 +18,23 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.47535850871269497,
+    "zoomFactor": 0.5079575118131755,
     "windowMask": false,
-    "selectedLayer": "Border"
+    "selectedLayer": "UI"
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "Impassable Objects",
+      "objects": [
+        {
+          "name": "Border"
+        },
+        {
+          "name": "Well"
+        }
+      ]
+    }
+  ],
   "variables": [],
   "instances": [
     {
@@ -594,8 +606,8 @@
       "name": "Water_Meter",
       "persistentUuid": "b91a50a2-9ccf-409b-9e50-8a24e29ddddd",
       "width": 125,
-      "x": 111,
-      "y": 129,
+      "x": 109,
+      "y": 135,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -611,7 +623,7 @@
       "persistentUuid": "7974cfad-f637-4f03-8743-4c395ad282a2",
       "width": 125,
       "x": 111,
-      "y": 237,
+      "y": 221,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -626,8 +638,8 @@
       "name": "Water_Icon",
       "persistentUuid": "473070b7-593e-4f85-ad13-c0a2b90dd2f5",
       "width": 66,
-      "x": 27,
-      "y": 121,
+      "x": 25,
+      "y": 127,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -644,24 +656,8 @@
       "persistentUuid": "9741065e-a38c-4da3-8edf-cb5ea33d2b37",
       "width": 108.72727272727272,
       "x": 7,
-      "y": 219,
+      "y": 203,
       "zOrder": 13,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "UI",
-      "name": "Score",
-      "persistentUuid": "c97bbb34-524f-4f10-ab5c-32670cc72331",
-      "width": 0,
-      "x": 140,
-      "y": 42,
-      "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -676,26 +672,9 @@
       "name": "Well",
       "persistentUuid": "0d0a68fa-a3b9-494d-8cb0-cbd7178e7d51",
       "width": 128,
-      "x": 105,
+      "x": 134,
       "y": 401,
       "zOrder": 113,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 98,
-      "keepRatio": true,
-      "layer": "UI",
-      "name": "Cactus",
-      "persistentUuid": "cd16feea-75f0-4447-a243-79e68c04cd69",
-      "width": 96,
-      "x": 19,
-      "y": 8,
-      "zOrder": 115,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -816,6 +795,72 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "E_Prompt",
+      "persistentUuid": "9dcf763e-cbad-42f2-8dcd-72403f0e700d",
+      "width": 0,
+      "x": 175,
+      "y": 328,
+      "zOrder": 123,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 9,
+      "keepRatio": true,
+      "layer": "Border",
+      "name": "Well_Distance_Mask",
+      "persistentUuid": "f8e5768a-6cdb-4103-8662-8c8e90a04d90",
+      "width": 64,
+      "x": 164,
+      "y": 429,
+      "zOrder": 124,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 66,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "Cactus_Icon",
+      "persistentUuid": "a5a3c5ac-74dc-4719-aeb5-4d233b3d2df4",
+      "width": 64,
+      "x": 29,
+      "y": 36,
+      "zOrder": 125,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 35.71428571428571,
+      "height": 53,
+      "layer": "UI",
+      "name": "Cactus_Meter",
+      "persistentUuid": "54fd45c2-220e-4814-94c8-3f4c9f8005c9",
+      "width": 125,
+      "x": 109,
+      "y": 44,
+      "zOrder": 126,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -931,8 +976,9 @@
     {
       "assetStoreId": "3d6c54e76a9a06cbd7629c1e78388d4ab808bbf36d644c61d6a14c9ad34d4f89",
       "name": "Seed_Meter",
+      "persistentUuid": "147e8aa6-73a2-4a80-bae0-abe996cc938a",
       "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-      "variant": "Green Flat Bar",
+      "variant": "Brown Flat Bar",
       "variables": [],
       "effects": [],
       "behaviors": [
@@ -1976,7 +2022,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Cactus",
       "type": "Sprite",
@@ -1986,12 +2032,12 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "Baby",
+          "name": "Growing",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 5,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -2011,19 +2057,55 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 20,
-                        "y": 50
+                        "x": 0,
+                        "y": 0
                       },
                       {
-                        "x": 130,
-                        "y": 50
+                        "x": 160,
+                        "y": 0
                       },
                       {
-                        "x": 130,
+                        "x": 160,
                         "y": 160
                       },
                       {
-                        "x": 20,
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/Cactus.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 160,
+                        "y": 0
+                      },
+                      {
+                        "x": 160,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
                         "y": 160
                       }
                     ]
@@ -2060,19 +2142,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 20,
-                        "y": 50
+                        "x": 0,
+                        "y": 0
                       },
                       {
-                        "x": 130,
-                        "y": 50
+                        "x": 160,
+                        "y": 0
                       },
                       {
-                        "x": 130,
+                        "x": 160,
                         "y": 160
                       },
                       {
-                        "x": 20,
+                        "x": 0,
                         "y": 160
                       }
                     ]
@@ -2109,19 +2191,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 20,
-                        "y": 50
+                        "x": 0,
+                        "y": 0
                       },
                       {
-                        "x": 130,
-                        "y": 50
+                        "x": 160,
+                        "y": 0
                       },
                       {
-                        "x": 130,
+                        "x": 160,
                         "y": 160
                       },
                       {
-                        "x": 20,
+                        "x": 0,
                         "y": 160
                       }
                     ]
@@ -2134,7 +2216,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Well",
       "type": "Sprite",
@@ -2175,20 +2257,24 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 15,
+                        "y": 11.5
+                      },
+                      {
+                        "x": 80,
+                        "y": 10
+                      },
+                      {
+                        "x": 138.5,
+                        "y": 11.5
                       },
                       {
                         "x": 160,
-                        "y": 0
+                        "y": 41
                       },
                       {
-                        "x": 160,
-                        "y": 160
-                      },
-                      {
-                        "x": 0,
-                        "y": 160
+                        "x": 0.5,
+                        "y": 41
                       }
                     ]
                   ]
@@ -2220,6 +2306,350 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "E_Prompt",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "EllipseMovement",
+          "type": "EllipseMovement::EllipseMovement",
+          "RadiusX": 0,
+          "RadiusY": 10,
+          "LoopDuration": 3,
+          "InitialTurningLeft": false,
+          "InitialDirectionAngle": 0,
+          "ShouldRotate": false,
+          "RotationOffset": 0,
+          "CenterX": 0,
+          "CenterY": 0,
+          "MovementAngle": 0,
+          "OldX": 2.0247e-320,
+          "OldY": 2.0247e-320
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/EPrompt.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 35
+                      },
+                      {
+                        "x": 45,
+                        "y": 35
+                      },
+                      {
+                        "x": 45,
+                        "y": 80
+                      },
+                      {
+                        "x": 0,
+                        "y": 80
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Well_Distance_Mask",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite13",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Cactus_Icon",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Grown",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/Cactus.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Baby",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/BabyCactus.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Seeded",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/SeedCactus.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "3d6c54e76a9a06cbd7629c1e78388d4ab808bbf36d644c61d6a14c9ad34d4f89",
+      "name": "Cactus_Meter",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "Green Flat Bar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 15,
+          "CurrentHealth": 0,
+          "MaxHealth": 15,
+          "DamageCooldown": 0,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        }
+      ],
+      "content": {
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": true,
+        "BarTopPadding": 4,
+        "BarBottomPadding": 6,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "MaxValue": 50,
+        "InitialValue": 0
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2244,6 +2674,9 @@
         "objectName": "Cactus"
       },
       {
+        "objectName": "Cactus_Icon"
+      },
+      {
         "objectName": "Water_Icon"
       },
       {
@@ -2253,6 +2686,9 @@
         "objectName": "Seed_Meter"
       },
       {
+        "objectName": "Cactus_Meter"
+      },
+      {
         "objectName": "Seed_Sprite"
       },
       {
@@ -2260,6 +2696,12 @@
       },
       {
         "objectName": "Well"
+      },
+      {
+        "objectName": "E_Prompt"
+      },
+      {
+        "objectName": "Well_Distance_Mask"
       }
     ]
   },
@@ -2273,6 +2715,22 @@
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "Player",
+                "Impassable Objects",
+                ""
+              ]
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2439,13 +2897,93 @@
           "actions": [
             {
               "type": {
-                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                "value": "Arreter"
               },
               "parameters": [
-                "Water_Meter",
-                "+",
-                "10",
+                "Player"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Player",
+                "Well_Distance_Mask",
+                "200",
                 ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "E_Prompt",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"e\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                  },
+                  "parameters": [
+                    "Water_Meter",
+                    "+",
+                    "10",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Distance"
+              },
+              "parameters": [
+                "Player",
+                "Well_Distance_Mask",
+                "200",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "E_Prompt"
               ]
             }
           ]
@@ -2483,7 +3021,7 @@
               },
               "parameters": [
                 "",
-                "\"g\""
+                "\"e\""
               ]
             }
           ],
@@ -2499,31 +3037,89 @@
             },
             {
               "type": {
-                "value": "SetNumberVariable"
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
               },
               "parameters": [
-                "Collected_Cacti",
+                "Cactus_Meter",
                 "+",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "Score",
-                "Text",
-                "=",
-                "Collected_Cacti"
+                "1",
+                ""
               ]
             }
           ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "CenterY"
+              },
+              "parameters": [
+                "Player",
+                ">",
+                "Cactus.CenterY()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Player",
+                "=",
+                "Cactus.ZOrder() + 1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CenterY"
+              },
+              "parameters": [
+                "Player",
+                "<",
+                "Cactus.CenterY()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Player",
+                "=",
+                "Cactus.ZOrder() - 1"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Growth"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            }
+          ]
         }
       ],
       "parameters": []
@@ -2729,6 +3325,33 @@
               "parameters": [
                 "",
                 "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "Border",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "Player"
               ]
             }
           ]
@@ -3023,6 +3646,10 @@
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "EllipseMovement",
+      "type": "EllipseMovement::EllipseMovement"
     },
     {
       "name": "Flippable",
