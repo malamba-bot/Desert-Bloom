@@ -42,7 +42,13 @@
   ],
   "dependencies": [],
   "globalVariables": [],
-  "sceneVariables": [],
+  "sceneVariables": [
+    {
+      "name": "WaterTaken",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "eventsFunctions": [],
   "eventsBasedBehaviors": [
     {
@@ -2426,6 +2432,74 @@
               "name": "Object",
               "supplementaryInformation": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
               "type": "object"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "Get water from well",
+          "functionType": "Action",
+          "group": "Resource bar",
+          "name": "GetWaterFromWell",
+          "sentence": "transfer water from _PARAM1_ to _PARAM0_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "WaterTaken",
+                    "=",
+                    "min(Object.MaxValue() - Object.Value(), well.Variable(water))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                  },
+                  "parameters": [
+                    "Object",
+                    "+",
+                    "WaterTaken",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "well",
+                    "water",
+                    "-",
+                    "WaterTaken"
+                  ]
+                }
+              ],
+              "variables": [
+                {
+                  "name": "WaterTaken",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+              "type": "object"
+            },
+            {
+              "description": "",
+              "name": "well",
+              "type": "objectList"
             }
           ],
           "objectGroups": []

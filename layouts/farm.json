@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.47535850871269497,
+    "zoomFactor": 0.5079575118131752,
     "windowMask": false,
     "selectedLayer": "Border"
   },
@@ -2143,7 +2143,12 @@
         {
           "name": "water",
           "type": "number",
-          "value": 30
+          "value": 0
+        },
+        {
+          "name": "maxWater",
+          "type": "number",
+          "value": 100
         }
       ],
       "effects": [],
@@ -2297,6 +2302,15 @@
                 "5",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Well",
+                "\"water add\""
+              ]
             }
           ]
         }
@@ -2439,12 +2453,11 @@
           "actions": [
             {
               "type": {
-                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::GetWaterFromWell"
               },
               "parameters": [
                 "Water_Meter",
-                "+",
-                "10",
+                "Well",
                 ""
               ]
             }
@@ -2734,6 +2747,55 @@
           ]
         }
       ],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Well",
+            "\"water add\"",
+            ">=",
+            "5"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "Well",
+            "\"water add\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "Well",
+            "water",
+            "+",
+            "min(10, Well.maxWater - Well.water)"
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Periodic Events",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
       "parameters": []
     }
   ],
