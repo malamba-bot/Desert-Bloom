@@ -3069,49 +3069,131 @@
                 "",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "KeyFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"g\""
-              ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Cactus",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"g\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Sprite"
+                  },
+                  "parameters": [
+                    "Cactus",
+                    ">=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Cactus",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Collected_Cacti",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Score",
+                    "Text",
+                    "=",
+                    "Collected_Cacti"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "SetNumberVariable"
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
               },
-              "parameters": [
-                "Collected_Cacti",
-                "+",
-                "1"
-              ]
+              "comment": "Seeds"
             },
             {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "Score",
-                "Text",
-                "=",
-                "Collected_Cacti"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"r\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Sprite"
+                  },
+                  "parameters": [
+                    "Cactus",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                  },
+                  "parameters": [
+                    "Seed_Meter",
+                    "+",
+                    "RandomInRange(1, 3)",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "Cactus",
+                    "=",
+                    "1"
+                  ]
+                }
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Comment",
