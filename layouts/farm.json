@@ -23,13 +23,7 @@
     "selectedLayer": "UI"
   },
   "objectsGroups": [],
-  "variables": [
-    {
-      "name": "Variable",
-      "type": "number",
-      "value": 0
-    }
-  ],
+  "variables": [],
   "instances": [
     {
       "angle": 0,
@@ -886,6 +880,22 @@
       "x": 799,
       "y": 396,
       "zOrder": 126,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "MessageBox",
+      "persistentUuid": "9888c1b0-5123-412e-827e-2f1684075db9",
+      "width": 0,
+      "x": 945,
+      "y": 8,
+      "zOrder": 127,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2457,6 +2467,49 @@
       "content": {
         "LabelText": "Sleep and skip to next day"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "MessageBox",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": " ",
+      "font": "CantoraOne-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 60,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 10,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": " ",
+        "font": "CantoraOne-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 60,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2509,6 +2562,9 @@
       },
       {
         "objectName": "SleepConfirm"
+      },
+      {
+        "objectName": "MessageBox"
       }
     ]
   },
@@ -3116,11 +3172,6 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
@@ -3153,13 +3204,142 @@
             "=",
             "ToString(DayNum)"
           ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "EventRand",
+            "=",
+            "RandomInRange(0, 4)"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Add whatever you want to happen during events here"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "EventRand",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "MessageBox",
+                "Text",
+                "=",
+                "\"Your farm has been wrecked by a sandstorm!\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "MessageBox",
+                "\"vis\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "EventRand",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "MessageBox",
+                "Text",
+                "=",
+                "\"Your farm has been blessed by rain!\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "MessageBox",
+                "\"vis\""
+              ]
+            }
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "name": "EventRand",
+          "type": "number",
+          "value": 0
         }
       ]
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "MessageBox",
+            "\"vis\"",
+            ">=",
+            "5"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "MessageBox",
+            "Text",
+            "=",
+            "\"\""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
