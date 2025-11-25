@@ -843,6 +843,14 @@
         "name": "NewTiledSprite2",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite13.png\"}",
+        "name": "NewSprite13",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -857,6 +865,11 @@
       "name": "Collected_Cacti",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "DayNum",
+      "type": "number",
+      "value": 1
     }
   ],
   "layouts": [
