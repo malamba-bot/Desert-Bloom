@@ -18,11 +18,23 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5079575118131752,
+    "zoomFactor": 0.5079575118131754,
     "windowMask": false,
     "selectedLayer": "UI"
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "Impassable Objects",
+      "objects": [
+        {
+          "name": "Border"
+        },
+        {
+          "name": "Well"
+        }
+      ]
+    }
+  ],
   "variables": [],
   "instances": [
     {
@@ -899,6 +911,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "E_Prompt",
+      "persistentUuid": "aec6f34a-508a-4580-8c34-3779d175f3c6",
+      "width": 0,
+      "x": 148,
+      "y": 332,
+      "zOrder": 128,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1309,6 +1337,10 @@
           "rotateObject": false,
           "useLegacyTurnBack": false,
           "viewpoint": "TopDown"
+        },
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
         }
       ],
       "animations": [
@@ -2066,58 +2098,15 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
+        }
+      ],
       "animations": [
         {
-          "name": "Baby",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/BabyCactus.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20,
-                        "y": 50
-                      },
-                      {
-                        "x": 130,
-                        "y": 50
-                      },
-                      {
-                        "x": 130,
-                        "y": 160
-                      },
-                      {
-                        "x": 20,
-                        "y": 160
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Grown",
+          "name": "Icon",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -2143,19 +2132,139 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 20,
-                        "y": 50
+                        "x": 0,
+                        "y": 0
                       },
                       {
-                        "x": 130,
-                        "y": 50
+                        "x": 140,
+                        "y": 0
                       },
                       {
-                        "x": 130,
+                        "x": 140,
                         "y": 160
                       },
                       {
-                        "x": 20,
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grow",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 6,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/BabyCactus.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Cactus.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/SeedCactus.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
                         "y": 160
                       }
                     ]
@@ -2192,19 +2301,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 20,
-                        "y": 50
+                        "x": 0,
+                        "y": 0
                       },
                       {
-                        "x": 130,
-                        "y": 50
+                        "x": 140,
+                        "y": 0
                       },
                       {
-                        "x": 130,
+                        "x": 140,
                         "y": 160
                       },
                       {
-                        "x": 20,
+                        "x": 0,
                         "y": 160
                       }
                     ]
@@ -2217,7 +2326,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Well",
       "type": "Sprite",
@@ -2263,20 +2372,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 17.5,
+                        "y": 20.5
+                      },
+                      {
+                        "x": 140,
+                        "y": 20.5
                       },
                       {
                         "x": 160,
-                        "y": 0
-                      },
-                      {
-                        "x": 160,
-                        "y": 160
+                        "y": 40
                       },
                       {
                         "x": 0,
-                        "y": 160
+                        "y": 40
                       }
                     ]
                   ]
@@ -2510,6 +2619,83 @@
         "lineHeight": 0,
         "color": "0;0;0"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "E_Prompt",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "EllipseMovement",
+          "type": "EllipseMovement::EllipseMovement",
+          "RadiusX": 0,
+          "RadiusY": 10,
+          "LoopDuration": 2,
+          "InitialTurningLeft": false,
+          "InitialDirectionAngle": 0,
+          "ShouldRotate": false,
+          "RotationOffset": 0,
+          "CenterX": 0,
+          "CenterY": 0,
+          "MovementAngle": 0,
+          "OldX": 2.0247e-320,
+          "OldY": 2.0247e-320
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "EPrompt.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 35
+                      },
+                      {
+                        "x": 45,
+                        "y": 35
+                      },
+                      {
+                        "x": 45,
+                        "y": 80
+                      },
+                      {
+                        "x": 0,
+                        "y": 80
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2532,6 +2718,9 @@
       },
       {
         "objectName": "Cactus"
+      },
+      {
+        "objectName": "E_Prompt"
       },
       {
         "objectName": "DayCounter"
@@ -2616,6 +2805,33 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Collision",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "Player",
+            "Impassable Objects",
+            ""
+          ]
+        }
+      ]
     },
     {
       "colorB": 228,
@@ -2707,6 +2923,17 @@
                 "3",
                 "3"
               ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Cactus",
+                "Animation",
+                "=",
+                "\"Grow\""
+              ]
             }
           ]
         }
@@ -2739,13 +2966,12 @@
           "conditions": [
             {
               "type": {
-                "value": "CollisionNP"
+                "value": "Distance"
               },
               "parameters": [
-                "Well",
                 "Player",
-                "",
-                "",
+                "Well",
+                "200",
                 ""
               ]
             }
@@ -2753,12 +2979,66 @@
           "actions": [
             {
               "type": {
-                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::GetWaterFromWell"
+                "value": "Montre"
               },
               "parameters": [
-                "Water_Meter",
-                "Well",
+                "E_Prompt",
                 ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"e\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::GetWaterFromWell"
+                  },
+                  "parameters": [
+                    "Water_Meter",
+                    "Well",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Distance"
+              },
+              "parameters": [
+                "Player",
+                "Well",
+                "200",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "E_Prompt"
               ]
             }
           ]
@@ -3630,6 +3910,10 @@
       "type": "EffectCapability::EffectBehavior"
     },
     {
+      "name": "EllipseMovement",
+      "type": "EllipseMovement::EllipseMovement"
+    },
+    {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
     },
@@ -3656,6 +3940,10 @@
     {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    },
+    {
+      "name": "YSort",
+      "type": "YSort::YSort"
     }
   ]
 }
