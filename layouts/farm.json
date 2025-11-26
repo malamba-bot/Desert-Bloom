@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5079575118131754,
+    "zoomFactor": 0.49138775453293754,
     "windowMask": false,
     "selectedLayer": "UI"
   },
@@ -924,6 +924,39 @@
       "x": 148,
       "y": 332,
       "zOrder": 128,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "Fertilizer_Count",
+      "persistentUuid": "eb8f9b27-2faa-440d-9841-b063089123bc",
+      "width": 0,
+      "x": 287,
+      "y": 298,
+      "zOrder": 129,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 66,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "Fertilizer_Object",
+      "persistentUuid": "d00e23c1-bc9e-435a-896c-bf6c2ec4a0a2",
+      "width": 247,
+      "x": 21,
+      "y": 295,
+      "zOrder": 130,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2696,16 +2729,162 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Fertilizer_Count",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "0",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 60,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "0",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 60,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Fertilized_Land",
+      "texture": "NewTiledSprite",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Fertilizer_Object",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Fertilizer:",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 60,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Fertilizer:",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 60,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Interactions",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Interactions:\n\n1.  \"f\" is used to plant cacti\n2.  \"g\" is used to collect grown cacti\n3.  \"r\" is used to collect 1-3 seeds from fully grown cacti\n4.  \"c\" is used to convert 4 cacti into fertilizer\n5.  \"e\" is used to collect water from the well that is used on fertilized land\n6. 1 fertilizer can be used on a plot of land to allow for planting",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 60,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Interactions:\n\n1.  \"f\" is used to plant cacti\n2.  \"g\" is used to collect grown cacti\n3.  \"r\" is used to collect 1-3 seeds from fully grown cacti\n4.  \"c\" is used to convert 4 cacti into fertilizer\n5.  \"e\" is used to collect water from the well that is used on fertilized land\n6. 1 fertilizer can be used on a plot of land to allow for planting",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 60,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
+        "objectName": "Interactions"
+      },
+      {
         "objectName": "Planter_Box"
       },
       {
         "objectName": "Border"
+      },
+      {
+        "objectName": "Fertilized_Land"
       },
       {
         "objectName": "Player"
@@ -2715,6 +2894,12 @@
       },
       {
         "objectName": "Score"
+      },
+      {
+        "objectName": "Fertilizer_Count"
+      },
+      {
+        "objectName": "Fertilizer_Object"
       },
       {
         "objectName": "Cactus"
@@ -2838,7 +3023,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Planting",
+      "name": "Planting / Expanding",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -2851,7 +3036,7 @@
               },
               "parameters": [
                 "Player",
-                "Planter_Box",
+                "Fertilized_Land",
                 "Player.Y()",
                 "",
                 ""
@@ -2923,16 +3108,115 @@
                 "3",
                 "3"
               ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "Planter_Box",
+                "Player.Y()",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Fertilized_Land",
+                "Planter_Box.X() + 130",
+                "Planter_Box.Y() + 85",
+                ""
+              ]
             },
             {
               "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                "value": "SetNumberVariable"
               },
               "parameters": [
-                "Cactus",
-                "Animation",
+                "Fertilizer",
+                "-",
+                "1"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Conversion",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Collected_Cacti",
+                ">=",
+                "4"
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"c\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Fertilizer",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Collected_Cacti",
+                "-",
+                "4"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Fertilizer_Count",
+                "Text",
                 "=",
-                "\"Grow\""
+                "Fertilizer"
               ]
             }
           ]

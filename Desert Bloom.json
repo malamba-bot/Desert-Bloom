@@ -839,7 +839,7 @@
       {
         "file": "assets/NewTiledSprite2.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/NewTiledSprite2.png\"}",
         "name": "NewTiledSprite2",
         "smoothed": false,
         "userAdded": false
@@ -859,6 +859,14 @@
         "name": "EPrompt.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -869,6 +877,11 @@
   },
   "objectsGroups": [],
   "variables": [
+    {
+      "name": "Fertilizer",
+      "type": "number",
+      "value": 0
+    },
     {
       "name": "Collected_Cacti",
       "type": "number",
