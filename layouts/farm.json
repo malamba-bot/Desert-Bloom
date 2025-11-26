@@ -1243,67 +1243,6 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Coin_Icon",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "NewSprite",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite9",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 8,
-                        "y": 8
-                      },
-                      {
-                        "x": 56,
-                        "y": 8
-                      },
-                      {
-                        "x": 56,
-                        "y": 56
-                      },
-                      {
-                        "x": 8,
-                        "y": 56
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "assetStoreId": "",
       "bold": false,
       "italic": false,
@@ -2875,70 +2814,92 @@
     "folderName": "__ROOT",
     "children": [
       {
+        "folderName": "Ground Tiles",
+        "children": [
+          {
+            "objectName": "Sand"
+          },
+          {
+            "objectName": "Planter_Box"
+          },
+          {
+            "objectName": "Fertilized_Land"
+          },
+          {
+            "objectName": "Border"
+          }
+        ]
+      },
+      {
+        "folderName": "UI",
+        "children": [
+          {
+            "folderName": "Controls",
+            "children": [
+              {
+                "objectName": "SleepConfirm"
+              },
+              {
+                "objectName": "E_Prompt"
+              }
+            ]
+          },
+          {
+            "folderName": "Resources",
+            "children": [
+              {
+                "objectName": "Score"
+              },
+              {
+                "objectName": "Water_Meter"
+              },
+              {
+                "objectName": "Seed_Meter"
+              },
+              {
+                "objectName": "Seed_Sprite"
+              },
+              {
+                "objectName": "Fertilizer_Count"
+              },
+              {
+                "objectName": "Water_Icon"
+              }
+            ]
+          },
+          {
+            "folderName": "Progressions",
+            "children": [
+              {
+                "objectName": "MessageBox"
+              },
+              {
+                "objectName": "Fertilizer_Object"
+              },
+              {
+                "objectName": "DayLabel"
+              },
+              {
+                "objectName": "DayCounter"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "objectName": "Interactions"
-      },
-      {
-        "objectName": "Planter_Box"
-      },
-      {
-        "objectName": "Border"
-      },
-      {
-        "objectName": "Fertilized_Land"
       },
       {
         "objectName": "Player"
       },
       {
-        "objectName": "Coin_Icon"
-      },
-      {
-        "objectName": "Score"
-      },
-      {
-        "objectName": "Fertilizer_Count"
-      },
-      {
-        "objectName": "Fertilizer_Object"
-      },
-      {
         "objectName": "Cactus"
-      },
-      {
-        "objectName": "E_Prompt"
-      },
-      {
-        "objectName": "DayCounter"
-      },
-      {
-        "objectName": "Water_Icon"
-      },
-      {
-        "objectName": "Water_Meter"
-      },
-      {
-        "objectName": "Seed_Meter"
-      },
-      {
-        "objectName": "Seed_Sprite"
-      },
-      {
-        "objectName": "Sand"
       },
       {
         "objectName": "Well"
       },
       {
         "objectName": "Bed"
-      },
-      {
-        "objectName": "DayLabel"
-      },
-      {
-        "objectName": "SleepConfirm"
-      },
-      {
-        "objectName": "MessageBox"
       }
     ]
   },
