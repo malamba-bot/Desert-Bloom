@@ -867,6 +867,24 @@
         "name": "NewTiledSprite",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Soil.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Soil.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "DesertBloomSounds/WaterFill.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "DesertBloomSounds/WaterFill.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

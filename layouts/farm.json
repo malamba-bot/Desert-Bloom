@@ -2808,6 +2808,66 @@
         "lineHeight": 0,
         "color": "0;0;0"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Soil",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/Soil.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 100,
+                        "y": 0
+                      },
+                      {
+                        "x": 100,
+                        "y": 100
+                      },
+                      {
+                        "x": 0,
+                        "y": 100
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2821,6 +2881,9 @@
           },
           {
             "objectName": "Planter_Box"
+          },
+          {
+            "objectName": "Soil"
           },
           {
             "objectName": "Fertilized_Land"
@@ -2997,7 +3060,7 @@
               },
               "parameters": [
                 "Player",
-                "Fertilized_Land",
+                "Soil",
                 "Player.Y()",
                 "",
                 ""
@@ -3115,7 +3178,7 @@
               },
               "parameters": [
                 "",
-                "Fertilized_Land",
+                "Soil",
                 "Planter_Box.X() + 130",
                 "Planter_Box.Y() + 85",
                 ""
@@ -3264,6 +3327,16 @@
                     "",
                     "\"e\""
                   ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SoundPlaying"
+                  },
+                  "parameters": [
+                    "",
+                    "2"
+                  ]
                 }
               ],
               "actions": [
@@ -3275,6 +3348,19 @@
                     "Water_Meter",
                     "Well",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "DesertBloomSounds/WaterFill.mp3",
+                    "2",
+                    "no",
+                    "30",
+                    "2"
                   ]
                 }
               ]
