@@ -3108,6 +3108,17 @@
                 "3",
                 "3"
               ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+              },
+              "parameters": [
+                "Cactus",
+                "Animation",
+                "=",
+                "1"
+              ]
             }
           ]
         },
@@ -3124,6 +3135,15 @@
                 "Player.Y()",
                 "",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"q\""
               ]
             }
           ],
