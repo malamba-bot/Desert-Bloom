@@ -1079,6 +1079,56 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/928c3ea4db1da835c9f8cc5b7089a47228350209d2ff489e1484c31e5ce41b3d_Yellow Button_Pressed.png",
           "name": "Yellow Button_Pressed.png"
         }
+      },
+      {
+        "file": "textbox.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "textbox.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/EPrompt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/EPrompt.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/textbox.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/textbox.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PressStart2P-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/longtextbox copy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/longtextbox copy.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PressStart2P-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/PressStart2P-Regular.ttf",
+        "userAdded": false
       }
     ]
   },

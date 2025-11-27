@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.49138775453293754,
+    "zoomFactor": 0.6197916666666701,
     "windowMask": false,
     "selectedLayer": "UI"
   },
@@ -666,15 +666,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 63,
       "keepRatio": true,
       "layer": "UI",
       "name": "Score",
       "persistentUuid": "c97bbb34-524f-4f10-ab5c-32670cc72331",
-      "width": 0,
-      "x": 140,
-      "y": 42,
+      "width": 64,
+      "x": 141,
+      "y": 53,
       "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
@@ -841,8 +842,8 @@
       "name": "DayCounter",
       "persistentUuid": "b255f6df-cd7f-47f6-98ed-40e49a22da27",
       "width": 176,
-      "x": 1719,
-      "y": 22,
+      "x": 1680,
+      "y": 1010,
       "zOrder": 124,
       "numberProperties": [],
       "stringProperties": [],
@@ -857,8 +858,8 @@
       "name": "DayLabel",
       "persistentUuid": "53390f21-7d78-4479-b84b-cc376fc671d0",
       "width": 0,
-      "x": 1702,
-      "y": 21,
+      "x": 1670,
+      "y": 1006,
       "zOrder": 125,
       "numberProperties": [],
       "stringProperties": [],
@@ -942,6 +943,40 @@
       "x": 21,
       "y": 295,
       "zOrder": 130,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 156,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "Textbox",
+      "persistentUuid": "476218c3-0c81-4572-8a62-c0160a19c590",
+      "width": 156,
+      "x": 124,
+      "y": -47,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 10,
+      "height": 157,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "NewSprite",
+      "persistentUuid": "0ef25c0b-edc9-41b6-ba9f-72ed36d16d00",
+      "width": 314,
+      "x": 1616,
+      "y": 925,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1287,9 +1322,9 @@
       "effects": [],
       "behaviors": [],
       "string": "0",
-      "font": "",
+      "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
       "textAlignment": "left",
-      "characterSize": 60,
+      "characterSize": 30,
       "color": {
         "b": 0,
         "g": 0,
@@ -1310,10 +1345,10 @@
         "smoothed": true,
         "underlined": false,
         "text": "0",
-        "font": "",
+        "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 60,
+        "characterSize": 30,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -2568,9 +2603,9 @@
       "effects": [],
       "behaviors": [],
       "string": "1",
-      "font": "",
+      "font": "assets/PressStart2P-Regular.ttf",
       "textAlignment": "right",
-      "characterSize": 50,
+      "characterSize": 40,
       "color": {
         "b": 0,
         "g": 0,
@@ -2591,10 +2626,10 @@
         "smoothed": true,
         "underlined": false,
         "text": "1",
-        "font": "",
+        "font": "assets/PressStart2P-Regular.ttf",
         "textAlignment": "right",
         "verticalTextAlignment": "top",
-        "characterSize": 50,
+        "characterSize": 40,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -2611,9 +2646,9 @@
       "effects": [],
       "behaviors": [],
       "string": "Day",
-      "font": "",
+      "font": "assets/PressStart2P-Regular.ttf",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 40,
       "color": {
         "b": 0,
         "g": 0,
@@ -2634,10 +2669,10 @@
         "smoothed": true,
         "underlined": false,
         "text": "Day",
-        "font": "",
+        "font": "assets/PressStart2P-Regular.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 50,
+        "characterSize": 40,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -2734,7 +2769,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "EPrompt.png",
+                  "image": "assets/EPrompt.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2997,6 +3032,126 @@
         "HoveredFadeOutDuration": 0.25,
         "LabelText": "Fertilize"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Textbox",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/textbox.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 43
+                      },
+                      {
+                        "x": 56,
+                        "y": 43
+                      },
+                      {
+                        "x": 56,
+                        "y": 99
+                      },
+                      {
+                        "x": 0,
+                        "y": 99
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/longtextbox copy.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 6
+                      },
+                      {
+                        "x": 30,
+                        "y": 6
+                      },
+                      {
+                        "x": 30,
+                        "y": 15
+                      },
+                      {
+                        "x": 2,
+                        "y": 15
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -3025,6 +3180,9 @@
       {
         "folderName": "UI",
         "children": [
+          {
+            "objectName": "Textbox"
+          },
           {
             "folderName": "Controls",
             "children": [
@@ -3095,6 +3253,9 @@
       },
       {
         "objectName": "Fertilize"
+      },
+      {
+        "objectName": "NewSprite"
       }
     ]
   },
