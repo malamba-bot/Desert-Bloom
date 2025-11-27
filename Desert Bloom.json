@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 245,
+    "build": 246,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -80,7 +80,9 @@
     "authorIds": [],
     "authorUsernames": [],
     "categories": [],
-    "playableDevices": [],
+    "playableDevices": [
+      "mobile"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
@@ -221,7 +223,7 @@
       {
         "file": "assets/NewSprite2.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite2.png\"}",
         "name": "NewSprite2",
         "smoothed": false,
         "userAdded": false
@@ -885,9 +887,199 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/8BitOperatorPlus8Regular_Edited.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\8BitOperatorPlus8Regular_Edited.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/15c1797cbcb41c3a753b6bbb21cfa60284cfaf81c9891c3abf78a8e0e1cacf59_8BitOperatorPlus8Regular_Edited.png",
+          "name": "8BitOperatorPlus8Regular_Edited.png"
+        }
+      },
+      {
+        "file": "assets/Small Brown Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Brown Button_Hovered.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/b0c67a3ffd38bb6a989dcd6fd82fd9d02becb98fe305ac13c3140616c5a19f35_Small Brown Button_Hovered.png",
+          "name": "Small Brown Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Small Brown Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Brown Button_Idle.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/4b14769489f9862882eba6d5463a8ccdec878e03a2abc1dca8b7d92e51416d3d_Small Brown Button_Idle.png",
+          "name": "Small Brown Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Small Brown Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Brown Button_Pressed.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/7332f7b9d2fbb8370ae5ba5b62d2cbfb23ba6392d8e5d071b4c16b2e45a40d38_Small Brown Button_Pressed.png",
+          "name": "Small Brown Button_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/8BitOperatorPlus8Regular_Edited.fnt",
+        "kind": "bitmapFont",
+        "metadata": "",
+        "name": "assets\\8BitOperatorPlus8Regular_Edited.fnt",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/6b410f07a3a02e721a49d41795e84b56707ef28ac4d095d55f1fd1093760e134_8BitOperatorPlus8Regular_Edited.fnt",
+          "name": "8BitOperatorPlus8Regular_Edited.fnt"
+        }
+      },
+      {
+        "file": "assets/red_planting_box.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "red_planting_box",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/red_planting_box2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "red_planting_box2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/red_planting_box.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/red_planting_box.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Small Tan Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Tan Button_Hovered.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/604e638c1c5abaef9a80a12af9dd366c53a98d41fcbb7e45da5e4cba13ed6e89_Small Tan Button_Hovered.png",
+          "name": "Small Tan Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Small Tan Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Tan Button_Idle.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/d612a03754c9553eb0338f78de55a2339dd0edb70519e8dd087b92f772ddf7ba_Small Tan Button_Idle.png",
+          "name": "Small Tan Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Small Tan Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Tan Button_Pressed.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/65ef82b46fc1e79d1f2601ad84a2098a26f4d7b00113b964b4340417f3d4f503_Small Tan Button_Pressed.png",
+          "name": "Small Tan Button_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/Small Red Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Red Button_Hovered.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/d63b2fa1436235851bd03b8000942eb3deab31a96f6d3afec025cfebc329a370_Small Red Button_Hovered.png",
+          "name": "Small Red Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Small Red Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Red Button_Idle.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/de41b4dea946f89f15f694402f457883f08aa0d4f60edfd38dca601e82a5dd5e_Small Red Button_Idle.png",
+          "name": "Small Red Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Small Red Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Red Button_Pressed.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/290ec24f0eb40e1cebd908a215ed5e6d36dea97c835bf3280c17f3e3f30243dd_Small Red Button_Pressed.png",
+          "name": "Small Red Button_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/Yellow Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Yellow Button_Hovered.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/c1e14acb64b9963341656c997853154dc4c86cd1c46fb12bfbe012d99712ef61_Yellow Button_Hovered.png",
+          "name": "Yellow Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Yellow Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Yellow Button_Idle.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/1cacfd123a1eb708837337c27982f6871f5127c5890dbf0775e0f411958fcbf1_Yellow Button_Idle.png",
+          "name": "Yellow Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Yellow Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Yellow Button_Pressed.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/928c3ea4db1da835c9f8cc5b7089a47228350209d2ff489e1484c31e5ce41b3d_Yellow Button_Pressed.png",
+          "name": "Yellow Button_Pressed.png"
+        }
       }
-    ],
-    "resourceFolders": []
+    ]
   },
   "objects": [],
   "objectsFolderStructure": {
@@ -917,7 +1109,12 @@
       "referenceTo": "/layouts/farm"
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/untitled-external-events"
+    }
+  ],
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
