@@ -1129,6 +1129,62 @@
         "metadata": "",
         "name": "assets/PressStart2P-Regular.ttf",
         "userAdded": false
+      },
+      {
+        "file": "assets/Empty_well.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Empty_well.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tiled_Tiled Empty UI Heart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiled_Tiled Empty UI Heart.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/688519c5bb4abaf5805518633f2ff810928e29164497fb5c13dabf97044be843_tiled_Tiled Empty UI Heart.png",
+          "name": "tiled_Tiled Empty UI Heart.png"
+        }
+      },
+      {
+        "file": "assets/tiled_Tiled Filler UI Heart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiled_Tiled Filler UI Heart.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/5b5c6c85ec4e1f5b6688be565c9a06920a76ee191915738afd61da1481fd6493_tiled_Tiled Filler UI Heart.png",
+          "name": "tiled_Tiled Filler UI Heart.png"
+        }
+      },
+      {
+        "file": "assets/Dead_Cactus copy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Dead_Cactus copy.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite4",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -1141,7 +1197,7 @@
     {
       "name": "Fertilizer",
       "type": "number",
-      "value": 1
+      "value": 20
     },
     {
       "name": "Collected_Cacti",
@@ -1152,6 +1208,11 @@
       "name": "DayNum",
       "type": "number",
       "value": 1
+    },
+    {
+      "name": "Planted_Cacti",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
@@ -1190,6 +1251,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/ysort"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/tiledunitsbar"
     }
   ],
   "externalLayouts": []

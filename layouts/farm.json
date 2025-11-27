@@ -20,9 +20,9 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.44485159988866835,
+    "zoomFactor": 0.4303403802207688,
     "windowMask": false,
-    "selectedLayer": "UI"
+    "selectedLayer": "Instructions"
   },
   "objectsGroups": [
     {
@@ -700,23 +700,6 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 98,
-      "keepRatio": true,
-      "layer": "UI",
-      "name": "Cactus",
-      "persistentUuid": "cd16feea-75f0-4447-a243-79e68c04cd69",
-      "width": 96,
-      "x": 19,
-      "y": 8,
-      "zOrder": 0,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
@@ -758,8 +741,8 @@
       "name": "Border",
       "persistentUuid": "00259c1a-5b01-4304-8533-e10c9d82fbb3",
       "width": 1923,
-      "x": 2,
-      "y": -35,
+      "x": -3,
+      "y": -36,
       "zOrder": 118,
       "numberProperties": [],
       "stringProperties": [],
@@ -808,8 +791,8 @@
       "name": "Border",
       "persistentUuid": "bbde8c21-b039-4353-b212-157a6cd8fc56",
       "width": 2505,
-      "x": 8,
-      "y": 0,
+      "x": -17,
+      "y": 1084,
       "zOrder": 121,
       "numberProperties": [],
       "stringProperties": [],
@@ -1012,6 +995,57 @@
       "x": 670,
       "y": 150,
       "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "Cactus_Icon",
+      "persistentUuid": "9381ffce-4b5d-4aaf-b312-d95b36e2e583",
+      "width": 96,
+      "x": 18,
+      "y": 18,
+      "zOrder": 131,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1123,
+      "keepRatio": true,
+      "layer": "Instructions",
+      "name": "White_Tile",
+      "persistentUuid": "a5e7e072-acb9-4ee1-b7d1-c8416555e975",
+      "width": 1963,
+      "x": -29,
+      "y": -27,
+      "zOrder": 132,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 248,
+      "keepRatio": true,
+      "layer": "Instructions",
+      "name": "Manual",
+      "persistentUuid": "bde17016-9824-473d-8d65-4e7e60b27ede",
+      "width": 1881,
+      "x": 6,
+      "y": -34,
+      "zOrder": 133,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2171,7 +2205,13 @@
       "name": "Cactus",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "age",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -2347,42 +2387,6 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/Cactus.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 140,
-                        "y": 0
-                      },
-                      {
-                        "x": 140,
-                        "y": 160
-                      },
-                      {
-                        "x": 0,
-                        "y": 160
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
                   "image": "assets/SeedCactus.png",
                   "points": [],
                   "originPoint": {
@@ -2422,7 +2426,7 @@
           ]
         },
         {
-          "name": "Seeded",
+          "name": "Dead",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -2432,7 +2436,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/SeedCactus.png",
+                  "image": "assets/Dead_Cactus copy.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2482,19 +2486,24 @@
         {
           "name": "water",
           "type": "number",
-          "value": 0
+          "value": 1
         },
         {
           "name": "maxWater",
           "type": "number",
           "value": 100
+        },
+        {
+          "name": "water2",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [],
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "Filled",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -2504,6 +2513,54 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/WaterWell.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 17.5,
+                        "y": 20.5
+                      },
+                      {
+                        "x": 140,
+                        "y": 20.5
+                      },
+                      {
+                        "x": 160,
+                        "y": 40
+                      },
+                      {
+                        "x": 0,
+                        "y": 40
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Empty",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/Empty_well.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2945,17 +3002,17 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "Interactions",
+      "name": "Manual",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Interactions:\n\n1.  \"f\" is used to plant cacti\n2.  \"g\" is used to collect grown cacti\n3.  \"r\" is used to collect 1-3 seeds from fully grown cacti\n4.  \"c\" is used to convert 4 cacti into fertilizer\n5.  \"e\" is used to collect water from the well that is used on fertilized land\n6. 1 fertilizer can be used on a plot of land to allow for planting",
-      "font": "",
+      "string": "Manual\n\nYour goal is to stock up 50 cactus so that you can survive a trip out of the desert! You will be alloted a limited amount of water per day from the well, and you can use fertilizer to make land suitable for growing cactus. Your cactus will grow a little day by day, eventually producing seeds, and dying. You can convert your collected cactus into more fertilizer to expand your farm and grow faster!\n\nHolding \"q\" will put you in a fertilizing mode where you can select a box with your cursor and click to use your available fertilizer and make a plot of land suitable for growing cacti.\n\n \"f\" is used to plant cacti, which require 1 water and 3 seeds to plant\n\n \"g\" is used to collect grown cacti\n\n \"r\" is used to collect 1-3 seeds from fully grown cacti\n\n \"c\" is used to convert 4 cacti into fertilizer\n\n \"e\" is used to collect water from the well",
+      "font": "assets/PressStart2P-Regular.ttf",
       "textAlignment": "left",
-      "characterSize": 60,
+      "characterSize": 33,
       "color": {
         "b": 0,
         "g": 0,
@@ -2963,11 +3020,11 @@
       },
       "content": {
         "bold": false,
-        "isOutlineEnabled": false,
+        "isOutlineEnabled": true,
         "isShadowEnabled": false,
         "italic": false,
         "outlineColor": "255;255;255",
-        "outlineThickness": 2,
+        "outlineThickness": 4,
         "shadowAngle": 90,
         "shadowBlurRadius": 2,
         "shadowColor": "0;0;0",
@@ -2975,11 +3032,11 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Interactions:\n\n1.  \"f\" is used to plant cacti\n2.  \"g\" is used to collect grown cacti\n3.  \"r\" is used to collect 1-3 seeds from fully grown cacti\n4.  \"c\" is used to convert 4 cacti into fertilizer\n5.  \"e\" is used to collect water from the well that is used on fertilized land\n6. 1 fertilizer can be used on a plot of land to allow for planting",
-        "font": "",
+        "text": "Manual\n\nYour goal is to stock up 50 cactus so that you can survive a trip out of the desert! You will be alloted a limited amount of water per day from the well, and you can use fertilizer to make land suitable for growing cactus. Your cactus will grow a little day by day, eventually producing seeds, and dying. You can convert your collected cactus into more fertilizer to expand your farm and grow faster!\n\nHolding \"q\" will put you in a fertilizing mode where you can select a box with your cursor and click to use your available fertilizer and make a plot of land suitable for growing cacti.\n\n \"f\" is used to plant cacti, which require 1 water and 3 seeds to plant\n\n \"g\" is used to collect grown cacti\n\n \"r\" is used to collect 1-3 seeds from fully grown cacti\n\n \"c\" is used to convert 4 cacti into fertilizer\n\n \"e\" is used to collect water from the well",
+        "font": "assets/PressStart2P-Regular.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 60,
+        "characterSize": 33,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -3295,6 +3352,330 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Cactus_Icon",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "age",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Icon",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/Cactus.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grow",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 6,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/BabyCactus.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/Cactus.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/Cactus.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/Cactus.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/SeedCactus.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Seeded",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/SeedCactus.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "White_Tile",
+      "texture": "NewTiledSprite4",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -3347,6 +3728,9 @@
             "folderName": "Resources",
             "children": [
               {
+                "objectName": "Cactus_Icon"
+              },
+              {
                 "objectName": "Fertilizer_Icon"
               },
               {
@@ -3389,7 +3773,7 @@
         ]
       },
       {
-        "objectName": "Interactions"
+        "objectName": "Manual"
       },
       {
         "objectName": "Player"
@@ -3402,6 +3786,9 @@
       },
       {
         "objectName": "Bed"
+      },
+      {
+        "objectName": "White_Tile"
       }
     ]
   },
@@ -3455,6 +3842,56 @@
               },
               "parameters": [
                 "message_box"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"m\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Instructions\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"m\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Instructions\""
               ]
             }
           ]
@@ -3621,6 +4058,16 @@
                 "Cactus",
                 "Animation"
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Planted_Cacti",
+                "+",
+                "1"
+              ]
             }
           ]
         },
@@ -3681,101 +4128,130 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "CollisionPoint"
+                    "value": "NumberVariable"
                   },
                   "parameters": [
-                    "Planter_Box",
-                    "CursorX()",
-                    "CursorY()"
+                    "Fertilizer",
+                    ">",
+                    "0"
                   ]
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Planter_Box",
-                    "Animation",
-                    "=",
-                    "\"black\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionPoint"
-                  },
-                  "parameters": [
-                    "Planter_Box",
-                    "CursorX()",
-                    "CursorY()"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Planter_Box",
-                    "Animation",
-                    "=",
-                    "\"red\""
-                  ]
-                }
-              ],
+              "actions": [],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "value": "MouseButtonFromTextReleased"
+                        "inverted": true,
+                        "value": "CollisionPoint"
                       },
                       "parameters": [
-                        "",
-                        "\"Left\""
+                        "Planter_Box",
+                        "CursorX()",
+                        "CursorY()"
                       ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "Soil",
-                        "Planter_Box.X()+144",
-                        "Planter_Box.Y()+116",
-                        "\"Desert Floor\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "Fertilizer",
-                        "-",
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Delete"
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
                       },
                       "parameters": [
                         "Planter_Box",
-                        ""
+                        "Animation",
+                        "=",
+                        "\"black\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionPoint"
+                      },
+                      "parameters": [
+                        "Planter_Box",
+                        "CursorX()",
+                        "CursorY()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Planter_Box",
+                        "Animation",
+                        "=",
+                        "\"red\""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "MouseButtonFromTextReleased"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Left\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Soil",
+                            "Planter_Box.X()+144",
+                            "Planter_Box.Y()+116",
+                            "\"Desert Floor\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Fertilizer",
+                            "-",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "Planter_Box",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "Fertilizer_Count",
+                            "Text",
+                            "=",
+                            "Fertilizer"
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -3893,6 +4369,17 @@
                 "=",
                 "Fertilizer"
               ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Score",
+                "Text",
+                "=",
+                "Collected_Cacti"
+              ]
             }
           ]
         }
@@ -3904,7 +4391,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Collecting",
+      "name": "Collecting and Watering",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -3961,12 +4448,13 @@
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "SoundPlaying"
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
                   },
                   "parameters": [
-                    "",
-                    "2"
+                    "Well",
+                    "Animation",
+                    "=",
+                    "\"Filled\""
                   ]
                 }
               ],
@@ -3992,6 +4480,17 @@
                     "no",
                     "30",
                     "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Well",
+                    "Animation",
+                    "=",
+                    "\"Empty\""
                   ]
                 }
               ]
@@ -4026,6 +4525,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4110,132 +4610,224 @@
                 },
                 {
                   "type": {
-                    "value": "KeyFromTextReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "\"g\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Sprite"
+                    "value": "PickNearest"
                   },
                   "parameters": [
                     "Cactus",
-                    ">=",
-                    "1"
+                    "Player.CenterX()",
+                    "Player.CenterY()",
+                    ""
                   ]
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Cactus",
-                    ""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "\"g\""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "Cactus",
+                            "Animation",
+                            "=",
+                            "\"Grow\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Sprite"
+                          },
+                          "parameters": [
+                            "Cactus",
+                            ">=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "Cactus",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Soil",
+                            "Planted",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Planted_Cacti",
+                            "-",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Collected_Cacti",
+                            "+",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "Score",
+                            "Text",
+                            "=",
+                            "Collected_Cacti"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "Cactus",
+                            "Animation",
+                            "=",
+                            "\"Dead\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "Cactus",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Soil",
+                            "Planted",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Planted_Cacti",
+                            "-",
+                            "1"
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "SetNumberVariable"
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
                   },
-                  "parameters": [
-                    "Collected_Cacti",
-                    "+",
-                    "1"
-                  ]
+                  "comment": "Seeds"
                 },
                 {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "Score",
-                    "Text",
-                    "=",
-                    "Collected_Cacti"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Soil",
-                    "Planted",
-                    "False",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Seeds"
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyFromTextReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "\"r\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
-                  },
-                  "parameters": [
-                    "Cactus",
-                    "Animation"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
-                  },
-                  "parameters": [
-                    "Seed_Meter",
-                    "+",
-                    "RandomInRange(1, 3)",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangeSprite"
-                  },
-                  "parameters": [
-                    "Cactus",
-                    "=",
-                    "1"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Sprite"
+                      },
+                      "parameters": [
+                        "Cactus",
+                        ">=",
+                        "3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyFromTextReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "\"r\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                      },
+                      "parameters": [
+                        "Seed_Meter",
+                        "+",
+                        "RandomInRange(1, 3)",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeSprite"
+                      },
+                      "parameters": [
+                        "Cactus",
+                        "=",
+                        "1"
+                      ]
+                    }
                   ]
                 }
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -4627,9 +5219,80 @@
                 "message_box",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Well",
+                "water",
+                "=",
+                "RandomInRange(1,5)"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Well",
+                "Animation",
+                "=",
+                "\"Filled\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AjoutObjConcern"
+              },
+              "parameters": [
+                "",
+                "Cactus"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Cactus",
+                "age",
+                "+",
+                "1"
+              ]
             }
           ],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Cactus",
+                    "age",
+                    ">",
+                    "5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Cactus",
+                    "Animation",
+                    "=",
+                    "\"Dead\""
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -4834,7 +5497,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Win Condition Event"
+          "comment": "Win and Loss Events"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -4864,11 +5527,91 @@
             },
             {
               "type": {
-                "value": "ResetObjectTimer"
+                "value": "Montre"
+              },
+              "parameters": [
+                "message_box",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Quit"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+              },
+              "parameters": [
+                "Seed_Meter",
+                "=",
+                "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Planted_Cacti",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
                 "MessageBox",
-                "\"vis\""
+                "Text",
+                "=",
+                "\"You have no seeds and no planted cactus. You've lost!\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "message_box",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Quit"
+              },
+              "parameters": [
+                ""
               ]
             }
           ]
@@ -4887,7 +5630,7 @@
             "MessageBox",
             "\"vis\"",
             ">=",
-            "5"
+            "4"
           ]
         }
       ],
@@ -5037,7 +5780,7 @@
       "isLocked": false,
       "name": "Planting Boxes Final",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {
@@ -5157,6 +5900,60 @@
       "name": "UI",
       "renderingType": "",
       "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Instructions",
+      "renderingType": "",
+      "visibility": false,
       "cameras": [],
       "effects": [
         {
