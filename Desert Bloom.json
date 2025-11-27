@@ -1197,7 +1197,7 @@
     {
       "name": "Fertilizer",
       "type": "number",
-      "value": 20
+      "value": 1
     },
     {
       "name": "Collected_Cacti",
