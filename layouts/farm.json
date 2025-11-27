@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6197916666666701,
+    "zoomFactor": 0.44485159988866835,
     "windowMask": false,
     "selectedLayer": "UI"
   },
@@ -608,9 +608,9 @@
       "name": "Water_Meter",
       "persistentUuid": "b91a50a2-9ccf-409b-9e50-8a24e29ddddd",
       "width": 125,
-      "x": 111,
-      "y": 129,
-      "zOrder": 10,
+      "x": 105,
+      "y": 159,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -624,9 +624,9 @@
       "name": "Seed_Meter",
       "persistentUuid": "7974cfad-f637-4f03-8743-4c395ad282a2",
       "width": 125,
-      "x": 111,
-      "y": 237,
-      "zOrder": 11,
+      "x": 371,
+      "y": 160,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -640,9 +640,9 @@
       "name": "Water_Icon",
       "persistentUuid": "473070b7-593e-4f85-ad13-c0a2b90dd2f5",
       "width": 66,
-      "x": 27,
-      "y": 121,
-      "zOrder": 12,
+      "x": 21,
+      "y": 151,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -657,9 +657,9 @@
       "name": "Seed_Sprite",
       "persistentUuid": "9741065e-a38c-4da3-8edf-cb5ea33d2b37",
       "width": 108.72727272727272,
-      "x": 7,
-      "y": 219,
-      "zOrder": 13,
+      "x": 267,
+      "y": 142,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -676,7 +676,7 @@
       "width": 64,
       "x": 141,
       "y": 53,
-      "zOrder": 15,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -710,7 +710,7 @@
       "width": 96,
       "x": 19,
       "y": 8,
-      "zOrder": 115,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -802,14 +802,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 32,
+      "height": 41,
       "keepRatio": true,
       "layer": "Border",
       "name": "Border",
       "persistentUuid": "bbde8c21-b039-4353-b212-157a6cd8fc56",
-      "width": 1949,
-      "x": 3,
-      "y": 1082,
+      "width": 2505,
+      "x": 8,
+      "y": 0,
       "zOrder": 121,
       "numberProperties": [],
       "stringProperties": [],
@@ -836,14 +836,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 108,
+      "height": 53,
       "keepRatio": true,
       "layer": "UI",
       "name": "DayCounter",
       "persistentUuid": "b255f6df-cd7f-47f6-98ed-40e49a22da27",
-      "width": 176,
-      "x": 1680,
-      "y": 1010,
+      "width": 87,
+      "x": 1808,
+      "y": 1006,
       "zOrder": 124,
       "numberProperties": [],
       "stringProperties": [],
@@ -884,15 +884,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 175,
       "keepRatio": true,
       "layer": "UI",
       "name": "MessageBox",
       "persistentUuid": "9888c1b0-5123-412e-827e-2f1684075db9",
-      "width": 0,
-      "x": 286,
-      "y": 16,
+      "width": 784,
+      "x": 774,
+      "y": 392,
       "zOrder": 127,
       "numberProperties": [],
       "stringProperties": [],
@@ -916,33 +917,17 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 31,
       "keepRatio": true,
       "layer": "UI",
       "name": "Fertilizer_Count",
       "persistentUuid": "eb8f9b27-2faa-440d-9841-b063089123bc",
-      "width": 0,
-      "x": 287,
-      "y": 298,
-      "zOrder": 129,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 66,
-      "keepRatio": true,
-      "layer": "UI",
-      "name": "Fertilizer_Object",
-      "persistentUuid": "d00e23c1-bc9e-435a-896c-bf6c2ec4a0a2",
-      "width": 247,
-      "x": 21,
-      "y": 295,
-      "zOrder": 130,
+      "width": 67,
+      "x": 391,
+      "y": 53,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -971,12 +956,62 @@
       "height": 157,
       "keepRatio": true,
       "layer": "UI",
-      "name": "NewSprite",
+      "name": "long_textbox",
       "persistentUuid": "0ef25c0b-edc9-41b6-ba9f-72ed36d16d00",
       "width": 314,
       "x": 1616,
       "y": 925,
       "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "Fertilizer_Icon",
+      "persistentUuid": "bca8e99c-3e66-4318-871b-b80e7e4a4f69",
+      "width": 0,
+      "x": 267,
+      "y": 11,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 156,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "Textbox",
+      "persistentUuid": "2b71ed67-a4ba-4253-959d-ae2b2e1ea204",
+      "width": 156,
+      "x": 374,
+      "y": -48,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 31,
+      "height": 500,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "message_box",
+      "persistentUuid": "d31a1646-5c95-4095-a9b8-1273c8c55fa2",
+      "width": 1000,
+      "x": 670,
+      "y": 150,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2604,12 +2639,12 @@
       "behaviors": [],
       "string": "1",
       "font": "assets/PressStart2P-Regular.ttf",
-      "textAlignment": "right",
+      "textAlignment": "left",
       "characterSize": 40,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 5,
+        "g": 117,
+        "r": 65
       },
       "content": {
         "bold": false,
@@ -2627,11 +2662,11 @@
         "underlined": false,
         "text": "1",
         "font": "assets/PressStart2P-Regular.ttf",
-        "textAlignment": "right",
+        "textAlignment": "left",
         "verticalTextAlignment": "top",
         "characterSize": 40,
         "lineHeight": 0,
-        "color": "0;0;0"
+        "color": "65;117;5"
       }
     },
     {
@@ -2681,12 +2716,12 @@
       "assetStoreId": "",
       "name": "SleepConfirm",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Red Button With Shadow",
+      "variant": "Red Button With Shadow2",
       "variables": [],
       "effects": [],
       "behaviors": [],
       "content": {
-        "LabelText": "Sleep and skip to next day"
+        "LabelText": "Next Day"
       }
     },
     {
@@ -2700,10 +2735,10 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": " ",
-      "font": "CantoraOne-Regular.ttf",
-      "textAlignment": "center",
-      "characterSize": 60,
+      "string": "",
+      "font": "assets/PressStart2P-Regular.ttf",
+      "textAlignment": "left",
+      "characterSize": 40,
       "color": {
         "b": 0,
         "g": 0,
@@ -2715,7 +2750,7 @@
         "isShadowEnabled": false,
         "italic": false,
         "outlineColor": "255;255;255",
-        "outlineThickness": 10,
+        "outlineThickness": 5,
         "shadowAngle": 90,
         "shadowBlurRadius": 2,
         "shadowColor": "0;0;0",
@@ -2723,11 +2758,11 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": " ",
-        "font": "CantoraOne-Regular.ttf",
-        "textAlignment": "center",
+        "text": "",
+        "font": "assets/PressStart2P-Regular.ttf",
+        "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 60,
+        "characterSize": 40,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -2820,10 +2855,10 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "0",
-      "font": "",
+      "string": "1",
+      "font": "assets/PressStart2P-Regular.ttf",
       "textAlignment": "left",
-      "characterSize": 60,
+      "characterSize": 30,
       "color": {
         "b": 0,
         "g": 0,
@@ -2843,11 +2878,11 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "0",
-        "font": "",
+        "text": "1",
+        "font": "assets/PressStart2P-Regular.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 60,
+        "characterSize": 30,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -3016,24 +3051,6 @@
       ]
     },
     {
-      "assetStoreId": "615de0316452630b9f4f6a39decc82e2449b82c1afd1ff24d6470dad2922177b",
-      "name": "Fertilize",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Red Button With Shadow",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LeftPadding": 16,
-        "RightPadding": 16,
-        "PressedLabelOffsetY": 10,
-        "BottomPadding": 32,
-        "TopPadding": 16,
-        "HoveredFadeOutDuration": 0.25,
-        "LabelText": "Fertilize"
-      }
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Textbox",
@@ -3096,7 +3113,133 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "NewSprite",
+      "name": "long_textbox",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/longtextbox copy.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 6
+                      },
+                      {
+                        "x": 30,
+                        "y": 6
+                      },
+                      {
+                        "x": 30,
+                        "y": 15
+                      },
+                      {
+                        "x": 2,
+                        "y": 15
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Fertilizer_Icon",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Planted",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/Soil.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 100,
+                        "y": 0
+                      },
+                      {
+                        "x": 100,
+                        "y": 100
+                      },
+                      {
+                        "x": 0,
+                        "y": 100
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "message_box",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -3184,6 +3327,12 @@
             "objectName": "Textbox"
           },
           {
+            "objectName": "long_textbox"
+          },
+          {
+            "objectName": "message_box"
+          },
+          {
             "folderName": "Controls",
             "children": [
               {
@@ -3197,6 +3346,9 @@
           {
             "folderName": "Resources",
             "children": [
+              {
+                "objectName": "Fertilizer_Icon"
+              },
               {
                 "objectName": "Score"
               },
@@ -3250,12 +3402,6 @@
       },
       {
         "objectName": "Bed"
-      },
-      {
-        "objectName": "Fertilize"
-      },
-      {
-        "objectName": "NewSprite"
       }
     ]
   },
@@ -3301,6 +3447,14 @@
               "parameters": [
                 "Well",
                 "\"water add\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "message_box"
               ]
             }
           ]
@@ -4464,6 +4618,15 @@
                 "=",
                 "RandomInRange(0, 4)"
               ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "message_box",
+                ""
+              ]
             }
           ],
           "events": [
@@ -4709,38 +4872,46 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "MessageBox",
-                "\"vis\"",
-                ">=",
-                "5"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "MessageBox",
-                "Text",
-                "=",
-                "\"\""
-              ]
-            }
-          ]
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "MessageBox",
+            "\"vis\"",
+            ">=",
+            "5"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "MessageBox",
+            "Text",
+            "=",
+            "\"\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "message_box"
+          ]
+        }
+      ]
     }
   ],
   "layers": [
