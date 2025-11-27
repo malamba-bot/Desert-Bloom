@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 246,
+    "build": 245,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -1079,7 +1079,8 @@
           "name": "Yellow Button_Pressed.png"
         }
       }
-    ]
+    ],
+    "resourceFolders": []
   },
   "objects": [],
   "objectsFolderStructure": {
@@ -1090,7 +1091,7 @@
     {
       "name": "Fertilizer",
       "type": "number",
-      "value": 0
+      "value": 1
     },
     {
       "name": "Collected_Cacti",
