@@ -3393,9 +3393,9 @@
                 }
               ],
               "string": "BUTTON",
-              "font": "CantoraOne-Regular.ttf",
+              "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
               "textAlignment": "center",
-              "characterSize": 40,
+              "characterSize": 50,
               "color": {
                 "b": 255,
                 "g": 255,
@@ -3416,10 +3416,10 @@
                 "smoothed": true,
                 "underlined": false,
                 "text": "BUTTON",
-                "font": "CantoraOne-Regular.ttf",
+                "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
                 "textAlignment": "center",
                 "verticalTextAlignment": "center",
-                "characterSize": 40,
+                "characterSize": 50,
                 "lineHeight": 0,
                 "color": "255;255;255"
               }
@@ -3678,8 +3678,10 @@
             "gridType": "rectangular",
             "gridWidth": 32,
             "gridHeight": 32,
+            "gridDepth": 32,
             "gridOffsetX": 0,
             "gridOffsetY": 0,
+            "gridOffsetZ": 0,
             "gridColor": 10401023,
             "gridAlpha": 0.8,
             "snap": false,

@@ -1207,6 +1207,22 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "file": "assets/Fertilizer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Fertilizer.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite5",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },

@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.389585627382733,
+    "zoomFactor": 0.3192894589690204,
     "windowMask": false,
     "selectedLayer": "Instructions"
   },
@@ -952,15 +952,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 114,
       "keepRatio": true,
       "layer": "UI",
       "name": "Fertilizer_Icon",
       "persistentUuid": "bca8e99c-3e66-4318-871b-b80e7e4a4f69",
-      "width": 0,
-      "x": 267,
-      "y": 11,
+      "width": 114,
+      "x": 260,
+      "y": 12,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -1027,9 +1028,26 @@
       "name": "Manual",
       "persistentUuid": "bde17016-9824-473d-8d65-4e7e60b27ede",
       "width": 1881,
-      "x": 6,
-      "y": -34,
+      "x": 5,
+      "y": 12,
       "zOrder": 133,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1101,
+      "keepRatio": true,
+      "layer": "Instructions",
+      "name": "White_Background",
+      "persistentUuid": "48808ae0-9e49-47b2-886f-ceaebf1b9127",
+      "width": 1933,
+      "x": -11,
+      "y": -15,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2695,9 +2713,9 @@
     {
       "assetStoreId": "",
       "name": "SleepConfirm",
-      "persistentUuid": "c356eb72-4f69-472c-8462-0c719b0c0576",
+      "persistentUuid": "4d0149bc-8c69-44e1-a41f-429986f9c55e",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Red Button With Shadow2",
+      "variant": "Brown With Shadow",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -2883,49 +2901,6 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "Fertilizer_Object",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Fertilizer:",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 60,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Fertilizer:",
-        "font": "",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 60,
-        "lineHeight": 0,
-        "color": "0;0;0"
-      }
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
       "name": "Manual",
       "smoothed": true,
       "type": "TextObject::Text",
@@ -2935,8 +2910,8 @@
       "behaviors": [],
       "string": "Manual\n\nYour goal is to stock up 50 cactus so that you can survive a trip out of the desert! You will be alloted a limited amount of water per day from the well, and you can use fertilizer to make land suitable for growing cactus. Your cactus will grow a little day by day, eventually producing seeds, and dying. You can convert your collected cactus into more fertilizer to expand your farm and grow faster!\n\nHolding \"q\" will put you in a fertilizing mode where you can select a box with your cursor and click to use your available fertilizer and make a plot of land suitable for growing cacti.\n\n \"f\" is used to plant cacti, which require 1 water and 3 seeds to plant\n\n \"g\" is used to collect grown cacti\n\n \"r\" is used to collect 1-3 seeds from fully grown cacti\n\n \"c\" is used to convert 4 cacti into fertilizer\n\n \"e\" is used to collect water from the well",
       "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
-      "textAlignment": "left",
-      "characterSize": 33,
+      "textAlignment": "center",
+      "characterSize": 60,
       "color": {
         "b": 0,
         "g": 0,
@@ -2958,9 +2933,9 @@
         "underlined": false,
         "text": "Manual\n\nYour goal is to stock up 50 cactus so that you can survive a trip out of the desert! You will be alloted a limited amount of water per day from the well, and you can use fertilizer to make land suitable for growing cactus. Your cactus will grow a little day by day, eventually producing seeds, and dying. You can convert your collected cactus into more fertilizer to expand your farm and grow faster!\n\nHolding \"q\" will put you in a fertilizing mode where you can select a box with your cursor and click to use your available fertilizer and make a plot of land suitable for growing cacti.\n\n \"f\" is used to plant cacti, which require 1 water and 3 seeds to plant\n\n \"g\" is used to collect grown cacti\n\n \"r\" is used to collect 1-3 seeds from fully grown cacti\n\n \"c\" is used to convert 4 cacti into fertilizer\n\n \"e\" is used to collect water from the well",
         "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
-        "textAlignment": "left",
+        "textAlignment": "center",
         "verticalTextAlignment": "top",
-        "characterSize": 33,
+        "characterSize": 60,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -2991,7 +2966,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/Soil.png",
+                  "image": "assets/Fertilizer.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -3011,16 +2986,16 @@
                         "y": 0
                       },
                       {
-                        "x": 100,
+                        "x": 160,
                         "y": 0
                       },
                       {
-                        "x": 100,
-                        "y": 100
+                        "x": 160,
+                        "y": 160
                       },
                       {
                         "x": 0,
-                        "y": 100
+                        "y": 160
                       }
                     ]
                   ]
@@ -3177,7 +3152,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/Soil.png",
+                  "image": "assets/Fertilizer.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -3193,20 +3168,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 10,
+                        "y": 10
                       },
                       {
-                        "x": 100,
-                        "y": 0
+                        "x": 140,
+                        "y": 10
                       },
                       {
-                        "x": 100,
-                        "y": 100
+                        "x": 140,
+                        "y": 140
                       },
                       {
-                        "x": 0,
-                        "y": 100
+                        "x": 10,
+                        "y": 140
                       }
                     ]
                   ]
@@ -3589,6 +3564,77 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/Fertilizer.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "White_Background",
+      "texture": "NewTiledSprite5",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -3673,9 +3719,6 @@
                 "objectName": "MessageBox"
               },
               {
-                "objectName": "Fertilizer_Object"
-              },
-              {
                 "objectName": "DayLabel"
               },
               {
@@ -3686,7 +3729,15 @@
         ]
       },
       {
-        "objectName": "Manual"
+        "folderName": "Manual",
+        "children": [
+          {
+            "objectName": "Manual"
+          },
+          {
+            "objectName": "White_Background"
+          }
+        ]
       },
       {
         "objectName": "Player"
@@ -3696,6 +3747,9 @@
       },
       {
         "objectName": "Well"
+      },
+      {
+        "objectName": "NewSprite"
       }
     ]
   },
@@ -3908,8 +3962,8 @@
               "parameters": [
                 "",
                 "Cactus",
-                "Soil.X() - 25",
-                "Soil.Y() - 80",
+                "Soil.X()",
+                "Soil.Y() - 60",
                 ""
               ]
             },
@@ -4124,8 +4178,8 @@
                           "parameters": [
                             "",
                             "Soil",
-                            "Planter_Box.X()+144",
-                            "Planter_Box.Y()+116",
+                            "Planter_Box.X()+123",
+                            "Planter_Box.Y()+87",
                             "\"Desert Floor\""
                           ]
                         },
@@ -4141,15 +4195,6 @@
                         },
                         {
                           "type": {
-                            "value": "Delete"
-                          },
-                          "parameters": [
-                            "Planter_Box",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
                           },
                           "parameters": [
@@ -4157,6 +4202,15 @@
                             "Text",
                             "=",
                             "Fertilizer"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "Planter_Box",
+                            ""
                           ]
                         }
                       ]
