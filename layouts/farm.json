@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.6762448643325192,
+    "zoomFactor": 0.389585627382733,
     "windowMask": false,
     "selectedLayer": "Instructions"
   },
@@ -875,9 +875,9 @@
       "layer": "UI",
       "name": "MessageBox",
       "persistentUuid": "9888c1b0-5123-412e-827e-2f1684075db9",
-      "width": 784,
-      "x": 774,
-      "y": 392,
+      "width": 573,
+      "x": 820,
+      "y": 291,
       "zOrder": 127,
       "numberProperties": [],
       "stringProperties": [],
@@ -987,14 +987,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 31,
-      "height": 500,
+      "height": 323,
       "keepRatio": true,
       "layer": "UI",
       "name": "message_box",
       "persistentUuid": "d31a1646-5c95-4095-a9b8-1273c8c55fa2",
-      "width": 1000,
-      "x": 670,
-      "y": 150,
+      "width": 727,
+      "x": 745,
+      "y": 148,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -1013,23 +1013,6 @@
       "x": 18,
       "y": 18,
       "zOrder": 131,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 1123,
-      "keepRatio": true,
-      "layer": "Instructions",
-      "name": "White_Tile",
-      "persistentUuid": "a5e7e072-acb9-4ee1-b7d1-c8416555e975",
-      "width": 1963,
-      "x": -29,
-      "y": -27,
-      "zOrder": 132,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2624,67 +2607,6 @@
       "behaviors": []
     },
     {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Bed",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "NewSprite",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite13",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 9,
-                        "y": 5
-                      },
-                      {
-                        "x": 52,
-                        "y": 5
-                      },
-                      {
-                        "x": 52,
-                        "y": 53
-                      },
-                      {
-                        "x": 9,
-                        "y": 53
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "assetStoreId": "",
       "bold": false,
       "italic": false,
@@ -2773,6 +2695,7 @@
     {
       "assetStoreId": "",
       "name": "SleepConfirm",
+      "persistentUuid": "c356eb72-4f69-472c-8462-0c719b0c0576",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variant": "Red Button With Shadow2",
       "variables": [],
@@ -2794,9 +2717,9 @@
       "effects": [],
       "behaviors": [],
       "string": "",
-      "font": "assets/PressStart2P-Regular.ttf",
-      "textAlignment": "left",
-      "characterSize": 40,
+      "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+      "textAlignment": "center",
+      "characterSize": 60,
       "color": {
         "b": 0,
         "g": 0,
@@ -2817,10 +2740,10 @@
         "smoothed": true,
         "underlined": false,
         "text": "",
-        "font": "assets/PressStart2P-Regular.ttf",
-        "textAlignment": "left",
+        "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+        "textAlignment": "center",
         "verticalTextAlignment": "top",
-        "characterSize": 40,
+        "characterSize": 60,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -3666,17 +3589,6 @@
           ]
         }
       ]
-    },
-    {
-      "assetStoreId": "",
-      "height": 32,
-      "name": "White_Tile",
-      "texture": "NewTiledSprite4",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -3784,12 +3696,6 @@
       },
       {
         "objectName": "Well"
-      },
-      {
-        "objectName": "Bed"
-      },
-      {
-        "objectName": "White_Tile"
       }
     ]
   },
@@ -4826,111 +4732,6 @@
                     }
                   ]
                 }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Bed"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "SleepConfirm",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Player",
-                "Bed",
-                "20",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "SleepConfirm",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-              },
-              "parameters": [
-                "SleepConfirm",
-                "yes",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "disabled": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Player",
-                "Bed",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "SleepConfirm"
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-              },
-              "parameters": [
-                "SleepConfirm",
-                "no",
-                ""
               ]
             }
           ]

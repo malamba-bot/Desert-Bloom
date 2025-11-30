@@ -189,7 +189,7 @@
       {
         "file": "assets/Red Button With Shadow_Idle.png.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/Red Button With Shadow_Idle.png.png\"}",
         "name": "Red Button With Shadow_Idle.png",
         "smoothed": false,
         "userAdded": false,
