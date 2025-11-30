@@ -1207,8 +1207,8 @@
         "BarBottomPadding": 6,
         "BarLeftPadding": 4,
         "BarRightPadding": 4,
-        "MaxValue": 50,
-        "InitialValue": 5
+        "MaxValue": 5,
+        "InitialValue": 1
       }
     },
     {
@@ -1256,7 +1256,7 @@
         "BarLeftPadding": 4,
         "BarRightPadding": 4,
         "MaxValue": 15,
-        "InitialValue": 15
+        "InitialValue": 6
       }
     },
     {
@@ -2212,6 +2212,11 @@
           "name": "age",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "last_hydrated",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [],
@@ -2390,6 +2395,55 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/SeedCactus.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dehydrated",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "dehydrated_cactus",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2908,7 +2962,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Manual\n\nYour goal is to stock up 50 cactus so that you can survive a trip out of the desert! You will be alloted a limited amount of water per day from the well, and you can use fertilizer to make land suitable for growing cactus. Your cactus will grow a little day by day, eventually producing seeds, and dying. You can convert your collected cactus into more fertilizer to expand your farm and grow faster!\n\nHolding \"q\" will put you in a fertilizing mode where you can select a box with your cursor and click to use your available fertilizer and make a plot of land suitable for growing cacti.\n\n \"f\" is used to plant cacti, which require 1 water and 3 seeds to plant\n\n \"g\" is used to collect grown cacti\n\n \"r\" is used to collect 1-3 seeds from fully grown cacti\n\n \"c\" is used to convert 4 cacti into fertilizer\n\n \"e\" is used to collect water from the well",
+      "string": "Manual\n\nYour goal is to stock up 50 cactus so that you can survive a trip out of the desert! You will be alloted a limited amount of water per day from the well, and you can use fertilizer to make land suitable for growing cactus. Your cactus will grow a little day by day, eventually producing seeds, and dying. You can convert your collected cactus into more fertilizer to expand your farm and grow faster!\n\nHolding \"q\" will put you in a fertilizing mode where you can select a box with your cursor and click to use your available fertilizer and make a plot of land suitable for growing cacti.\n\n \"f\" is used to plant cacti, which require 1 water and 3 seeds to plant\n\n \"g\" is used to collect grown cacti\n\n \"r\" is used to collect 1-3 seeds from fully grown cacti\n\n\"left shift\" hydrates the cactus below you, it requires one water\n\n \"c\" is used to convert 4 cacti into fertilizer\n\n \"e\" is used to collect water from the well",
       "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
       "textAlignment": "center",
       "characterSize": 60,
@@ -2931,7 +2985,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Manual\n\nYour goal is to stock up 50 cactus so that you can survive a trip out of the desert! You will be alloted a limited amount of water per day from the well, and you can use fertilizer to make land suitable for growing cactus. Your cactus will grow a little day by day, eventually producing seeds, and dying. You can convert your collected cactus into more fertilizer to expand your farm and grow faster!\n\nHolding \"q\" will put you in a fertilizing mode where you can select a box with your cursor and click to use your available fertilizer and make a plot of land suitable for growing cacti.\n\n \"f\" is used to plant cacti, which require 1 water and 3 seeds to plant\n\n \"g\" is used to collect grown cacti\n\n \"r\" is used to collect 1-3 seeds from fully grown cacti\n\n \"c\" is used to convert 4 cacti into fertilizer\n\n \"e\" is used to collect water from the well",
+        "text": "Manual\n\nYour goal is to stock up 50 cactus so that you can survive a trip out of the desert! You will be alloted a limited amount of water per day from the well, and you can use fertilizer to make land suitable for growing cactus. Your cactus will grow a little day by day, eventually producing seeds, and dying. You can convert your collected cactus into more fertilizer to expand your farm and grow faster!\n\nHolding \"q\" will put you in a fertilizing mode where you can select a box with your cursor and click to use your available fertilizer and make a plot of land suitable for growing cacti.\n\n \"f\" is used to plant cacti, which require 1 water and 3 seeds to plant\n\n \"g\" is used to collect grown cacti\n\n \"r\" is used to collect 1-3 seeds from fully grown cacti\n\n\"left shift\" hydrates the cactus below you, it requires one water\n\n \"c\" is used to convert 4 cacti into fertilizer\n\n \"e\" is used to collect water from the well",
         "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "top",
@@ -3566,9 +3620,20 @@
       ]
     },
     {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "White_Background",
+      "texture": "NewTiledSprite5",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "NewSprite",
+      "name": "Water_Cactus",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -3585,7 +3650,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/Fertilizer.png",
+                  "image": "assets/CactusBlue.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -3605,16 +3670,64 @@
                         "y": 0
                       },
                       {
-                        "x": 16,
+                        "x": 140,
                         "y": 0
                       },
                       {
-                        "x": 16,
-                        "y": 16
+                        "x": 140,
+                        "y": 160
                       },
                       {
                         "x": 0,
-                        "y": 16
+                        "y": 160
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/BabyCactusBlue.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
                       }
                     ]
                   ]
@@ -3624,17 +3737,6 @@
           ]
         }
       ]
-    },
-    {
-      "assetStoreId": "",
-      "height": 32,
-      "name": "White_Background",
-      "texture": "NewTiledSprite5",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -3749,7 +3851,7 @@
         "objectName": "Well"
       },
       {
-        "objectName": "NewSprite"
+        "objectName": "Water_Cactus"
       }
     ]
   },
@@ -4366,7 +4468,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Water"
+          "comment": "Collecting from the Well"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -4584,6 +4686,112 @@
               "actions": [],
               "events": [
                 {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Watering Cactus"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "\"LShift\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+                      },
+                      "parameters": [
+                        "Water_Meter",
+                        ">",
+                        "0",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Cactus",
+                        "Animation",
+                        "=",
+                        "\"Dead\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                      },
+                      "parameters": [
+                        "Water_Meter",
+                        "-",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Cactus",
+                        "last_hydrated",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Cactus",
+                        "Animation",
+                        "=",
+                        "\"Grow\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeSprite"
+                      },
+                      "parameters": [
+                        "Cactus",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Collecting Cactus"
+                },
+                {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -4603,23 +4811,50 @@
                       "conditions": [
                         {
                           "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                            "value": "BuiltinCommonInstructions::Or"
                           },
-                          "parameters": [
-                            "Cactus",
-                            "Animation",
-                            "=",
-                            "\"Grow\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Sprite"
-                          },
-                          "parameters": [
-                            "Cactus",
-                            ">=",
-                            "1"
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::Name"
+                              },
+                              "parameters": [
+                                "Cactus",
+                                "Animation",
+                                "=",
+                                "\"Dehydrated\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::And"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                                  },
+                                  "parameters": [
+                                    "Cactus",
+                                    "Animation",
+                                    "=",
+                                    "\"Grow\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Sprite"
+                                  },
+                                  "parameters": [
+                                    "Cactus",
+                                    ">",
+                                    "0"
+                                  ]
+                                }
+                              ]
+                            }
                           ]
                         }
                       ],
@@ -5117,10 +5352,21 @@
                 "+",
                 "1"
               ]
+            },
+            {
+              "type": {
+                "value": "ChangeSprite"
+              },
+              "parameters": [
+                "Cactus",
+                "+",
+                "1"
+              ]
             }
           ],
           "events": [
             {
+              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5195,12 +5441,13 @@
                 },
                 {
                   "type": {
-                    "value": "ChangeSprite"
+                    "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
                     "Cactus",
-                    "+",
-                    "2"
+                    "last_hydrated",
+                    "=",
+                    "0"
                   ]
                 }
               ]
@@ -5251,12 +5498,13 @@
                 },
                 {
                   "type": {
-                    "value": "ChangeSprite"
+                    "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
                     "Cactus",
+                    "last_hydrated",
                     "+",
-                    "0"
+                    "2"
                   ]
                 }
               ]
@@ -5307,10 +5555,11 @@
                 },
                 {
                   "type": {
-                    "value": "ChangeSprite"
+                    "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
                     "Cactus",
+                    "last_hydrated",
                     "+",
                     "1"
                   ]
@@ -5327,12 +5576,65 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "cactus growth"
+              "comment": "Check for Dehydration"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Cactus",
+                    "last_hydrated",
+                    ">",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Cactus",
+                    "Animation",
+                    "=",
+                    "\"Dehydrated\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Cactus",
+                    "last_hydrated",
+                    ">",
+                    "3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Cactus",
+                    "Animation",
+                    "=",
+                    "\"Dead\""
+                  ]
+                }
+              ]
             }
           ],
           "variables": [
@@ -5372,6 +5674,15 @@
           "actions": [
             {
               "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "MessageBox",
+                "\"vis\""
+              ]
+            },
+            {
+              "type": {
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
@@ -5395,7 +5706,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "5"
+                "4"
               ]
             },
             {
@@ -5436,6 +5747,15 @@
           "actions": [
             {
               "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "MessageBox",
+                "\"vis\""
+              ]
+            },
+            {
+              "type": {
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
@@ -5459,7 +5779,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "5"
+                "4"
               ]
             },
             {
