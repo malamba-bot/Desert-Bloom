@@ -1247,6 +1247,46 @@
         "name": "dehydrated_cactus",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/wc_button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/wc_button.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/wc_button_hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/wc_button_hovered.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/c_button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/c_button.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/c_button_hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/c_button_hovered.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/empty.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "empty",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -1275,6 +1315,11 @@
       "name": "Planted_Cacti",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "planting",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
