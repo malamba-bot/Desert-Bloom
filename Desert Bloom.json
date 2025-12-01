@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 247,
+    "build": 248,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -1285,6 +1285,14 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "empty",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/selected.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "selected",
         "smoothed": false,
         "userAdded": false
       }
