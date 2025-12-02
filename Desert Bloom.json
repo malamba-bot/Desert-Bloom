@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 248,
+    "build": 245,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -81,7 +81,6 @@
     "authorUsernames": [],
     "categories": [],
     "playableDevices": [
-      "mobile",
       "mobile"
     ],
     "extensionProperties": [],
@@ -1304,7 +1303,8 @@
         "smoothed": false,
         "userAdded": false
       }
-    ]
+    ],
+    "resourceFolders": []
   },
   "objects": [],
   "objectsFolderStructure": {
