@@ -13,10 +13,8 @@
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
-    "gridDepth": 32,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
-    "gridOffsetZ": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
@@ -5188,6 +5186,18 @@
                             "False",
                             ""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "DesertBloomSounds/placeplant.wav",
+                            "",
+                            "80",
+                            ""
+                          ]
                         }
                       ]
                     }
@@ -5336,6 +5346,18 @@
                           "parameters": [
                             "planting",
                             "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "DesertBloomSounds/placeplant.wav",
+                            "",
+                            "80",
                             ""
                           ]
                         }
@@ -5555,6 +5577,18 @@
                           },
                           "parameters": [
                             "Planter_Box",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "DesertBloomSounds/placeplant.wav",
+                            "",
+                            "80",
                             ""
                           ]
                         }
@@ -6010,6 +6044,18 @@
                         "=",
                         "0"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "DesertBloomSounds/waterplant.wav",
+                        "",
+                        "80",
+                        ""
+                      ]
                     }
                   ],
                   "events": [
@@ -6111,6 +6157,18 @@
                         "Animation",
                         "=",
                         "\"full\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "DesertBloomSounds/waterplant.wav",
+                        "",
+                        "80",
+                        ""
                       ]
                     },
                     {
@@ -6692,6 +6750,18 @@
                         "=",
                         "Collected_Cacti"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "DesertBloomSounds/removeplant.wav",
+                        "",
+                        "90",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -6733,6 +6803,18 @@
                     },
                     {
                       "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "DesertBloomSounds/removeplant.wav",
+                        "",
+                        "90",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "SetNumberVariable"
                       },
                       "parameters": [
@@ -6769,6 +6851,18 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "DesertBloomSounds/removeplant.wav",
+                    "",
+                    "90",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Delete"
@@ -7731,7 +7825,6 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
-      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -7785,7 +7878,6 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
-      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -7839,7 +7931,6 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
-      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -7893,7 +7984,6 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
-      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -7958,7 +8048,6 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
-      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -8012,7 +8101,6 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
-      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -8066,7 +8154,6 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
-      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,

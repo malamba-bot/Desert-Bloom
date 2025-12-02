@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 248,
+    "build": 245,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -81,7 +81,6 @@
     "authorUsernames": [],
     "categories": [],
     "playableDevices": [
-      "mobile",
       "mobile"
     ],
     "extensionProperties": [],
@@ -1303,8 +1302,39 @@
         "name": "assets/selected_fertilizer.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "DesertBloomSounds/waterplant.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "DesertBloomSounds/waterplant.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "DesertBloomSounds/placeplant.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "DesertBloomSounds/placeplant.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "DesertBloomSounds/removeplant.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "DesertBloomSounds/removeplant.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
-    ]
+    ],
+    "resourceFolders": []
   },
   "objects": [],
   "objectsFolderStructure": {
