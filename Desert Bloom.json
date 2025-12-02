@@ -1332,6 +1332,22 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Wet_Fertilizer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Wet_Fertilizer.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Wet_Selected_Fertilizer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Wet_Selected_Fertilizer.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
