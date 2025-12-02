@@ -13,8 +13,10 @@
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
+    "gridDepth": 32,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
+    "gridOffsetZ": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
@@ -3719,7 +3721,12 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
+        }
+      ],
       "animations": [
         {
           "name": "full",
@@ -5610,7 +5617,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Conversion",
+      "name": "Fertilizer Conversion",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -5872,20 +5879,45 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Cactus TODO: Change collision to point in object"
+          "comment": "Cactus "
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "CollisionNP"
+                "value": "CollisionPoint"
               },
               "parameters": [
-                "Player",
+                "Soil",
+                "Player.CenterX()",
+                "Player.CenterY()"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Soil",
+                "Planted",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PickNearest"
+              },
+              "parameters": [
                 "Cactus Types",
-                "Player.Y()",
-                "",
+                "Player.CenterX()",
+                "Player.CenterY()",
                 ""
               ]
             }
@@ -5893,121 +5925,110 @@
           "actions": [],
           "events": [
             {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Watering Cactus"
+            },
+            {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "CollisionNP"
+                    "value": "KeyFromTextReleased"
                   },
                   "parameters": [
-                    "Player",
-                    "Soil",
                     "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PickNearest"
-                  },
-                  "parameters": [
-                    "Cactus Types",
-                    "Player.CenterX()",
-                    "Player.CenterY()",
-                    ""
+                    "\"Space\""
                   ]
                 }
               ],
               "actions": [],
               "events": [
                 {
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "Watering Cactus"
-                },
-                {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "value": "KeyFromTextReleased"
+                        "value": "PickedInstancesCount"
                       },
                       "parameters": [
-                        "",
-                        "\"Space\""
+                        "Cactus",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+                      },
+                      "parameters": [
+                        "Water_Meter",
+                        ">",
+                        "0",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Cactus",
+                        "Animation",
+                        "=",
+                        "\"Dead\""
                       ]
                     }
                   ],
-                  "actions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                      },
+                      "parameters": [
+                        "Water_Meter",
+                        "-",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Cactus",
+                        "last_hydrated",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
                   "events": [
                     {
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "value": "PickedInstancesCount"
-                          },
-                          "parameters": [
-                            "Cactus",
-                            "=",
-                            "1"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
-                          },
-                          "parameters": [
-                            "Water_Meter",
-                            ">",
-                            "0",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "inverted": true,
                             "value": "AnimatableCapability::AnimatableBehavior::Name"
                           },
                           "parameters": [
                             "Cactus",
                             "Animation",
                             "=",
-                            "\"Dead\""
+                            "\"Dehydrated\""
                           ]
                         }
                       ],
                       "actions": [
-                        {
-                          "type": {
-                            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
-                          },
-                          "parameters": [
-                            "Water_Meter",
-                            "-",
-                            "1",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberObjectVariable"
-                          },
-                          "parameters": [
-                            "Cactus",
-                            "last_hydrated",
-                            "=",
-                            "0"
-                          ]
-                        },
                         {
                           "type": {
                             "value": "AnimatableCapability::AnimatableBehavior::SetName"
@@ -6030,103 +6051,121 @@
                           ]
                         }
                       ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
-                          },
-                          "parameters": [
-                            "Water_Meter",
-                            ">",
-                            "0",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "PickedInstancesCount"
-                          },
-                          "parameters": [
-                            "Water_Cactus",
-                            "=",
-                            "1"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
-                          },
-                          "parameters": [
-                            "Water_Cactus",
-                            "Animation",
-                            "=",
-                            "\"empty\""
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
-                          },
-                          "parameters": [
-                            "Water_Meter",
-                            "-",
-                            "1",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                          },
-                          "parameters": [
-                            "Water_Cactus",
-                            "Animation",
-                            "=",
-                            "\"full\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ChangeSprite"
-                          },
-                          "parameters": [
-                            "Water_Cactus",
-                            "=",
-                            "1"
-                          ]
-                        }
-                      ]
                     }
                   ]
                 },
                 {
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "Collecting Cactus (keybind)"
-                },
-                {
-                  "disabled": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "value": "KeyFromTextReleased"
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
                       },
                       "parameters": [
-                        "",
-                        "\"g\""
+                        "Water_Meter",
+                        ">",
+                        "0",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PickedInstancesCount"
+                      },
+                      "parameters": [
+                        "Water_Cactus",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Water_Cactus",
+                        "Animation",
+                        "=",
+                        "\"empty\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                      },
+                      "parameters": [
+                        "Water_Meter",
+                        "-",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Water_Cactus",
+                        "Animation",
+                        "=",
+                        "\"full\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeSprite"
+                      },
+                      "parameters": [
+                        "Water_Cactus",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Collecting Cactus (keybind)"
+            },
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"g\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PickedInstancesCount"
+                      },
+                      "parameters": [
+                        "Cactus",
+                        "=",
+                        "1"
                       ]
                     }
                   ],
@@ -6137,23 +6176,24 @@
                       "conditions": [
                         {
                           "type": {
-                            "value": "PickedInstancesCount"
+                            "value": "BuiltinCommonInstructions::Or"
                           },
-                          "parameters": [
-                            "Cactus",
-                            "=",
-                            "1"
-                          ]
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
+                          "parameters": [],
+                          "subInstructions": [
                             {
                               "type": {
-                                "value": "BuiltinCommonInstructions::Or"
+                                "value": "AnimatableCapability::AnimatableBehavior::Name"
+                              },
+                              "parameters": [
+                                "Cactus",
+                                "Animation",
+                                "=",
+                                "\"Dehydrated\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::And"
                               },
                               "parameters": [],
                               "subInstructions": [
@@ -6165,141 +6205,74 @@
                                     "Cactus",
                                     "Animation",
                                     "=",
-                                    "\"Dehydrated\""
+                                    "\"Grow\""
                                   ]
                                 },
                                 {
                                   "type": {
-                                    "value": "BuiltinCommonInstructions::And"
+                                    "value": "Sprite"
                                   },
-                                  "parameters": [],
-                                  "subInstructions": [
-                                    {
-                                      "type": {
-                                        "value": "AnimatableCapability::AnimatableBehavior::Name"
-                                      },
-                                      "parameters": [
-                                        "Cactus",
-                                        "Animation",
-                                        "=",
-                                        "\"Grow\""
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "Sprite"
-                                      },
-                                      "parameters": [
-                                        "Cactus",
-                                        ">",
-                                        "0"
-                                      ]
-                                    }
+                                  "parameters": [
+                                    "Cactus",
+                                    ">",
+                                    "0"
                                   ]
                                 }
                               ]
                             }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "Delete"
-                              },
-                              "parameters": [
-                                "Cactus",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "SetBooleanObjectVariable"
-                              },
-                              "parameters": [
-                                "Soil",
-                                "Planted",
-                                "False",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "SetNumberVariable"
-                              },
-                              "parameters": [
-                                "Planted_Cacti",
-                                "-",
-                                "1"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "SetNumberVariable"
-                              },
-                              "parameters": [
-                                "Collected_Cacti",
-                                "+",
-                                "1"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                              },
-                              "parameters": [
-                                "Score",
-                                "Text",
-                                "=",
-                                "Collected_Cacti"
-                              ]
-                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "Cactus",
+                            ""
                           ]
                         },
                         {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "AnimatableCapability::AnimatableBehavior::Name"
-                              },
-                              "parameters": [
-                                "Cactus",
-                                "Animation",
-                                "=",
-                                "\"Dead\""
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "Delete"
-                              },
-                              "parameters": [
-                                "Cactus",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "SetBooleanObjectVariable"
-                              },
-                              "parameters": [
-                                "Soil",
-                                "Planted",
-                                "False",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "SetNumberVariable"
-                              },
-                              "parameters": [
-                                "Planted_Cacti",
-                                "-",
-                                "1"
-                              ]
-                            }
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Soil",
+                            "Planted",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Planted_Cacti",
+                            "-",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Collected_Cacti",
+                            "+",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "Score",
+                            "Text",
+                            "=",
+                            "Collected_Cacti"
                           ]
                         }
                       ]
@@ -6309,54 +6282,45 @@
                       "conditions": [
                         {
                           "type": {
-                            "value": "PickedInstancesCount"
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
                           },
                           "parameters": [
-                            "Water_Cactus",
+                            "Cactus",
+                            "Animation",
                             "=",
-                            "1"
+                            "\"Dead\""
                           ]
                         }
                       ],
-                      "actions": [],
-                      "events": [
+                      "actions": [
                         {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "AnimatableCapability::AnimatableBehavior::Name"
-                              },
-                              "parameters": [
-                                "Water_Cactus",
-                                "Animation",
-                                "=",
-                                "\"full\""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "Sprite"
-                              },
-                              "parameters": [
-                                "Water_Cactus",
-                                ">=",
-                                "1"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
-                              },
-                              "parameters": [
-                                "Water_Meter",
-                                "+",
-                                "1",
-                                ""
-                              ]
-                            }
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "Cactus",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Soil",
+                            "Planted",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Planted_Cacti",
+                            "-",
+                            "1"
                           ]
                         }
                       ]
@@ -6364,27 +6328,16 @@
                   ]
                 },
                 {
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "Seeds and Water from Cactus"
-                },
-                {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "value": "KeyFromTextReleased"
+                        "value": "PickedInstancesCount"
                       },
                       "parameters": [
-                        "",
-                        "\"e\""
+                        "Water_Cactus",
+                        "=",
+                        "1"
                       ]
                     }
                   ],
@@ -6395,60 +6348,13 @@
                       "conditions": [
                         {
                           "type": {
-                            "value": "PickedInstancesCount"
-                          },
-                          "parameters": [
-                            "Cactus",
-                            "=",
-                            "1"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Sprite"
-                          },
-                          "parameters": [
-                            "Cactus",
-                            ">=",
-                            "3"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
-                          },
-                          "parameters": [
-                            "Seed_Meter",
-                            "+",
-                            "RandomInRange(1, 3)",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ChangeSprite"
-                          },
-                          "parameters": [
-                            "Cactus",
-                            "=",
-                            "1"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PickedInstancesCount"
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
                           },
                           "parameters": [
                             "Water_Cactus",
+                            "Animation",
                             "=",
-                            "1"
+                            "\"full\""
                           ]
                         },
                         {
@@ -6473,18 +6379,133 @@
                             "1",
                             ""
                           ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                          },
-                          "parameters": [
-                            "Water_Cactus",
-                            "Animation",
-                            "=",
-                            "\"empty\""
-                          ]
                         }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Seeds and Water from Cactus"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"e\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PickedInstancesCount"
+                      },
+                      "parameters": [
+                        "Cactus",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Sprite"
+                      },
+                      "parameters": [
+                        "Cactus",
+                        ">=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                      },
+                      "parameters": [
+                        "Seed_Meter",
+                        "+",
+                        "RandomInRange(1, 3)",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeSprite"
+                      },
+                      "parameters": [
+                        "Cactus",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PickedInstancesCount"
+                      },
+                      "parameters": [
+                        "Water_Cactus",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Sprite"
+                      },
+                      "parameters": [
+                        "Water_Cactus",
+                        ">=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                      },
+                      "parameters": [
+                        "Water_Meter",
+                        "+",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Water_Cactus",
+                        "Animation",
+                        "=",
+                        "\"empty\""
                       ]
                     }
                   ]
@@ -6510,12 +6531,22 @@
           "conditions": [
             {
               "type": {
-                "value": "SourisSurObjet"
+                "value": "CollisionPoint"
               },
               "parameters": [
                 "Soil",
-                "=",
-                "no",
+                "CursorX()",
+                "CursorY()"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Soil",
+                "Planted",
+                "True",
                 ""
               ]
             },
@@ -6525,8 +6556,8 @@
               },
               "parameters": [
                 "Cactus Types",
-                "Soil.X()",
-                "Soil.Y()",
+                "CursorX()",
+                "CursorY()",
                 ""
               ]
             }
@@ -6737,7 +6768,17 @@
                   ]
                 }
               ],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Water_Cactus",
+                    ""
+                  ]
+                }
+              ],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -7690,6 +7731,7 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -7743,6 +7785,7 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -7796,6 +7839,7 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -7849,6 +7893,7 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -7913,6 +7958,7 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -7966,6 +8012,7 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -8019,6 +8066,7 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
