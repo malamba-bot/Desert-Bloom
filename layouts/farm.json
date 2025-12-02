@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4303403802207712,
+    "zoomFactor": 0.47535850871269975,
     "windowMask": false,
     "selectedLayer": "UI"
   },
@@ -4387,11 +4387,10 @@
             },
             {
               "type": {
-                "value": "TopDownMovementBehavior::IsMoving"
+                "value": "AnyKeyPressed"
               },
               "parameters": [
-                "Player",
-                "TopDownMovement"
+                "Player"
               ]
             }
           ],
@@ -6806,6 +6805,26 @@
                 "",
                 "\"a\""
               ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"w\""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"s\""
+              ]
             }
           ],
           "actions": [
@@ -6843,6 +6862,26 @@
               "parameters": [
                 "",
                 "\"d\""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"w\""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"s\""
               ]
             }
           ],
@@ -6979,11 +7018,13 @@
           "conditions": [
             {
               "type": {
-                "value": "TopDownMovementBehavior::IsMoving"
+                "value": "TopDownMovementBehavior::Speed"
               },
               "parameters": [
                 "Player",
-                "TopDownMovement"
+                "TopDownMovement",
+                "!=",
+                "0"
               ]
             },
             {
@@ -7014,12 +7055,13 @@
           "conditions": [
             {
               "type": {
-                "inverted": true,
-                "value": "TopDownMovementBehavior::IsMoving"
+                "value": "TopDownMovementBehavior::Speed"
               },
               "parameters": [
                 "Player",
-                "TopDownMovement"
+                "TopDownMovement",
+                "=",
+                "0"
               ]
             }
           ],
