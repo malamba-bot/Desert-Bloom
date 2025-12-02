@@ -1295,6 +1295,14 @@
         "name": "selected",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/selected_fertilizer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/selected_fertilizer.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
