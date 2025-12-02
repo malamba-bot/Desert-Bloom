@@ -20,7 +20,7 @@
     "snap": false,
     "zoomFactor": 0.47535850871269975,
     "windowMask": false,
-    "selectedLayer": "UI"
+    "selectedLayer": "Instructions"
   },
   "objectsGroups": [
     {
@@ -1031,23 +1031,6 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 248,
-      "keepRatio": true,
-      "layer": "Instructions",
-      "name": "Manual",
-      "persistentUuid": "bde17016-9824-473d-8d65-4e7e60b27ede",
-      "width": 1881,
-      "x": 5,
-      "y": 12,
-      "zOrder": 133,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
       "height": 1101,
       "keepRatio": true,
       "layer": "Instructions",
@@ -1074,6 +1057,89 @@
       "x": 225,
       "y": 12,
       "zOrder": 134,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Instructions",
+      "name": "Manual_Title",
+      "persistentUuid": "9a6b1aeb-9c66-42c3-b79d-af0f7e796249",
+      "width": 0,
+      "x": 833,
+      "y": 12,
+      "zOrder": 135,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1094,
+      "keepRatio": true,
+      "layer": "Credits",
+      "name": "White_Background",
+      "persistentUuid": "b9806a87-8dc9-4eba-9874-eff74c12760e",
+      "width": 1930,
+      "x": -4,
+      "y": -7,
+      "zOrder": 136,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 283,
+      "keepRatio": true,
+      "layer": "Credits",
+      "name": "Credits",
+      "persistentUuid": "b5324c17-21f7-48e7-bd63-3491e38d269d",
+      "width": 1913,
+      "x": 5,
+      "y": 199,
+      "zOrder": 137,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Credits",
+      "name": "Credits_Title",
+      "persistentUuid": "44e81f19-461c-454c-acc7-eb7eb7222ee2",
+      "width": 0,
+      "x": 785,
+      "y": 102,
+      "zOrder": 138,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 654,
+      "keepRatio": true,
+      "layer": "Instructions",
+      "name": "Manual1",
+      "persistentUuid": "18b0c45b-ac79-4942-b1c7-dc5c2162d230",
+      "width": 1892,
+      "x": 8,
+      "y": 82,
+      "zOrder": 139,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2994,10 +3060,10 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Manual\n\nYour goal is to stock up 50 cactus so that you can survive a trip out of the desert! You will be alloted a limited amount of water per day from the well, and you can use fertilizer to make land suitable for growing cactus. Your cactus will grow a little day by day, eventually producing seeds, and dying. You can convert your collected cactus into more fertilizer to expand your farm and grow faster!\n\nHolding \"q\" will put you in a fertilizing mode where you can select a box with your cursor and click to use your available fertilizer and make a plot of land suitable for growing cacti.\n\n \"f\" is used to plant cacti, which require 1 water and 3 seeds to plant\n\n \"g\" is used to collect grown cacti\n\n \"r\" is used to collect 1-3 seeds from fully grown cacti\n\n\"left shift\" hydrates the cactus below you, it requires one water\n\n \"c\" is used to convert 4 cacti into fertilizer\n\n \"e\" is used to collect water from the well",
+      "string": "Your goal is to stock up 50 cactus so that you can survive a trip out of the desert! You will be alloted a limited amount of water per day from the well, and you can use fertilizer to make land suitable for growing cactus. Your cactus will grow a little day by day, eventually producing seeds, and dying. You can convert your collected cactus into more fertilizer to expand your farm and grow faster!\n\nFERTILIZING\n- Holding \"q\" will put you in a fertilizing mode where you can select a box with your cursor and click to use your available fertilizer and make a plot of land suitable for growing cacti.\n- Use the convert button to turn 4 cactus into fertilizer\n\nPLANTING\n- Left click above a soil patch or walk over a patch and press space to bring up the planting menu. Moving your character will exit the menu. Planting either type of cactus requires three seeds and one water.\n\nWATERING\n- Stand over a soil patch and press space to water it (uses one water)\n\nCOLLECTING WATER AND SEEDS\n- Standing next to the well or a full water cactus and pressing 'e' will collect water from it. Standing next to a seeded cactus  pressing 'e' will collect the seeds.\n\nCOLLECTING CACTUS\n- Right click on a cactus or water cactus to collect it. Note that water cactus are not counted towards your goal of collecting 50 cactus.\n\n",
       "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
-      "textAlignment": "center",
-      "characterSize": 60,
+      "textAlignment": "left",
+      "characterSize": 54,
       "color": {
         "b": 0,
         "g": 0,
@@ -3017,11 +3083,11 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Manual\n\nYour goal is to stock up 50 cactus so that you can survive a trip out of the desert! You will be alloted a limited amount of water per day from the well, and you can use fertilizer to make land suitable for growing cactus. Your cactus will grow a little day by day, eventually producing seeds, and dying. You can convert your collected cactus into more fertilizer to expand your farm and grow faster!\n\nHolding \"q\" will put you in a fertilizing mode where you can select a box with your cursor and click to use your available fertilizer and make a plot of land suitable for growing cacti.\n\n \"f\" is used to plant cacti, which require 1 water and 3 seeds to plant\n\n \"g\" is used to collect grown cacti\n\n \"r\" is used to collect 1-3 seeds from fully grown cacti\n\n\"left shift\" hydrates the cactus below you, it requires one water\n\n \"c\" is used to convert 4 cacti into fertilizer\n\n \"e\" is used to collect water from the well",
+        "text": "Your goal is to stock up 50 cactus so that you can survive a trip out of the desert! You will be alloted a limited amount of water per day from the well, and you can use fertilizer to make land suitable for growing cactus. Your cactus will grow a little day by day, eventually producing seeds, and dying. You can convert your collected cactus into more fertilizer to expand your farm and grow faster!\n\nFERTILIZING\n- Holding \"q\" will put you in a fertilizing mode where you can select a box with your cursor and click to use your available fertilizer and make a plot of land suitable for growing cacti.\n- Use the convert button to turn 4 cactus into fertilizer\n\nPLANTING\n- Left click above a soil patch or walk over a patch and press space to bring up the planting menu. Moving your character will exit the menu. Planting either type of cactus requires three seeds and one water.\n\nWATERING\n- Stand over a soil patch and press space to water it (uses one water)\n\nCOLLECTING WATER AND SEEDS\n- Standing next to the well or a full water cactus and pressing 'e' will collect water from it. Standing next to a seeded cactus  pressing 'e' will collect the seeds.\n\nCOLLECTING CACTUS\n- Right click on a cactus or water cactus to collect it. Note that water cactus are not counted towards your goal of collecting 50 cactus.\n\n",
         "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
-        "textAlignment": "center",
+        "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 60,
+        "characterSize": 54,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -4185,6 +4251,103 @@
       "content": {
         "LabelText": "-> Convert"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Manual_Title",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "MANUAL",
+      "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+      "textAlignment": "center",
+      "characterSize": 80,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "MANUAL",
+        "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 80,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Credits",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]Art and Animations[/b] - Max Kinet\n[b]Sounds[/b] - Brendan Talbot\n[b]Background Music[/b] - James Burton (commisioned)\n[b]Game Concept[/b] - Aiden Hamid\n[b]Systems and Resources Programming[/b] - Max Kinet and Brendan Talbot\n[b]User Interface[/b]  - Max Kinet\n\n",
+        "opacity": 255,
+        "fontSize": 90,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+        "align": "center",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Credits_Title",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "CREDITS",
+        "opacity": 255,
+        "fontSize": 120,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+        "align": "center",
+        "verticalTextAlignment": "center"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Manual1",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Your goal is to stock up 50 cactus so that you can survive a trip out of the desert! \n\nYou can make land suitable for growth by converting collected cactus into fertilizer. You will be alloted a limited amount of water per day from the well. You can only hold up to 5 water on your person, but you can store additional water in water cactus! Your cactus will grow everyday, eventually producing seeds. Keep them watered, or your cactus will enter a dehydrated state, meaning they will die and be worth nothing the next day! Each day has a chance of bringing rain or a sandstorm, which will water all your plants or bring them closer to dehydration.\n\n[b]FERTILIZING[/b]\n- Holding 'q' will put you in a fertilizing mode where you can select a box with your cursor and click to use your available fertilizer and make a plot of land suitable for growing cacti.\n- Use the convert button to turn 4 cactus into fertilizer\n\n[b]PLANTING[/b]\n- Left click above a soil patch or walk over a patch and press space to bring up the planting menu. Moving your character will exit the menu. Planting either type of cactus requires three seeds and one water.\n\n[b]WATERING[/b]\n- Stand over a soil patch and press space to water it (uses one water)\n\n[b]COLLECTING WATER AND SEEDS[/b]\n- Standing next to the well or a full water cactus and pressing 'e' will collect water from it. Standing next to a seeded cactus  pressing 'e' will collect the seeds.\n\n[b]COLLECTING CACTUS[/b]\n- Right click on a cactus or water cactus to collect it. Note that water cactus are not counted towards your goal of collecting 50 cactus.\n\n",
+        "opacity": 255,
+        "fontSize": 54,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -4299,7 +4462,13 @@
             "objectName": "Manual"
           },
           {
+            "objectName": "Manual1"
+          },
+          {
             "objectName": "White_Background"
+          },
+          {
+            "objectName": "Manual_Title"
           }
         ]
       },
@@ -4314,6 +4483,12 @@
       },
       {
         "objectName": "Well"
+      },
+      {
+        "objectName": "Credits"
+      },
+      {
+        "objectName": "Credits_Title"
       }
     ]
   },
@@ -4417,6 +4592,56 @@
               "parameters": [
                 "",
                 "\"Instructions\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"c\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Credits\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"c\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Credits\""
               ]
             }
           ]
@@ -7703,16 +7928,77 @@
                     "",
                     "Cactus"
                   ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Only bring to dehydration if cactus is close to dying"
                 },
                 {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Cactus",
-                    "last_hydrated",
-                    "+",
-                    "2"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Cactus",
+                        "last_hydrated",
+                        ">=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Cactus",
+                        "last_hydrated",
+                        "+",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Cactus",
+                        "last_hydrated",
+                        "<",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Cactus",
+                        "last_hydrated",
+                        "+",
+                        "2"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -8383,6 +8669,59 @@
       "isLightingLayer": false,
       "isLocked": false,
       "name": "Instructions",
+      "renderingType": "",
+      "visibility": false,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Credits",
       "renderingType": "",
       "visibility": false,
       "cameras": [],
