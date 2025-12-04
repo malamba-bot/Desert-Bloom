@@ -3050,49 +3050,6 @@
       "behaviors": []
     },
     {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "Manual",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Your goal is to stock up 50 cactus so that you can survive a trip out of the desert! You will be alloted a limited amount of water per day from the well, and you can use fertilizer to make land suitable for growing cactus. Your cactus will grow a little day by day, eventually producing seeds, and dying. You can convert your collected cactus into more fertilizer to expand your farm and grow faster!\n\nFERTILIZING\n- Holding \"q\" will put you in a fertilizing mode where you can select a box with your cursor and click to use your available fertilizer and make a plot of land suitable for growing cacti.\n- Use the convert button to turn 4 cactus into fertilizer\n\nPLANTING\n- Left click above a soil patch or walk over a patch and press space to bring up the planting menu. Moving your character will exit the menu. Planting either type of cactus requires three seeds and one water.\n\nWATERING\n- Stand over a soil patch and press space to water it (uses one water)\n\nCOLLECTING WATER AND SEEDS\n- Standing next to the well or a full water cactus and pressing 'e' will collect water from it. Standing next to a seeded cactus  pressing 'e' will collect the seeds.\n\nCOLLECTING CACTUS\n- Right click on a cactus or water cactus to collect it. Note that water cactus are not counted towards your goal of collecting 50 cactus.\n\n",
-      "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
-      "textAlignment": "left",
-      "characterSize": 54,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": true,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 4,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Your goal is to stock up 50 cactus so that you can survive a trip out of the desert! You will be alloted a limited amount of water per day from the well, and you can use fertilizer to make land suitable for growing cactus. Your cactus will grow a little day by day, eventually producing seeds, and dying. You can convert your collected cactus into more fertilizer to expand your farm and grow faster!\n\nFERTILIZING\n- Holding \"q\" will put you in a fertilizing mode where you can select a box with your cursor and click to use your available fertilizer and make a plot of land suitable for growing cacti.\n- Use the convert button to turn 4 cactus into fertilizer\n\nPLANTING\n- Left click above a soil patch or walk over a patch and press space to bring up the planting menu. Moving your character will exit the menu. Planting either type of cactus requires three seeds and one water.\n\nWATERING\n- Stand over a soil patch and press space to water it (uses one water)\n\nCOLLECTING WATER AND SEEDS\n- Standing next to the well or a full water cactus and pressing 'e' will collect water from it. Standing next to a seeded cactus  pressing 'e' will collect the seeds.\n\nCOLLECTING CACTUS\n- Right click on a cactus or water cactus to collect it. Note that water cactus are not counted towards your goal of collecting 50 cactus.\n\n",
-        "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 54,
-        "lineHeight": 0,
-        "color": "0;0;0"
-      }
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Soil",
@@ -4339,9 +4296,9 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "Your goal is to stock up 50 green cactus so that you can survive a trip out of the desert! \n\nYou can make land suitable for growth by converting collected cactus into fertilizer. You will be alloted a limited amount of water per day from the well. You can only hold up to 5 water on your person, but you can store additional water in water cactus! Your green cactus will grow everyday, eventually producing seeds. Keep them watered, or your green cactus will enter a dehydrated state, meaning they will die and be worth nothing the next day! Each day has a chance of bringing rain or a sandstorm, which will water all your plants or bring them closer to dehydration.\n\n[b]FERTILIZING[/b]\n- Holding 'q' will put you in a fertilizing mode where you can select a box with your cursor and click to use your available fertilizer and make a plot of land suitable for growing cacti.\n- Use the convert button to turn 4 cactus into fertilizer\n\n[b]PLANTING[/b]\n- Left click above a soil patch or walk over a patch and press space to bring up the planting menu. Moving your character will exit the menu. Planting either type of cactus requires at least 1 seed and 1 water, and the process uses up to 3 seeds.\n\n[b]WATERING[/b]\n- Stand over a soil patch and press space to water it (uses one water). This will fill empty water cactus with one water, and hydrate your green cactus.\n\n[b]COLLECTING WATER AND SEEDS[/b]\n- Standing next to the well or a full water cactus and pressing 'e' will collect water from it. Standing next to a seeded green cactus  and pressing 'e' will collect the seeds.\n\n[b]COLLECTING CACTUS[/b]\n- Right click on a green cactus or water cactus to collect it. Note that water cactus are not counted towards your goal of collecting 50 green cactus.\n\n",
+        "text": "Your goal is to stock up 50 green cactus so that you can survive a trip out of the desert! \n\nYou can make land suitable for growth by converting collected cactus into fertilizer. You will be alloted a limited amount of water per day from the well. You can only hold up to 5 water on your person, but you can store additional water in water cactus! Your green cactus will grow everyday, eventually producing seeds. Keep them watered, or your green cactus will enter a dehydrated state, meaning they will die and be worth nothing the next day! Each day has a chance of bringing rain or a sandstorm, which will water all your plants or bring them closer to dehydration.\n\n[b]FERTILIZING[/b]\n- Holding 'q' will put you in a fertilizing mode where you can select a box with your cursor and click to use your available fertilizer and make a plot of land suitable for growing cacti.\n- Use the convert button to turn 4 cactus into fertilizer\n\n[b]PLANTING[/b]\n- Left click above a soil patch or walk over a patch and press space to bring up the planting menu. Moving your character will exit the menu. Planting either type of cactus requires at least 1 seed and 1 water, and the process uses up to 3 seeds.\n\n[b]WATERING[/b]\n- Stand over a soil patch and press space to water it (uses one water). This will fill empty water cactus with one water, and hydrate your green cactus.\n\n[b]COLLECTING WATER AND SEEDS[/b]\n- Standing next to the well or a full water cactus and pressing 'e' will collect water from it. Standing next to a seeded green cactus  and pressing 'e' will collect the seeds.\n\n[b]COLLECTING CACTUS[/b]\n- Right click on a green cactus or water cactus to collect it. Note that water cactus are not counted towards your goal of collecting 50 green cactus.\n\n'c' to show credits!\n\n",
         "opacity": 255,
-        "fontSize": 52,
+        "fontSize": 50,
         "visible": true,
         "color": "0;0;0",
         "fontFamily": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
@@ -4458,9 +4415,6 @@
       {
         "folderName": "Manual",
         "children": [
-          {
-            "objectName": "Manual"
-          },
           {
             "objectName": "Manual1"
           },
