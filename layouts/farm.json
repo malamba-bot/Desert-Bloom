@@ -22,7 +22,7 @@
     "snap": false,
     "zoomFactor": 0.47535850871269975,
     "windowMask": false,
-    "selectedLayer": "Instructions"
+    "selectedLayer": "Credits"
   },
   "objectsGroups": [
     {
@@ -4305,7 +4305,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "[b]Art and Animations[/b] - Max Kinet\n[b]Sounds[/b] - Brendan Talbot\n[b]Background Music[/b] - James Burton (commisioned)\n[b]Game Concept[/b] - Aiden Hamid\n[b]Systems and Resources Programming[/b] - Max Kinet and Brendan Talbot\n[b]User Interface[/b]  - Max Kinet\n\n",
+        "text": "[b]Art and Animations[/b] - Max Kinet\n[b]Sounds[/b] - Brendan Talbot\n[b]Background Music[/b] - James Burton (commisioned)\n[b]Game Concept[/b] - Aiden Hamid\n[b]Tips[/b] - Aiden Hamid\n[b]Systems and Resources Programming[/b] - Max Kinet and Brendan Talbot\n[b]User Interface[/b]  - Max Kinet\n\n",
         "opacity": 255,
         "fontSize": 90,
         "visible": true,
@@ -9005,7 +9005,7 @@
       "isLocked": false,
       "name": "Credits",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [],
       "effects": [
         {
