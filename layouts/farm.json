@@ -6226,15 +6226,15 @@
                 },
                 {
                   "type": {
-                    "value": "PlaySoundCanal"
+                    "value": "PlaySound"
                   },
                   "parameters": [
                     "",
-                    "DesertBloomSounds/WaterFill.mp3",
+                    "DesertBloomSounds/pourlq.wav",
                     "2",
-                    "no",
-                    "30",
-                    "2"
+                    "80",
+                    "1",
+                    ""
                   ]
                 },
                 {
@@ -7602,11 +7602,11 @@
               },
               "parameters": [
                 "",
-                "DesertBloomSounds/sand-step.mp3",
+                "DesertBloomSounds/impact.wav",
                 "0",
                 "yes",
-                "50",
-                "1.5"
+                "12",
+                "2"
               ]
             }
           ]

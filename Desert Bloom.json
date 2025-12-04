@@ -1348,6 +1348,26 @@
         "name": "assets/Wet_Selected_Fertilizer.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "DesertBloomSounds/pourlq.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "DesertBloomSounds/pourlq.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "DesertBloomSounds/impact.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "DesertBloomSounds/impact.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
