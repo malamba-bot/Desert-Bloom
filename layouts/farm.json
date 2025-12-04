@@ -5379,8 +5379,8 @@
                   "parameters": [
                     "",
                     "wc_button",
-                    "Soil.X() - 15",
-                    "Soil.Y() - 30",
+                    "Soil.X() - 5",
+                    "Soil.Y() + 25",
                     "\"Planting Buttons\""
                   ]
                 },
@@ -5391,8 +5391,8 @@
                   "parameters": [
                     "",
                     "c_button",
-                    "Soil.X() + 95",
-                    "Soil.Y() - 30",
+                    "Soil.X() + 85",
+                    "Soil.Y() + 25",
                     "\"Planting Buttons\""
                   ]
                 },
