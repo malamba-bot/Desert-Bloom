@@ -13,10 +13,8 @@
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
-    "gridDepth": 32,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
-    "gridOffsetZ": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
@@ -881,14 +879,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 175,
+      "height": 207,
       "keepRatio": true,
       "layer": "UI",
       "name": "MessageBox",
       "persistentUuid": "9888c1b0-5123-412e-827e-2f1684075db9",
       "width": 573,
-      "x": 820,
-      "y": 291,
+      "x": 818,
+      "y": 321,
       "zOrder": 127,
       "numberProperties": [],
       "stringProperties": [],
@@ -999,7 +997,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 31,
-      "height": 323,
+      "height": 396,
       "keepRatio": true,
       "layer": "UI",
       "name": "message_box",
@@ -4305,7 +4303,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "[b]Art and Animations[/b] - Max Kinet\n[b]Sounds[/b] - Brendan Talbot\n[b]Background Music[/b] - James Burton (commisioned)\n[b]Game Concept[/b] - Aiden Hamid\n[b]Tips[/b] - Aiden Hamid\n[b]Systems and Resources Programming[/b] - Max Kinet and Brendan Talbot\n[b]User Interface[/b]  - Max Kinet\n\n",
+        "text": "[b]Art and Animations[/b] - Max Kinet\n[b]Sounds[/b] - Brendan Talbot\n[b]Background Music[/b] - James Burton (commisioned)\n[b]Game Concept[/b] - Aiden Hamid\n[b]Tutorial[/b] - Aiden Hamid\n[b]Systems and Resources Programming[/b] - Max Kinet and Brendan Talbot\n[b]User Interface[/b]  - Max Kinet\n\n",
         "opacity": 255,
         "fontSize": 90,
         "visible": true,
@@ -4341,9 +4339,9 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "Your goal is to stock up 50 cactus so that you can survive a trip out of the desert! \n\nYou can make land suitable for growth by converting collected cactus into fertilizer. You will be alloted a limited amount of water per day from the well. You can only hold up to 5 water on your person, but you can store additional water in water cactus! Your cactus will grow everyday, eventually producing seeds. Keep them watered, or your cactus will enter a dehydrated state, meaning they will die and be worth nothing the next day! Each day has a chance of bringing rain or a sandstorm, which will water all your plants or bring them closer to dehydration.\n\n[b]FERTILIZING[/b]\n- Holding 'q' will put you in a fertilizing mode where you can select a box with your cursor and click to use your available fertilizer and make a plot of land suitable for growing cacti.\n- Use the convert button to turn 4 cactus into fertilizer\n\n[b]PLANTING[/b]\n- Left click above a soil patch or walk over a patch and press space to bring up the planting menu. Moving your character will exit the menu. Planting either type of cactus requires three seeds and one water.\n\n[b]WATERING[/b]\n- Stand over a soil patch and press space to water it (uses one water)\n\n[b]COLLECTING WATER AND SEEDS[/b]\n- Standing next to the well or a full water cactus and pressing 'e' will collect water from it. Standing next to a seeded cactus  pressing 'e' will collect the seeds.\n\n[b]COLLECTING CACTUS[/b]\n- Right click on a cactus or water cactus to collect it. Note that water cactus are not counted towards your goal of collecting 50 cactus.\n\n",
+        "text": "Your goal is to stock up 50 green cactus so that you can survive a trip out of the desert! \n\nYou can make land suitable for growth by converting collected cactus into fertilizer. You will be alloted a limited amount of water per day from the well. You can only hold up to 5 water on your person, but you can store additional water in water cactus! Your green cactus will grow everyday, eventually producing seeds. Keep them watered, or your green cactus will enter a dehydrated state, meaning they will die and be worth nothing the next day! Each day has a chance of bringing rain or a sandstorm, which will water all your plants or bring them closer to dehydration.\n\n[b]FERTILIZING[/b]\n- Holding 'q' will put you in a fertilizing mode where you can select a box with your cursor and click to use your available fertilizer and make a plot of land suitable for growing cacti.\n- Use the convert button to turn 4 cactus into fertilizer\n\n[b]PLANTING[/b]\n- Left click above a soil patch or walk over a patch and press space to bring up the planting menu. Moving your character will exit the menu. Planting either type of cactus requires at least 1 seed and 1 water, and the process uses up to 3 seeds.\n\n[b]WATERING[/b]\n- Stand over a soil patch and press space to water it (uses one water). This will fill empty water cactus with one water, and hydrate your green cactus.\n\n[b]COLLECTING WATER AND SEEDS[/b]\n- Standing next to the well or a full water cactus and pressing 'e' will collect water from it. Standing next to a seeded green cactus  and pressing 'e' will collect the seeds.\n\n[b]COLLECTING CACTUS[/b]\n- Right click on a green cactus or water cactus to collect it. Note that water cactus are not counted towards your goal of collecting 50 green cactus.\n\n",
         "opacity": 255,
-        "fontSize": 54,
+        "fontSize": 52,
         "visible": true,
         "color": "0;0;0",
         "fontFamily": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
@@ -4531,15 +4529,6 @@
             },
             {
               "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Well",
-                "\"water add\""
-              ]
-            },
-            {
-              "type": {
                 "value": "Montre"
               },
               "parameters": [
@@ -4555,246 +4544,324 @@
                 "MessageBox",
                 "Text",
                 "=",
-                "\"Hold 'q' to open the fertilizer menu and get started!\""
+                "\"You've been abandoned in the desert! Hold 'q' to open the fertilizer menu and get started!\""
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Tutorial Section"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::Value"
+                "value": "NumberVariable"
               },
               "parameters": [
-                "DayCounter",
-                "Text",
+                "DayNum",
                 "=",
-                "\"1\""
-              ]
-            },
-            {
-              "type": {
-                "value": "KeyFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"q\""
+                "1"
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "MessageBox",
-                "Text",
-                "=",
-                "\"Now click on any of the available patches to use your fertilizer!\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::Value"
-              },
-              "parameters": [
-                "DayCounter",
-                "Text",
-                "=",
-                "\"1\""
-              ]
-            },
-            {
-              "type": {
-                "value": "KeyFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"q\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "MessageBox",
-                "Text",
-                "=",
-                "\"Now click on your new patch of soil to plant a cactus!\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::Value"
-              },
-              "parameters": [
-                "DayCounter",
-                "Text",
-                "=",
-                "\"1\""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"q\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "MessageBox",
+                    "Text",
+                    "=",
+                    "\"Now click on any of the available patches to use your fertilizer!\""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "planting",
-                "True",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"q\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Fertilizer",
+                        "<",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "MessageBox",
+                        "Text",
+                        "=",
+                        "\"Now click on your new patch of soil to plant a cactus! Make sure to plant a green one.\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Fertilizer",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "MessageBox",
+                        "Text",
+                        "=",
+                        "\"Hold 'q' to open the fertilizer menu and get started!\""
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "MessageBox",
-                "Text",
-                "=",
-                "\"Now stand on top of your cacti to learn how watering works!\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::Value"
-              },
-              "parameters": [
-                "DayCounter",
-                "Text",
-                "=",
-                "\"1\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "Soil",
-                "Planted",
-                "True",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Planted_Cacti",
+                    ">",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "MessageBox",
+                    "Text",
+                    "=",
+                    "\"That used up all your water! Go to the well and press 'e' to collect some more.\""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "MessageBox",
-                "Text",
-                "=",
-                "\"Hit space while standing on the planted cacti to water it!\""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Well",
+                    "water",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "MessageBox",
+                    "Text",
+                    "=",
+                    "\"Your green cactus will dehydrate (pale green) and eventually die (brown) if you don't water them.\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "MessageBox",
+                    "Text",
+                    "=",
+                    "\"Water your cactus by walking over it and pressing space.\""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "message_box",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::Value"
-              },
-              "parameters": [
-                "DayCounter",
-                "Text",
-                "=",
-                "\"1\""
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::Name"
-              },
-              "parameters": [
-                "Soil",
-                "Animation",
-                "=",
-                "\"wet\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "MessageBox",
-                "Text",
-                "=",
-                "\"Clicking 'e' lets you collect seeds or water from the cacti! Good Luck from now on!\""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "Soil",
+                    "Animation",
+                    "=",
+                    "\"wet\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::Value"
+                  },
+                  "parameters": [
+                    "MessageBox",
+                    "Text",
+                    "=",
+                    "\"Water your cactus by walking over it and pressing space.\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "MessageBox",
+                    "Text",
+                    "=",
+                    "\"Now you've got the basics! Hold escape to access the manual.\""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "4"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "MessageBox",
-                "\"vis\""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::Value"
+                  },
+                  "parameters": [
+                    "MessageBox",
+                    "Text",
+                    "=",
+                    "\"Now you've got the basics! Hold escape to access the manual.\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Escape\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "MessageBox",
+                    "Text",
+                    "=",
+                    "\"Now that you've read the manual, you're ready to move onto the next day!\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "MessageBox",
+                    "\"vis\""
+                  ]
+                }
               ]
             }
           ]
@@ -6259,6 +6326,16 @@
                             "80",
                             ""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Fertilized_land",
+                            "+",
+                            "1"
+                          ]
                         }
                       ]
                     }
@@ -6427,6 +6504,44 @@
                 "Well",
                 "200",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Fertilized_land",
+                ">",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Planted_Cacti",
+                    ">",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Collected_Cacti",
+                    ">",
+                    "0"
+                  ]
+                }
               ]
             }
           ],
@@ -8156,6 +8271,62 @@
                     "=",
                     "\"wet\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "Water_Cactus"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Water_Cactus",
+                        "Animation",
+                        "=",
+                        "\"empty\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Water_Cactus",
+                        "Animation",
+                        "=",
+                        "\"full\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeSprite"
+                      },
+                      "parameters": [
+                        "Water_Cactus",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -8606,7 +8777,6 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
-      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -8660,7 +8830,6 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
-      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -8714,7 +8883,6 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
-      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -8768,7 +8936,6 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
-      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -8833,7 +9000,6 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
-      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -8887,7 +9053,6 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
-      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -8941,7 +9106,6 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
-      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -8995,7 +9159,6 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
-      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
@@ -9005,7 +9168,7 @@
       "isLocked": false,
       "name": "Credits",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {

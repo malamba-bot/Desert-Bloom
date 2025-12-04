@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 246,
+    "build": 245,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -81,7 +81,6 @@
     "authorUsernames": [],
     "categories": [],
     "playableDevices": [
-      "mobile",
       "mobile"
     ],
     "extensionProperties": [],
@@ -1370,7 +1369,8 @@
         "preloadInCache": false,
         "userAdded": false
       }
-    ]
+    ],
+    "resourceFolders": []
   },
   "objects": [],
   "objectsFolderStructure": {
@@ -1402,6 +1402,11 @@
       "name": "planting",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "Fertilized_land",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
